@@ -1,0 +1,88 @@
+divider{
+  animation: 2s ease 0.5s 1 normal forwards scale-up;
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* TEXT */
+#hello{
+  white-space: nowrap;
+  margin-top: 10vh;
+  padding-bottom: 10vh;
+}
+#resume p{
+  font-size: var(--resume);
+}
+#institute{
+  font-weight: 550;
+  font-size: var(--resume);
+  text-transform: none;
+}
+/* INFO DIV*/
+intro{
+  width: 100%;
+}
+#intro-desc{
+  width: 35%;
+}
+.icon{
+  width: 3rem;
+  margin: 15px;
+}
+#resume h4{
+  color: var(--black);
+}
+#links-cluster{
+  margin: var(--br);
+}
+/*PROJECT CONTENT*/
+section{
+  padding: var(--uni) 0;
+}
+.sec{
+  width: 40vw;
+}
+#section-cluster{
+  flex-direction: row;
+}
+divider{
+  padding: 5px;
+  border-top: 1px solid var(--divider);
+}
+@media (max-width: 800px){
+  intro{
+    flex-direction: column;
+    align-items: center;
+  }
+  #intro-desc{
+      width: 100%;
+    }
+    .links-section{
+    flex-direction: row;
+    }
+  }
+  @media (max-width: 600px) {
+    #section-cluster{
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 500px){
+      .sec{
+        width: 100%;
+      }
+      .links-section,
+      .sec-2{
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 450px) {
+    .w-2{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    }

@@ -1,0 +1,160 @@
+body,
+main{
+  max-width: 100% !important;
+}
+#loader{
+	position: fixed;
+	margin: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	overflow: hidden !important;
+	height: 100%;
+	background-color: var(--black);
+}
+#loader #top{
+  padding: var(--uni);
+}
+#loader h4{
+  white-space: nowrap;
+  color: var(--subtext);
+}
+#loader h2 {
+	white-space: nowrap;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	color: var(--white);
+	font-family: var(--title);
+	font-style: normal;
+}
+.parent{
+	height: 100%;
+	overflow: hidden;
+	display: block;
+}
+.reveal .parent .child{
+	display: block;
+}
+.child plug{
+	display: inline-block;
+}
+plug .child {
+	display: inline-block;
+}
+.parent .child plug{
+	display: inline-block;
+}
+#hero,
+.hero-container{
+  max-width: 100% !important;
+  overflow: hidden !important;
+}
+.hero-container{
+  position: relative;
+  height: 100vh;
+  height: 100svh;
+}
+#hero{
+  height: 100%;
+}
+/* MARQUEE */
+.marquee {
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  /* height: 7.5vh; */
+  position: relative;
+  display: flex;
+  width: 200vw;
+  grid-column-gap: 3rem; 
+  grid-row-gap: 3rem; 
+}
+.marquee-content {
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  display: flex;
+	flex-shrink: 0;
+  min-width: 100%;
+  justify-content: space-around;
+  grid-column-gap: 3rem; 
+  grid-row-gap: 3rem; 
+}
+.marquee-content img{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  max-width: 250px;
+  height: 80%;
+}
+
+/* #about .cta{
+  margin-top: var(--uni);
+} */
+
+/* WORK */
+#work{
+  width: 100%;
+}
+#work-title{
+  pointer-events: none;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+}
+project{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15vh;
+}
+project img{
+  max-width: 450px;
+  aspect-ratio: 3 / 4;
+  display: block;
+  object-fit: cover;
+}
+#project-row{
+  flex-direction: column;
+  width: 85%;
+}
+/* #project-row{
+  flex-direction: row;
+  height: 100vh;
+} */
+@media (max-width: 1200px){
+  bruv{
+    width: 100%;
+  }
+}
+@media (max-width: 800px){
+  body,
+  main{
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  #work-title{
+    position: inherit;
+    top: auto;
+    height: auto;
+    margin-top: 10vh;
+    margin-bottom: 0;
+  }
+  #project-row{
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  project{
+    object-fit: cover;
+    width: 100%;
+    margin: 2.5vh 0;
+  }
+  project img{
+    width: 100%;
+    min-height: auto;
+    filter: grayscale(0);
+  }
+}
