@@ -7,24 +7,24 @@ var tl = gsap.timeline({ paused: true });
   tl
   .to("#overlay, #overlay-bg", {
     y:"0",
-    delay: -1,
-    ease: "expo.inOut",
+    ease: "power4.inOut",
     duration: 2
+  })
+
+  .to("#overlay-bg", {
+    opacity: 1,
+    duration: 1.5,
+    delay: -1,
+    // delay: -2,
+    ease: "power4.inOut",
   })
 
   .to("#socials a", {
     y:"0",
-    delay: -1.75,
+    delay: -2.5,
     ease: "circ.inOut",
     stagger: 0.1,
     duration: 1.75,
-  })
-
-    .to("#overlay-bg", {
-    opacity: 1,
-    delay: -1.3,
-    duration: 1.3,
-    ease: "power4.inOut",
   })
 
   // .to(".star", {
