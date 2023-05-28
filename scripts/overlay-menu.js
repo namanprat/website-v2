@@ -15,7 +15,6 @@ var tl = gsap.timeline({ paused: true });
     opacity: 1,
     duration: 1.5,
     delay: -1,
-    // delay: -2,
     ease: "power4.inOut",
   })
 

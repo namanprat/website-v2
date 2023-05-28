@@ -150,7 +150,7 @@ section p{
 }
 .q-box{
   padding: var(--uni);
-  background-color: var(--grey);
+  background-color: var(--divider);
 }
 showcase{
   flex-direction: row;

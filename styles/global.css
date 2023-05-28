@@ -69,16 +69,14 @@
   /* Colors */
   --text-color: #272320cf;
   --black: #272320;
-  --divider: #2723202e;
-  --grey: #e9e7df;
-  --white: #ebe7e2;
+  --divider: #2723201f;
+  --white: #f8f0e5;
   --primary: #eb5348;
-  --subtext: #ebe7e2bd;
-  --nav: #ebe7e2;
+  --nav: #f1e8dc;
 
 
   /* UNIVERSAL */
-  --body-spacing: -0.25px;
+  --body-spacing: 0px;
   --ratio: 1.414;
   --uni:calc( var(--ratio) * 1.414rem);
   --ratio-2: calc(var(--ratio) * var(--ratio));
@@ -86,12 +84,10 @@
 /* UNIVERSAL ELEMENTS */
 
 [data-theme="dark"] {
-  --text-color: #ebe7e2cf;
-  --black: #ebe7e2;
-  --divider: #ebe7e22e;
-  --grey: #ebe7e217;
+  --text-color: #f7ecddde;
+  --black: #f0e4d5;
+  --divider: #f1e8dc2e;
   --white: #272320;
-  --subtext: #272320bd;
 }
 .w{
   padding-left: var(--uni);
@@ -198,8 +194,8 @@
   padding: var(--uni);
 }
 #loader h4{
+  color: var(--white);
   white-space: nowrap;
-  color: var(--subtext);
 }
 #loader h2 {
 	white-space: nowrap;
