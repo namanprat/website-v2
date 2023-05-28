@@ -33,7 +33,6 @@
   --h2: clamp(2.83rem, 0.96vw + 2.59rem, 3.36rem);
   --h1-footer: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
   --h1: clamp(9.22rem, 3.14vw + 8.44rem, 10.3rem);
-  /*--h1:clamp(8.81rem, 3vw + 8.06rem, 9.15rem);*/
   --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
 
 /* --font-1: clamp(0.71rem, 0.24vw + 0.65rem, 0.84rem);
@@ -68,7 +67,6 @@
   --font-u: clamp(180.61rem, 61.57vw + 165.22rem, 214.47rem);*/
 
   /* Colors */
-  /* --text-color: #222121; */
   --text-color: #272320d0;
   --black: #272320;
   --divider: #2723202e;
@@ -78,14 +76,6 @@
   --subtext: #ebe7e2bd;
   --nav: #ebe7e2;
 
-  /* --text-color: #2e2c2c;
-  --black: #1a1919;
-  --divider: #1a19192e;
-  --grey: #e9e7df;
-  --white: #faf8f2;
-  --primary: #e44439;
-  --subtext: #faf8f2bd;
-  --nav: #faf8f2; */
 
   /* UNIVERSAL */
   --body-spacing: -0.25px;
@@ -96,12 +86,6 @@
 /* UNIVERSAL ELEMENTS */
 
 [data-theme="dark"] {
-  /* --text-color: #faf8f2d8;
-  --black: #faf8f2;
-  --divider: #1a19192e;
-  --grey: #faf8f217;
-  --white: #1a1919;
-  --subtext: #1a1919bd; */
   --text-color: #ebe7e2d0;
   --black: #ebe7e2;
   --divider: #ebe7e22e;
@@ -190,7 +174,7 @@
 .pointer-none{
   pointer-events: none;
 }
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
   background: var(--black);
   color: var(--white);
 }
@@ -314,11 +298,8 @@ body{
   flex-direction: column;
 }
 main{
-  /* max-width: 100% !important; */
   background: var(--white);
-  /* z-index: 2; */
   transition: 0.2s ease-in-out;
-  /* padding-bottom: calc(var(--uni) * var(--ratio)); */
 }
 /* HEADER */
 nav{
@@ -354,7 +335,6 @@ input[type="checkbox"] {
  }
 .cta,
 .nav{
-  /* color: var(--black); */
   text-transform: uppercase;
   font-size: var(--h4);
   font-weight: 450;
@@ -468,7 +448,6 @@ svg{
 .stripe {
   padding: 0 !important;
   overflow-x: hidden !important;
-  /* height: 7.5vh; */
   position: relative;
   display: flex;
   width: 200vw;
@@ -498,8 +477,10 @@ svg{
 
 @media (max-width: 1440px){
   :root{
-    /* --h1: clamp(9.64rem, 3.28vw + 8.82rem, 8.82rem); */
     --h1: clamp(8.81rem, 3vw + 8.06rem, 9.15rem);
+  }
+  .copy{
+    width: 100%;
   }
 }
 
@@ -520,9 +501,6 @@ svg{
   #nav-cluster{
     width: clamp(9.64rem, 3.28vw + 8.82rem, 11.45rem);
    }
-  .copy{
-    width: 100%;
-  }
   body,
   main{
     max-width: 100% !important;
@@ -583,12 +561,6 @@ svg{
   :root{
     --h1: clamp(3.41rem, 1.36vw + 3.66rem, 4.75rem);
     --h1-project: clamp(5.23rem, 1.78vw + 4.79rem, 6.22rem);
-
-    /* --text-color: #faf8f2cc;
-    --black: #faf8f2;
-    --divider: #faf8f22e;
-    --grey: #faf8f211;
-    --white: #1a1919; */
   }
 }
 @media (max-width: 450px) {
