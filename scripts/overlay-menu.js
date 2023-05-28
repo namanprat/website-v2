@@ -20,8 +20,8 @@ var tl = gsap.timeline({ paused: true });
 
   .to("#socials a", {
     y:"0",
-    delay: -2.5,
-    ease: "circ.inOut",
+    delay: -2,
+    ease: "power4.inOut",
     stagger: 0.1,
     duration: 1.75,
   })
