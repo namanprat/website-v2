@@ -27,15 +27,6 @@ var tl = gsap.timeline({ paused: true });
     duration: 1.75,
   })
 
-  // .to(".star", {
-  //   rotation: 360,
-  //   delay: -10,
-  //   transformOrigin: "center",
-  //   ease: "none", 
-  //   duration: 3,
-  //   repeat: -1
-  // })
-
   $(".menu-open, .menu-close").click (function() {
  tl.reversed() ? tl.play() : tl.reverse();
   })
