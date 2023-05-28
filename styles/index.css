@@ -86,11 +86,6 @@ plug .child {
   max-width: 250px;
   height: 80%;
 }
-
-/* #about .cta{
-  margin-top: var(--uni);
-} */
-
 /* WORK */
 #work{
   width: 100%;
@@ -131,7 +126,6 @@ project img{
 @media (max-width: 800px){
   body,
   main{
-    max-width: 100% !important;
     overflow-x: hidden !important;
   }
   #work-title{
