@@ -43,7 +43,6 @@ function textReveal(){
       $("[animate]").each(function (index) {
         let tl = gsap.timeline();
         tl.from('.word', {
-          delay: 1,
           opacity: 0, 
           yPercent: 100, 
           duration: 1.5, 
@@ -51,12 +50,11 @@ function textReveal(){
           stagger: { amount: 0.05 } 
         });
     
-        // ScrollTrigger.create ({
-        //   trigger: $(this),
-        //   delay: 0.05,
-        //   start: "top bottom",
-        //   onEnter: () => tl.restart()
-        // });
+         ScrollTrigger.create ({
+           trigger: $(this),
+           start: "top bottom",
+           onEnter: () => tl.restart()
+         });
       });
      });
 }

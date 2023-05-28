@@ -67,7 +67,7 @@
   --font-u: clamp(180.61rem, 61.57vw + 165.22rem, 214.47rem);*/
 
   /* Colors */
-  --text-color: #272320d0;
+  --text-color: #272320cf;
   --black: #272320;
   --divider: #2723202e;
   --grey: #e9e7df;
@@ -86,7 +86,7 @@
 /* UNIVERSAL ELEMENTS */
 
 [data-theme="dark"] {
-  --text-color: #ebe7e2d0;
+  --text-color: #ebe7e2cf;
   --black: #ebe7e2;
   --divider: #ebe7e22e;
   --grey: #ebe7e217;
@@ -260,7 +260,7 @@ h3{
 }
 h4{
   line-height: 150%;
-  color: var(--text-color);
+  color: var(--black);
   font-size: var(--h4);
   font-weight: 500;
   font-family: var(--text);
