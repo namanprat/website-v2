@@ -2,7 +2,7 @@ gsap.set("#overlay", {y:"-100%"});
 gsap.set("#socials a", {y:"100%"});
 gsap.set("#overlay-bg", {y:"-100%", opacity:0});
 
-var tl = gsap.timeline({ paused: true });
+var tl = gsap.timeline({paused: true, reversed:true});
 
   tl
   .to("#overlay, #overlay-bg", {
@@ -26,7 +26,7 @@ var tl = gsap.timeline({ paused: true });
     duration: 1.75,
   })
 
-  $(".menu-open, .menu-close").click (function() {
+  $(".menu-close, .menu-open").click (function() {
  tl.reversed() ? tl.play() : tl.reverse();
   })
 
