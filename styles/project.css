@@ -41,18 +41,11 @@
   width: 100%;
   margin-bottom: calc(var(--ratio) * 1);
 }
-/* crumb h4{
-  display: block;
-  border-radius: 2em;
-  height: 2rem;
-  line-height: 2rem;
-  width: 130%;
-  background-color: transparent;
-  color: var(--black);
-  border: 1px solid var(--black);
-  text-align: center;
-  text-decoration: none;
-} */
+#about{
+  margin: 0 auto;
+  height: 65vh;
+  width: 100%;
+}
 #info{
   width: 100%;
 }

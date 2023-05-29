@@ -87,6 +87,11 @@ plug .child {
   height: 80%;
 }
 /* WORK */
+#about{
+  margin: 0 auto;
+  height: 50vh;
+  width: 100%;
+}
 #work{
   width: 100%;
 }

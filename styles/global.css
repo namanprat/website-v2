@@ -369,14 +369,6 @@ input[type="checkbox"] {
 }
 
 /* H2 TEXT */
-#about{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  height: 65vh;
-  width: 100%;
-}
 .copy{
   align-self: center;
   position: relative;
