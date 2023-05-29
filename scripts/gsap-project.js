@@ -45,9 +45,9 @@ function textReveal(){
         tl.from('.word', {
           opacity: 0, 
           yPercent: 100, 
-          duration: 1.5, 
+          duration: 1.35, 
           ease: "expo.inOut", 
-          stagger: { amount: 0.05 } 
+          stagger: { amount: 0.08 } 
         });
     
          ScrollTrigger.create ({
