@@ -67,10 +67,10 @@
   --font-u: clamp(180.61rem, 61.57vw + 165.22rem, 214.47rem);*/
 
   /* Colors */
-  --text-color: #272320cf;
-  --black: #272320;
-  --divider: #2723201f;
-  --white: #f8f0e5;
+  --text-color: #f7ecddde;
+  --black: #f0e4d5;
+  --divider: #f1e8dc2e;
+  --white: #272320;
   --primary: #eb5348;
   --nav: #f1e8dc;
 
@@ -83,10 +83,10 @@
 }
 /* UNIVERSAL ELEMENTS */
 [data-theme="dark"] {
-  --text-color: #f7ecddde;
-  --black: #f0e4d5;
-  --divider: #f1e8dc2e;
-  --white: #272320;
+  --text-color: #272320cf;
+  --black: #272320;
+  --divider: #2723201f;
+  --white: #f8f0e5;
 }
 .disable-scroll{
   overflow-y:hidden;
@@ -303,6 +303,7 @@ main{
 }
 /* HEADER */
 nav{
+  text-transform: uppercase;
   mix-blend-mode: difference;
   height: clamp(7.99rem, 2.72vw + 7.31rem, 9.49rem);
   z-index: 3;
