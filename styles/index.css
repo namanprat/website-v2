@@ -95,8 +95,8 @@ capsule{
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: #e6e6e6;
-  color: #000000;
+  background-color: #f6f6f6;
+  color: #111;
   transition: 0.5s ease-in-out;
 }
 .project:hover #capsule-container{
