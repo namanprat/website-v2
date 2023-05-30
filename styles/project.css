@@ -81,7 +81,7 @@ img {
   height: auto;
   object-fit: contain;
   width: auto;
-  height: 80vh;
+  /* height: 80vh; */
   margin-top: var(--uni);
 }
 imgsection{
