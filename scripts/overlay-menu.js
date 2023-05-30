@@ -13,7 +13,7 @@ var tl = gsap.timeline({paused: true, reversed:true});
 
   .to("#overlay-bg", {
     opacity: 1,
-    duration: 1.5,
+    duration: 1.28,
     delay: -1,
     ease: "power4.inOut",
   })
