@@ -1,7 +1,7 @@
 function introAnimation(){
     var tl = gsap.timeline();
     tl
-    .from("#navbar, .coverimg , #info , .title, crumb , tag",2,
+    .from("#navbar, .coverimg , #about , .title, crumb , tag",2,
     {
       y: "100",
       opacity: 0,

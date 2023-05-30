@@ -20,17 +20,15 @@
 }
 /* TYPE */
 .title{
-  /* mix-blend-mode: difference; */
   font-family: var(--title);  
   font-size: var(--h1-project);
   color: var(--black);
-  /* color: var(--white); */
 }
 /* HERO (TITLE AND OVERVIEW)*/
 #hero{
   margin-top: 20vh;
 }
-#briv{
+#project-info{
   /* background-color: red; */
   flex-direction: row;
   margin-top: 10vh;
@@ -39,30 +37,26 @@
   margin-bottom: calc(var(--ratio) * 1);
 }
 #about{
-  margin: 0 auto;
-  height: 65vh;
   width: 100%;
 }
-#info{
-  width: 100%;
-}
-#info a{
+#about a{
   color: var(--text-color);
   text-decoration: none !important;
 }
 #crumbs{
-  /* background-color: blue; */
   text-transform: uppercase;
   width: 60%;
 }
 crumb{
-  /* width: 100%; */
   justify-content: space-between;
 }
 #tags{
   width: 60%;
 }
-/*IMAGE*/
+/* IMAGES */
+.bg-section{ 
+  width: 100%;
+}
 img {
   width: 90%;
   height: auto;
@@ -85,20 +79,11 @@ imgsection img{
   overflow-x: hidden !important;
   width: 100%;
 }
-.bg-section{ 
-  width: 100%;
+.prev-screens{
+  width: clamp(38.56rem, 13.14vw + 35.28rem, 45.79rem);
 }
-/* VERTICAL SCROLL */
-/* overview{
-  position: relative;
-  width: 80%;
-  font-family: var(--title);
-  font-size: var(--h2);
-  text-align: left;
-  line-height: 150%;
-  overflow: hidden;
-} */
-/* SECTIONS */
+
+/* CONTENT & SECTIONS */
 .section-header{
   width: 50%;
 }
@@ -106,9 +91,10 @@ imgsection img{
   width: auto;
   margin-bottom: calc(var(--ratio) * var(--uni));
 }
-.prev-screens{
-  width: clamp(38.56rem, 13.14vw + 35.28rem, 45.79rem);
-
+#img-showcase{
+  z-index: 2;
+  flex-direction: column;
+  width: 80%;
 }
 .cluster{
   justify-content: space-between;
@@ -215,42 +201,4 @@ showcase{
 .title{
 margin-top: 15vh;
 }
-}
-
-
-
-/* NEW SHIT */
-#info{
-  display: inline-block;
-  overflow: hidden;
-  padding: 20px 0px;
-}
-tag{
-  align-items: center;
-  padding: 20px 0px;
-  height: min-content;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  border-top: 2px solid var(--divider);
-}
-#overview{
-  font-size: var(--h3);
-}
-#page-1{
-  width: 100%;
-}
-#project-content{
-  z-index: 1;
-  pointer-events: none;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  height: 100svh;
-} 
-#img-showcase{
-  z-index: 2;
-  flex-direction: column;
-  width: 80%;
 }

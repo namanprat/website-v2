@@ -82,12 +82,15 @@
   --ratio-2: calc(var(--ratio) * var(--ratio));
 }
 /* UNIVERSAL ELEMENTS */
-
 [data-theme="dark"] {
   --text-color: #f7ecddde;
   --black: #f0e4d5;
   --divider: #f1e8dc2e;
   --white: #272320;
+}
+.disable-scroll{
+  overflow-y:hidden;
+  overflow-x:hidden;
 }
 .w{
   padding-left: var(--uni);
@@ -181,6 +184,7 @@
 }
 /* LOADER */
 #loader{
+  pointer-events: none;
 	position: fixed;
 	margin: 0;
 	z-index: 10;
