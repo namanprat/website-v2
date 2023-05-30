@@ -72,6 +72,8 @@ function titleFade(){
   })
 }
 
+gsap.registerPlugin(ScrollTrigger);
+gsap.config({ nullTargetWarn: false});
 loaderAnimation();
 introAnimation();
 imgShrink();

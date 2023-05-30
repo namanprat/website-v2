@@ -68,7 +68,7 @@
       <div id="overlay-bg" class="menu-close"></div>
 
       <div id="page-1" class="col space-bw center">
-        <div id="project-content" class="col center space-even">
+        <div id="project-content" class="col center space-even w-3">
           <div class="title overflow-hidden">money.me</div>
           <div id="tags" class="col center">
             <div class="col self-start overflow-hidden">
@@ -92,7 +92,7 @@
         pay seamlessly and assist in saving money using an algorithm.</h3>
         </div>
 
-        <div id="img-showcase" class="flex center space-even work-padding">
+        <div id="img-showcase" class="flex space-even work-padding">
           <img class="self-start" alt="" loading="lazy" src="images/money-me/Onboarding.webp" />
           <img class="self-end" alt="" loading="lazy" src="images/money-me/Sign-Up.webp" />
           <img class="self-start" alt="" loading="lazy" src="images/money-me/Add-bank.webp" />
@@ -112,9 +112,10 @@
 
 
   <style>
-  #tags{
-    width: 35%;
+    .title{
+      margin-top: 7.5vh;
     }
+
     .last-tag{
       /* border-bottom: 2px solid var(--divider); */
     }
@@ -151,6 +152,24 @@
   z-index: 1;
   flex-direction: column;
   width: 80%;
+}
+@media (max-width: 800px){
+  #tags{
+    width: 60%;
+    }
+/* #project-content{
+    position: inherit;
+    top: auto;
+    height: auto;
+    margin-bottom: 0;
+  } */
+  #img-showcase{
+    margin-top: 10vh;
+    align-items: center !important;
+    flex-direction: column;
+    margin-bottom: 0;
+    width: auto;
+  }
 }
   </style>
   <script src="./scripts/gsap-project.js"></script>
