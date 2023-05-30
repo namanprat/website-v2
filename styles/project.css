@@ -50,8 +50,27 @@
 crumb{
   justify-content: space-between;
 }
+/* V2 PROJECT INFORMATION */
+#about{
+  display: inline-block;
+  overflow: hidden;
+  padding: 20px 0px;
+}
 #tags{
   width: 60%;
+}
+tag{
+  align-items: center;
+  padding: 20px 0px;
+  height: min-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 2px solid var(--divider);
+}
+#overview{
+  font-size: var(--h3);
 }
 /* IMAGES */
 .bg-section{ 
@@ -84,6 +103,17 @@ imgsection img{
 }
 
 /* CONTENT & SECTIONS */
+#page-1{
+  width: 100%;
+}
+#project-content{
+  z-index: 1;
+  pointer-events: none;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+} 
 .section-header{
   width: 50%;
 }
