@@ -88,7 +88,7 @@ main{
 }
 capsule{
   font-size: clamp(0.71rem, 0.24vw + 0.65rem, 0.84rem);
-  transform: translateY(10%);
+  transform: translateY(30%);
   overflow: hidden;
   border-radius: 2em;
   padding: 5px 15px;
@@ -96,7 +96,7 @@ capsule{
   text-decoration: none;
   text-transform: uppercase;
   background-color: #e6e6e6;
-  color: #272320;
+  color: #000000;
   transition: 0.5s ease-in-out;
 }
 .project:hover #capsule-container{
