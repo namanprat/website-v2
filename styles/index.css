@@ -125,11 +125,13 @@ capsule{
     align-items: center;
     flex-direction: column;
     margin-bottom: 0;
-    width: 100%;
+    width: auto;
   }
   #project-row > a{
+    /* align-items: center !important; */
     object-fit: cover;
-    width: 100%;
+    width: auto;
+    /* width: 100%; */
     margin: 3vh 0;
   }
   .image-capusle > img{
