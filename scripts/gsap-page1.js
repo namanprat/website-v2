@@ -22,7 +22,7 @@ function valueSetters(){
     gsap.set ("#right" , {x:0 , opacity: '1'});
     gsap.set ("bruv" , {y:"100%"});
     gsap.set ("#extra-text" , {opacity: '1'});
-    
+
 }
 
 function loaderAnimation() {
@@ -125,21 +125,20 @@ function textReveal(){
           types: "words, chars",
           tagName: "span"
         });
-      
+
         $("[animate]").each(function (index) {
           let tl = gsap.timeline({paused:true});
           tl.from($(this).find(".word"), {
-            opacity: 0, 
-            yPercent: 100, 
-            duration: 1.35, 
-            ease: "expo.inOut", 
-            stagger: { amount: 0.08 } 
+            opacity: 0,
+            yPercent: 100,
+            duration: 1.35,
+            ease: "expo.inOut",
+            stagger: { amount: 0.08 }
           });
-      
+
           ScrollTrigger.create ({
             trigger: $(this),
             start: "top 50%",
-            markers: true,
             onEnter: () => tl.restart()
           });
         });
@@ -167,7 +166,7 @@ function textReveal(){
  const container = document.querySelector('#work');
 
  const tl = gsap.timeline({
-  
+
     scrollTrigger: {
          trigger: "#work",
          start: "top 1%",

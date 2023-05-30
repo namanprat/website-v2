@@ -301,7 +301,7 @@ main{
 nav{
   mix-blend-mode: difference;
   height: clamp(7.99rem, 2.72vw + 7.31rem, 9.49rem);
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   width: 100%;
  }
