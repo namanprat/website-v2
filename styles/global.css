@@ -375,7 +375,6 @@ input[type="checkbox"] {
   width: 80%;
   font-family: var(--title);
   text-align: left;
-  overflow: hidden;
 }
 .char span{
   font-style: normal;
