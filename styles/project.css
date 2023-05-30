@@ -59,6 +59,9 @@ crumb{
   /* width: 100%; */
   justify-content: space-between;
 }
+#tags{
+  width: 60%;
+}
 /*IMAGE*/
 img {
   width: 90%;
@@ -167,6 +170,13 @@ showcase{
   }
 }
 @media (max-width: 768px) {
+  #img-showcase{
+    margin-top: 10vh;
+    align-items: center !important;
+    flex-direction: column;
+    margin-bottom: 0;
+    width: auto;
+  }
   .showcase-header{
     align-self: center;
     height: auto;
@@ -194,4 +204,53 @@ showcase{
   margin-top: calc(var(--ratio) * 2);
   width: 100%;
   }
+  #tags{
+    width: 80%;
+  }
+  .copy{
+    overflow: none;
+  }
+}
+@media (max-width: 450px) {
+.title{
+margin-top: 15vh;
+}
+}
+
+
+
+/* NEW SHIT */
+#info{
+  display: inline-block;
+  overflow: hidden;
+  padding: 20px 0px;
+}
+tag{
+  align-items: center;
+  padding: 20px 0px;
+  height: min-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 2px solid var(--divider);
+}
+#overview{
+  font-size: var(--h3);
+}
+#page-1{
+  width: 100%;
+}
+#project-content{
+  z-index: 1;
+  pointer-events: none;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+} 
+#img-showcase{
+  z-index: 2;
+  flex-direction: column;
+  width: 80%;
 }

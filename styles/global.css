@@ -553,7 +553,7 @@ svg{
 @media (max-width: 450px) {
   :root{
     --h1: clamp(3rem, 2vw + 3rem, 4rem);
-    --h1-project: clamp(4rem, 1.36vw + 3.66rem, 4.75rem);
+    /* --h1-project: clamp(4rem, 1.36vw + 3.66rem, 4.75rem); */
     --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
 }
 .w-3{
