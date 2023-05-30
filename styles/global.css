@@ -400,7 +400,7 @@ input[type="checkbox"] {
   overflow-x: hidden !important;
   width: 100%;
   background-color: var(--primary);
-  height: 60vh;
+  height: 58vh;
   position: fixed;
   top: 0;
   left: 0;
