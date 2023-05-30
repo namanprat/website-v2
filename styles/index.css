@@ -97,7 +97,7 @@ capsule{
   text-transform: uppercase;
   background-color: #e6e6e6;
   color: #272320;
-  transition: 0.25s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 .project:hover #capsule-container{
   opacity: 1;
