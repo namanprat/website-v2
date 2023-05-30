@@ -1,10 +1,10 @@
 function introAnimation(){
-    gsap.from("#navbar, .coverimg , .title, crumb , #info",2,
+    gsap.from("#navbar, .coverimg , .title, crumb , tag , #info",2,
     {
       y: "250",
       opacity: 0,
       ease: "expo.inOut",
-      stagger: 0.08,
+      stagger: 0.09,
     }
   );
 }
@@ -43,6 +43,7 @@ function textReveal(){
       $("[animate]").each(function (index) {
         let tl = gsap.timeline();
         tl.from('.word', {
+          delay: 1,
           opacity: 0, 
           yPercent: 100, 
           duration: 1.35, 
@@ -50,16 +51,29 @@ function textReveal(){
           stagger: { amount: 0.08 } 
         });
     
-         ScrollTrigger.create ({
-           trigger: $(this),
-           start: "top bottom",
-           onEnter: () => tl.restart()
-         });
+        //  ScrollTrigger.create ({
+        //    trigger: $(this),
+        //    start: "top bottom",
+        //    onEnter: () => tl.restart()
+        //  });
       });
      });
+}
+
+function titleFade(){
+  gsap.to("#project-content", {
+      opacity: 0.1,
+      scrollTrigger: {
+      scrub: true,
+      trigger: '#project-content',
+      start: "top top",
+      scroller: "body",
+    }
+  })
 }
 
 loaderAnimation();
 introAnimation();
 imgShrink();
 textReveal();
+titleFade();
