@@ -138,7 +138,8 @@ function textReveal(){
       
           ScrollTrigger.create ({
             trigger: $(this),
-            start: "top bottom",
+            start: "top 50%",
+            markers: true,
             onEnter: () => tl.restart()
           });
         });

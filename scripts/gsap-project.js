@@ -1,12 +1,14 @@
 function introAnimation(){
-    gsap.from("#navbar, .coverimg , .title, crumb , tag , #info",2,
+    var tl = gsap.timeline();
+    tl
+    .from("#navbar, .coverimg , #info , .title, crumb , tag",2,
     {
-      y: "250",
+      y: "100",
       opacity: 0,
       ease: "expo.inOut",
       stagger: 0.09,
     }
-  );
+  )
 }
 
 function loaderAnimation() {
