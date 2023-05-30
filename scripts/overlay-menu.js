@@ -1,4 +1,4 @@
-gsap.set("#overlay", {y:"-100%"});
+gsap.set("#overlay", {y:"-105%"});
 gsap.set("#socials a", {y:"100%"});
 gsap.set("#overlay-bg", {y:"-100%", opacity:0});
 
