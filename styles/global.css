@@ -184,7 +184,6 @@
 }
 /* LOADER */
 #loader{
-  pointer-events: none;
 	position: fixed;
 	margin: 0;
 	z-index: 10;
@@ -193,13 +192,6 @@
 	overflow: hidden !important;
 	height: 100%;
 	background-color: var(--black);
-}
-#loader #top{
-  padding: var(--uni);
-}
-#loader h4{
-  color: var(--white);
-  white-space: nowrap;
 }
 #loader h2 {
 	white-space: nowrap;
