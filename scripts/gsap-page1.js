@@ -145,19 +145,22 @@ function textReveal(){
        });
 }
  function workTitle(){
-    gsap.to("#work-title", {
-        y: 0,
-        //delay: -0.5,
-        //duration: 0.75,
-        stagger: 2,
-         scrollTrigger: {
-         //scrub: true,
-         trigger: '.cta',
-        start: "top top",
-         scroller: "body",
-         //markers: true
-          }
-     })
+    $("[work-animate]").each(function (index) {
+        let tl = gsap.timeline({paused:true});
+        tl.from($(this).find(".word"), {
+          opacity: 0,
+          yPercent: 100,
+          duration: 1,
+          ease: "expo.inOut",
+          stagger: { amount: 0.08 }
+        });
+
+        ScrollTrigger.create ({
+          trigger: $(this),
+          start: "top",
+          onEnter: () => tl.play()
+        });
+      });
  }
 
 
@@ -207,7 +210,7 @@ valueSetters();
 loaderAnimation();
 xAxisScroll();
 //aboutAnimation();
-//workTitle();
+workTitle();
 // bgColor();
 textReveal();
 titleFade();
