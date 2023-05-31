@@ -320,7 +320,6 @@ em {
   box-sizing: border-box;
   text-decoration: none !important;
   list-style: none !important;
-
 }
 
 html {
@@ -350,6 +349,14 @@ nav {
   z-index: 3;
   position: fixed;
   width: 100%;
+}
+
+/* NAVBAR BACKGROUND */
+nav {
+  mix-blend-mode: normal !important;
+  background-color: var(--white);
+  /* border-bottom: 2px solid var(--divider); */
+  height: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
 }
 
 #nav-home {
@@ -702,5 +709,11 @@ svg {
   .w-3 {
     padding-left: calc(var(--uni) * 1);
     padding-right: calc(var(--uni) * 1);
+  }
+}
+
+@media (max-width: 375px) {
+  #about {
+    height: 75vh;
   }
 }
