@@ -354,7 +354,9 @@ nav {
 /* NAVBAR BACKGROUND */
 nav {
   mix-blend-mode: normal !important;
-  background-color: var(--white);
+  
+  /* background-color: var(--white); */
+  background-image: linear-gradient(var(--white) 35%, transparent);
   /* border-bottom: 2px solid var(--divider); */
   height: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
 }
