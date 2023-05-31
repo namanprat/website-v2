@@ -63,15 +63,18 @@ function textReveal(){
 }
 
 function titleFade(){
-  gsap.to("#project-content", {
+  let mm = gsap.matchMedia();
+  mm.add("(min-width: 768px)", () => {
+    gsap.to("#project-content", {
       opacity: 0.1,
       scrollTrigger: {
       scrub: true,
       trigger: '#project-content',
       start: "top top",
-      scroller: "body",
+      scroller: "body"
     }
   })
+  });
 }
 
 gsap.registerPlugin(ScrollTrigger);

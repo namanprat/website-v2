@@ -455,8 +455,22 @@ svg{
 }
 
 /* SCROLL */
-::-webkit-scrollbar {
-  display: none;
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--primary) var(--white);
+}
+*::-webkit-scrollbar {
+  width: 22px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 10px;
+  border: 7px solid var(--white);
 }
 
 @media (max-width: 1440px){
@@ -479,6 +493,9 @@ svg{
   }
 }
 @media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
   svg{
     height: clamp(1.7rem, 0.58vw + 1.56rem, 2.02rem);
   }

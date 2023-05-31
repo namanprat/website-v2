@@ -184,6 +184,8 @@ function textReveal(){
  }
 
  function titleFade(){
+    let mm = gsap.matchMedia();
+  mm.add("(min-width: 768px)", () => {
     gsap.to("#work-title", {
         opacity: 0.065,
         //delay: -0.5,
@@ -196,6 +198,7 @@ function textReveal(){
          //markers: true
           }
      })
+    });
  }
  gsap.registerPlugin(ScrollTrigger);
  gsap.config({ nullTargetWarn: false});

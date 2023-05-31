@@ -164,7 +164,7 @@ showcase{
   }
 }
 @media (max-width: 768px) {
-  .title{
+  #page-1{
     margin-top: 20vh;
     }
   #img-showcase{
