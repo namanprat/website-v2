@@ -76,8 +76,6 @@
   --divider: #f1e8dc2e;
   --white: #272320;
   --primary: #ee492c;
-  --nav: #f1e8dc;
-
 
   /* RATIOS */
   --body-spacing: 0px;
@@ -352,12 +350,11 @@ nav {
 }
 
 /* NAVBAR BACKGROUND */
-/* nav {
-  filter: grayscale(100%);
+nav {
   mix-blend-mode: normal !important;
-  background-image: linear-gradient(var(--white) 35%, transparent);
-  height: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
-} */
+  background-image: linear-gradient(var(--white), transparent);
+  height: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem);
+}
 
 #nav-home {
   text-transform: none;
@@ -386,7 +383,7 @@ input[type="checkbox"] {
 
 .nav {
   z-index: 10;
-  color: var(--nav);
+  color: var(--black);
 }
 
 .cta,
@@ -414,7 +411,6 @@ input[type="checkbox"] {
 #copyright {
   margin: 1rem 0;
 }
-
 /* CTA */
 .cta {
   display: block;
