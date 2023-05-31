@@ -23,10 +23,10 @@
 }
 :root {
   /* fonts */
-  /* --title: 'ivypresto';
-  --text: 'Satoshi'; */
+  /* --title: 'ivypresto'; */
+  --text: 'Satoshi';
   --title: ivypresto-display, serif;
-  --text: neue-haas-grotesk-display, sans-serif;
+  /* --text: neue-haas-grotesk-display, sans-serif; */
   /* font sizes */
   --p: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   --h4: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
@@ -78,7 +78,7 @@
 
 
   /* UNIVERSAL */
-  /* --body-spacing: 0.25px; */
+  --body-spacing: -0.25px;
   --ratio: 1.414;
   --uni:calc( var(--ratio) * 1.414rem);
   --ratio-2: calc(var(--ratio) * var(--ratio));
