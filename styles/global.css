@@ -455,6 +455,9 @@ svg{
 }
 
 /* SCROLL */
+::-webkit-scrollbar {
+  display: none;
+}
 * {
   scrollbar-width: auto;
   scrollbar-color: var(--primary) var(--white);
