@@ -139,7 +139,7 @@ function textReveal(){
           ScrollTrigger.create ({
             trigger: $(this),
             start: "top 50%",
-            onEnter: () => tl.restart()
+            onEnter: () => tl.play()
           });
         });
        });
