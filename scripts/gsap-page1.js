@@ -138,7 +138,7 @@ function textReveal(){
 
           ScrollTrigger.create ({
             trigger: $(this),
-            start: "top 50%",
+            start: "top bottom",
             onEnter: () => tl.play()
           });
         });
@@ -150,7 +150,7 @@ function textReveal(){
         tl.from($(this).find(".word"), {
           opacity: 0,
           yPercent: 100,
-          duration: 1,
+          duration: 1.35,
           ease: "expo.inOut",
           stagger: { amount: 0.08 }
         });
