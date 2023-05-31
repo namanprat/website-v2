@@ -56,7 +56,7 @@ function textReveal(){
         //  ScrollTrigger.create ({
         //    trigger: $(this),
         //    start: "top bottom",
-        //    onEnter: () => tl.restart()
+        //    onEnter: () => tl.play()
         //  });
       });
      });
