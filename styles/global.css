@@ -453,7 +453,31 @@ svg{
   color: var(--white)!important;
   font-size: var(--h1-footer);
 }
-
+.marquee {
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  position: relative;
+  display: flex;
+  width: 200vw;
+  grid-column-gap: 3rem; 
+  grid-row-gap: 3rem; 
+}
+.marquee-content {
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  display: flex;
+	flex-shrink: 0;
+  min-width: 100%;
+  justify-content: space-around;
+  grid-column-gap: 3rem; 
+  grid-row-gap: 3rem; 
+}
+.marquee-content img{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  max-width: 250px;
+  height: 80%;
+}
 /* SCROLL */
 ::-webkit-scrollbar {
   display: none;
