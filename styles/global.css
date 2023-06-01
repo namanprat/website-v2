@@ -71,14 +71,13 @@
   --font-u: clamp(180.61rem, 61.57vw + 165.22rem, 214.47rem);*/
 
   /* COLOURS */
+  --primary: #f3e5d4;
+  --secondary: #272320;
   --text-color: #f7ecddde;
-  --black: #f3e5d4;
   --divider: #f1e8dc2e;
-  --white: #272320;
-  --primary: #ee492c;
+  --accent: #df4f36;
 
   /* RATIOS */
-  --body-spacing: 0px;
   --ratio: 1.414;
   --uni: calc(var(--ratio) * 1.414rem);
   --ratio-2: calc(var(--ratio) * var(--ratio));
@@ -86,10 +85,10 @@
 
 /* UNIVERSAL ELEMENTS */
 [data-theme="dark"] {
+  --primary: #272320;
+  --secondary: #f3e5d4;
   --text-color: #272320cf;
-  --black: #272320;
   --divider: #2723201f;
-  --white: #f8f0e5;
 }
 
 .disable-scroll {
@@ -204,15 +203,34 @@
 }
 
 ::-moz-selection {
-  background: var(--black);
-  color: var(--white);
+  background: var(--primary);
+  color: var(--secondary);
 }
 
 ::selection {
-  background: var(--black);
-  color: var(--white);
+  background: var(--primary);
+  color: var(--secondary);
 }
 
+/* CURSOR */
+.cursor div{
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 32px;
+  height: 32px;
+  background-color: #ee492c;
+  border-radius: 50%;
+  z-index: 1000;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+/* .dot {
+  border-radius: 50%;
+  background-color: var(--accent);
+  width: 12px;
+  height: 12px;
+} */
 /* LOADER */
 #loader {
   position: fixed;
@@ -222,7 +240,7 @@
   height: 100%;
   overflow: hidden !important;
   height: 100%;
-  background-color: var(--black);
+  background-color: var(--primary);
 }
 
 #loader h2 {
@@ -231,7 +249,7 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--white);
+  color: var(--secondary);
   font-family: var(--title);
   font-style: normal;
 }
@@ -273,14 +291,14 @@ h1 {
   font-family: var(--title);
   font-weight: 250;
   font-style: normal;
-  color: var(--black);
+  color: var(--primary);
 }
 
 h2 {
   font-size: var(--h2);
   font-family: var(--title);
   font-weight: 500;
-  color: var(--black);
+  color: var(--primary);
 }
 
 h3 {
@@ -288,12 +306,12 @@ h3 {
   font-size: var(--h3);
   font-family: var(--title);
   font-weight: 200;
-  color: var(--black);
+  color: var(--primary);
 }
 
 h4 {
   line-height: 150%;
-  color: var(--black);
+  color: var(--primary);
   font-size: var(--h4);
   font-weight: 500;
   font-family: var(--text);
@@ -325,7 +343,7 @@ html {
 }
 
 body {
-  background: var(--white);
+  background: var(--secondary);
   box-sizing: border-box;
   color: var(--text-color);
   font-size: var(--p);
@@ -335,7 +353,7 @@ body {
 }
 
 main {
-  background: var(--white);
+  background: var(--secondary);
   transition: 0.2s ease-in-out;
 }
 
@@ -352,7 +370,7 @@ nav {
 /* NAVBAR BACKGROUND */
 nav {
   mix-blend-mode: normal !important;
-  background-image: linear-gradient(var(--white), transparent);
+  background-image: linear-gradient(var(--secondary), transparent);
   height: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem);
 }
 
@@ -383,7 +401,7 @@ input[type="checkbox"] {
 
 .nav {
   z-index: 10;
-  color: var(--black);
+  color: var(--primary);
 }
 
 .cta,
@@ -419,15 +437,15 @@ input[type="checkbox"] {
   line-height: 4rem;
   width: 170px;
   background-color: transparent;
-  color: var(--black);
-  border: 1px solid var(--black);
+  color: var(--primary);
+  border: 1px solid var(--primary);
   text-align: center;
   text-decoration: none;
 }
 
 .cta:hover {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 /* H2 TEXT */
@@ -470,7 +488,7 @@ input[type="checkbox"] {
 .overlay {
   overflow-x: hidden !important;
   width: 100%;
-  background-color: var(--primary);
+  background-color: var(--accent);
   height: 58vh;
   position: fixed;
   top: 0;
@@ -488,23 +506,23 @@ input[type="checkbox"] {
 
 svg {
   height: clamp(2.41rem, 0.82vw + 2.21rem, 2.86rem);
-  fill: var(--white);
+  fill: var(--secondary);
   transition: 0.2s ease-in-out;
 }
 
 .overlay>* {
-  color: var(--white) !important;
+  color: var(--secondary) !important;
   text-align: center;
   width: 100%;
 }
 
 .overlay h4 {
-  color: var(--white) !important;
+  color: var(--secondary) !important;
 }
 
 #footer-title a {
   font-family: var(--title);
-  color: var(--white) !important;
+  color: var(--secondary) !important;
 }
 
 .stripe {
@@ -530,7 +548,7 @@ svg {
 
 .stripe-content h1 {
   transition: 0.2s ease-in-out;
-  color: var(--white) !important;
+  color: var(--secondary) !important;
   font-size: var(--h1-footer);
 }
 
@@ -569,7 +587,7 @@ svg {
 
 * {
   scrollbar-width: auto;
-  scrollbar-color: var(--primary) var(--white);
+  scrollbar-color: var(--accent) var(--secondary);
 }
 
 *::-webkit-scrollbar {
@@ -577,13 +595,13 @@ svg {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--white);
+  background: var(--secondary);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
+  background-color: var(--accent);
   border-radius: 10px;
-  border: 7px solid var(--white);
+  border: 7px solid var(--secondary);
 }
 
 @media (max-width: 1440px) {
