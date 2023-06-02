@@ -71,9 +71,9 @@
   --font-u: clamp(180.61rem, 61.57vw + 165.22rem, 214.47rem);*/
 
   /* COLOURS */
-  --primary: #f3e5d4;
+  --primary: #fae9d5;
   --secondary: #272320;
-  --text-color: #f7ecddde;
+  --text-color: #f3e5d4b3;
   --divider: #f1e8dc2e;
   --accent: #df4f36;
 
@@ -86,8 +86,8 @@
 /* UNIVERSAL ELEMENTS */
 [data-theme="dark"] {
   --primary: #272320;
-  --secondary: #f3e5d4;
-  --text-color: #272320cf;
+  --secondary: #fae9d5;
+  --text-color: #272320b3;
   --divider: #2723201f;
 }
 
