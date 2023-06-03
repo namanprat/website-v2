@@ -213,36 +213,38 @@
 }
 
 /* CURSOR */
-body:hover > #cursor {
-  opacity: 1;
-}
-
-#cursor {
-  height: 20px;
-  width: 20px;
-  background-color: #f6f6f6;
-  border-radius: 20px;
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: 10000;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 500ms ease;
-  display: grid;
-  place-items: center;
-}
-
-#cursor:not([data-type=""]) > #cursor-text {
-  opacity: 1;
-}
-
-#cursor-text {
-  color: #272320;
-  font-size: 3px;
-  line-height: 4px;
-  opacity: 0;
-  transition: opacity 400ms ease;
+@media (min-width: 769px) {
+  body:hover > #cursor {
+    opacity: 1;
+  }
+  
+  #cursor {
+    height: 20px;
+    width: 20px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 10000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    display: grid;
+    place-items: center;
+  }
+  
+  #cursor:not([data-type=""]) > #cursor-text {
+    opacity: 1;
+  }
+  
+  #cursor-text {
+    color: #272320;
+    font-size: 3px;
+    line-height: 4px;
+    opacity: 0;
+    transition: opacity 400ms ease;
+  }
 }
 /* LOADER */
 #loader {
