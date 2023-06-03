@@ -66,8 +66,8 @@ tag {
 
 img {
   object-fit: contain;
-  width: auto;
-  height: 80vh;
+  width: 80%;
+  height: auto;
   margin-top: var(--uni);
 }
 
@@ -90,6 +90,10 @@ imgsection img {
 
 .prev-screens {
   width: clamp(38.56rem, 13.14vw + 35.28rem, 45.79rem);
+}
+
+.prev {
+  height: 80vh;
 }
 
 /* CONTENT & SECTIONS */
