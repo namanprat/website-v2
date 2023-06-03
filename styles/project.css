@@ -18,18 +18,13 @@
   margin-bottom: calc(var(--ratio) * 1);
 }
 
-#about {
+#brev {
+  height: 65vh;
   width: 100%;
 }
 
-#about a {
-  color: var(--text-color);
-  text-decoration: none !important;
-}
-
 #crumbs {
-  text-transform: uppercase;
-  width: 60%;
+  width: 40%;
 }
 
 crumb {
@@ -150,9 +145,9 @@ section {
 
 section-header {
   color: var(--primary);
-  font-family: var(--text);
-  text-transform: uppercase;
-  font-size: var(--h4);
+  font-family: var(--title);
+  text-transform: capitalize;
+  font-size: var(--h3);
 }
 
 section p {
@@ -179,7 +174,7 @@ showcase {
     flex-direction: column;
   }
 
-  .section-header {
+  section-header {
     width: 100%;
   }
 

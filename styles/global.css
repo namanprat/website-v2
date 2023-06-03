@@ -76,6 +76,7 @@
   --text-color: #cdc3b7;
   --divider: #f1e8dc2e;
   --accent: #df4f36;
+  --nav-text: #fae9d5;
 
   /* RATIOS */
   --ratio: 1.414;
@@ -416,7 +417,7 @@ input[type="checkbox"] {
 
 .nav {
   z-index: 10;
-  color: var(--primary);
+  color: var(--nav-text);
 }
 
 .cta,
