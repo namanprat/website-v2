@@ -1,29 +1,27 @@
-const cursor = document.querySelector("div.cursor")
-const dot = cursor.querySelectorAll("div")
+const cursor = document.getElementById("cursor");
 
-let aimX = 0
-let aimY = 0
+const animatecursor = (e, interacting) => {
+  const x = e.clientX - cursor.offsetWidth / 2,
+        y = e.clientY - cursor.offsetHeight / 2;
+  
+  const keyframes = {
+    transform: `translate(${x}px, ${y}px) scale(${interacting ? 7 : 1})`
+  }
+  
+  cursor.animate(keyframes, { 
+    duration: 800, 
+    fill: "forwards" 
+  });
+}
 
-dot.forEach((dot, index) => {
-    let currentX = 0
-    let currentY = 0
 
-    let speed = 0.45 - index * 0.025
-
-    const animate = function () {
-        currentX += (aimX - currentX) * speed
-        currentY += (aimY - currentY) * speed
-
-        dot.style.left = currentX + "px"
-        dot.style.top = currentY + "px"
-    
-        requestAnimationFrame(animate)
-    }
-    
-    animate()
-})
-
-document.addEventListener("mousemove", function (event) {
-    aimX = event.pageX
-    aimY = event.pageY
-})
+window.onmousemove = e => {
+  const interactable = e.target.closest(".interactable"),
+        interacting = interactable !== null;
+  
+  const icon = document.getElementById("cursor-icon");
+  
+  animatecursor(e, interacting);
+  
+  cursor.dataset.type = interacting ? interactable.dataset.type : "";
+}
