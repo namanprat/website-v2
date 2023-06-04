@@ -605,7 +605,7 @@ svg {
 
 * {
   scrollbar-width: auto;
-  scrollbar-color: var(--accent) var(--secondary);
+  scrollbar-color: var(--accent) rgba(0, 0, 0, 0);
 }
 
 *::-webkit-scrollbar {
@@ -613,7 +613,7 @@ svg {
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--secondary);
+  background: transparent;
 }
 
 *::-webkit-scrollbar-thumb {
