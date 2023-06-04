@@ -87,8 +87,8 @@
 /* UNIVERSAL ELEMENTS */
 [data-theme="dark"] {
   --primary: #272320;
-  --secondary: #fae9d5;
-  --text-color: #272320b3;
+  --secondary: #fff0e0;
+  --text-color: #272320c5;
   --divider: #2723201f;
 }
 
