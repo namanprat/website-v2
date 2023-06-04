@@ -77,6 +77,7 @@
   --divider: #f1e8dc2e;
   --accent: #df4f36;
   --nav-text: #fae9d5;
+  --cusror: #f6f6f6;
 
   /* RATIOS */
   --ratio: 1.414;
@@ -90,6 +91,7 @@
   --secondary: #fff0e0;
   --text-color: #272320c5;
   --divider: #2723201f;
+  --cusror: #191919;
 }
 
 .disable-scroll {
@@ -222,7 +224,7 @@
   #cursor {
     height: 20px;
     width: 20px;
-    background-color: #f6f6f6;
+    background-color: var(--cusror);
     border-radius: 20px;
     position: fixed;
     left: 0px;
@@ -240,7 +242,7 @@
   }
   
   #cursor-text {
-    color: #272320;
+    color: var(--secondary);
     font-size: 3px;
     line-height: 4px;
     opacity: 0;
