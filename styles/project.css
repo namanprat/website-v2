@@ -19,7 +19,7 @@
 }
 
 #brev {
-  height: 65vh;
+  margin: 10vh 0;
   width: 100%;
 }
 
@@ -61,6 +61,7 @@ tag {
 
 /* IMAGES */
 .bg-section {
+  overflow: hidden;
   width: 100%;
 }
 
@@ -197,6 +198,7 @@ showcase {
   }
 
   .cluster {
+    align-items: center;
     flex-direction: column;
   }
 }
@@ -239,7 +241,7 @@ showcase {
     align-items: center;
   }
 
-  #briv {
+  #project-info {
     flex-direction: column;
   }
 
