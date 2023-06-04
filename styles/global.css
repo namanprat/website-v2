@@ -645,6 +645,9 @@ svg {
 }
 
 @media (max-width: 768px) {
+  #cursor { 
+    display: none;
+  }
   ::-webkit-scrollbar {
     display: none;
   }
