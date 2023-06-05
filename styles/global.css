@@ -22,10 +22,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('/fonts/Neue\ Montreal\ Regular\ 400.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 :root {
   /* FONTS */
   --title: 'ivypresto';
-  --text: 'Satoshi';
+  /* --text: 'Satoshi'; */
+  --text: 'NeueMontreal';
   /* --title: ivypresto-display, serif; */
   /* --text: neue-haas-grotesk-display, sans-serif; */
 
@@ -73,7 +82,7 @@
   /* COLOURS */
   --primary: #fae9d5;
   --secondary: #272320;
-  --text-color: #cdc3b7;
+  --text-color: rgba(255, 247, 235, 0.7);
   --divider: #f1e8dc2e;
   --accent: #df4f36;
   --nav-text: #fae9d5;
@@ -89,7 +98,7 @@
 [data-theme="dark"] {
   --primary: #272320;
   --secondary: #fff0e0;
-  --text-color: #272320c5;
+  --text-color: rgba(0, 0, 0, 0.7);
   --divider: #2723201f;
   --cusror: #191919;
 }
@@ -298,7 +307,6 @@ plug .child {
 p {
   color: var(--text-color);
   font-family: var(--text);
-  font-weight: 500;
   font-style: normal;
   font-size: var(--p);
   line-height: 170%;
