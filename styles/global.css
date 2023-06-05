@@ -32,11 +32,9 @@
 
 :root {
   /* FONTS */
-  --title: 'ivypresto';
+  /* --title: 'ivypresto'; */
   /* --text: 'Satoshi'; */
   --text: 'NeueMontreal';
-  /* --title: ivypresto-display, serif; */
-  /* --text: neue-haas-grotesk-display, sans-serif; */
 
   /* fONT SIZES */
   --p: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
