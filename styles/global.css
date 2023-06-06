@@ -222,6 +222,11 @@
 }
 
 /* CURSOR */
+@media (hover: none) {
+  #cursor {
+    display: none;
+  }
+}
 @media (min-width: 769px) {
   body:hover > #cursor {
     opacity: 1;
