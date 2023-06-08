@@ -74,7 +74,7 @@ function xAxisScroll(){
             scroller: "body",
             ease: "power4.inOut",
             start:"top -5%",
-            end:"top -90%",
+            end:"top -75%",
             scrub: 1
         }
     })

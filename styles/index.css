@@ -18,7 +18,19 @@ main {
 #hero {
   height: 100%;
 }
+/* MARQUEE */
+.marquee-content h1 {
+  color: var(--secondary);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--primary);
+  transition: 0.25s ease-in-out;
+}
 
+.marquee-content h1:hover {
+  color: var(--primary);
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--secondary); */
+}
 /* WORK */
 #about {
   margin: 0 auto;
