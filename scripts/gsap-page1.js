@@ -52,8 +52,6 @@ tl
     }
 })
 }
-
-
 function animateHomepage(){
     var tl = gsap.timeline();
     tl
@@ -131,14 +129,14 @@ function textReveal(){
           tl.from($(this).find(".word"), {
             opacity: 0,
             yPercent: 100,
-            duration: 1.35,
+            duration: 1.5,
             ease: "expo.inOut",
-            stagger: { amount: 0.08 }
+            stagger: { amount: 0.1 }
           });
 
           ScrollTrigger.create ({
             trigger: $(this),
-            start: "top 70%",
+            start: "top 65%",
             onEnter: () => tl.play()
           });
         });
