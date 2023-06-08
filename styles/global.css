@@ -15,14 +15,6 @@
 }
 
 @font-face {
-  font-family: 'Satoshi';
-  src: url('/fonts/Satoshi.woff') format('woff');
-  font-weight: 500;
-  font-display: swap;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'NeueMontreal';
   src: url('/fonts/Neue\ Montreal\ Regular\ 400.woff') format('woff');
   font-weight: 400;
@@ -608,6 +600,13 @@ svg {
   height: 80%;
 }
 
+#footer {
+  mix-blend-mode: difference;
+  z-index: 3;
+  width: 100%;
+  position: fixed;
+  bottom: 2rem;
+}
 /* SCROLL */
 ::-webkit-scrollbar {
   display: none;
