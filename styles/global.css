@@ -601,6 +601,7 @@ svg {
 }
 
 #footer {
+  opacity: 60%;
   mix-blend-mode: difference;
   z-index: 3;
   width: 100%;
