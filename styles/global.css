@@ -686,7 +686,7 @@ svg {
     --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
   }
 
-  #nav-playground {
+  #nav-project {
     display: none;
   }
 }
