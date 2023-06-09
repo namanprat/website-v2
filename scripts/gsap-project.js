@@ -44,14 +44,14 @@ function textReveal(){
     
       $("[animate]").each(function (index) {
         let tl = gsap.timeline();
-        tl.from('.word', {
-          delay: 1,
-          opacity: 0, 
-          yPercent: 100, 
-          duration: 1.35, 
-          ease: "expo.inOut", 
-          stagger: { amount: 0.08 } 
-        });
+          tl.from(".char", {
+            delay: 1,
+            opacity: 0,
+            yPercent: 100,
+            duration: 1.2,
+            ease: "expo.inOut",
+            stagger: { amount: 0.3 }
+          });
     
         //  ScrollTrigger.create ({
         //    trigger: $(this),

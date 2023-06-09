@@ -1,7 +1,7 @@
 /* TYPE */
 .title {
   font-family: var(--title);
-  font-size: var(--h1-project);
+  font-size: var(--h1);
   color: var(--primary);
 }
 

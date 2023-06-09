@@ -189,7 +189,6 @@ function textReveal(){
   mm.add("(min-width: 768px)", () => {
     gsap.to("#work-title", {
         opacity: 0.065,
-        scale: 0.8,
         //delay: -0.5,
         //duration: 0.75,
          scrollTrigger: {
