@@ -438,7 +438,6 @@ input[type="checkbox"] {
 .nav {
   text-transform: uppercase;
   font-size: var(--h4);
-  font-weight: 450;
   transition: 0.25s ease-in-out;
 }
 
