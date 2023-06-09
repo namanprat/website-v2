@@ -202,6 +202,9 @@
 .pointer-none {
   pointer-events: none;
 }
+.nowrap {
+  white-space: nowrap;
+}
 
 ::-moz-selection {
   background: var(--primary);
@@ -344,8 +347,24 @@ spon {
 }
 
 em {
+  line-height: 0;
+  font-size: var(--h1-project);
+  font-family: var(--title);
+  -webkit-text-fill-color: var(--secondary);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--secondary);
   font-style: italic;
-  text-decoration: underline;
+
+  text-shadow:
+  -1px -1px 0 var(--primary),
+   0   -1px 0 var(--primary),
+   1px -1px 0 var(--primary),
+   1px  0   0 var(--primary),
+   1px  1px 0 var(--primary),
+   0    1px 0 var(--primary),
+  -1px  1px 0 var(--primary),
+  -1px  0   0 var(--primary);
+
 }
 
 /* MAIN */
@@ -363,7 +382,6 @@ html {
 
 body {
   background: var(--secondary);
-  box-sizing: border-box;
   color: var(--text-color);
   font-size: var(--p);
   font-family: var(--text);
@@ -378,21 +396,14 @@ main {
 
 /* HEADER */
 nav {
-  text-transform: uppercase;
-  mix-blend-mode: difference;
-  height: clamp(7.99rem, 2.72vw + 7.31rem, 9.49rem);
+  background-image: linear-gradient(var(--secondary), transparent);
+  height: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem);
   z-index: 3;
   position: fixed;
   width: 100%;
 }
 
 /* NAVBAR BACKGROUND */
-/* nav {
-  mix-blend-mode: normal !important;
-  background-image: linear-gradient(var(--secondary), transparent);
-  height: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem);
-} */
-
 #nav-home {
   text-transform: none;
   font-family: var(--title);
@@ -420,7 +431,7 @@ input[type="checkbox"] {
 
 .nav {
   z-index: 10;
-  color: var(--nav-text);
+  color: var(--primary);
 }
 
 .cta,
@@ -601,12 +612,12 @@ svg {
 
 #footer {
   opacity: 60%;
-  mix-blend-mode: difference;
   z-index: 3;
   width: 100%;
   position: fixed;
-  bottom: 2rem;
+  bottom: 3rem;
 }
+
 /* SCROLL */
 ::-webkit-scrollbar {
   display: none;

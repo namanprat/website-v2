@@ -52,6 +52,18 @@ tl
     }
 })
 }
+function heroText(){
+    $("[hero]").each(function (index) {
+        let tl = gsap.timeline({paused:true});
+        tl.from(".char", {
+          opacity: 0,
+          yPercent: 100,
+          duration: 1.35,
+          ease: "expo.inOut",
+          stagger: { amount: 0.3 }
+        })
+    })
+   }
 function animateHomepage(){
     var tl = gsap.timeline();
     tl
@@ -142,26 +154,6 @@ function textReveal(){
         });
        });
 }
- function workTitle(){
-    $("[work-animate]").each(function (index) {
-        let tl = gsap.timeline({paused:true});
-        tl.from($(this).find(".word"), {
-          opacity: 0,
-          yPercent: 100,
-          duration: 1.35,
-          ease: "expo.inOut",
-          stagger: { amount: 0.08 }
-        });
-
-        ScrollTrigger.create ({
-          trigger: $(this),
-          start: "top",
-          onEnter: () => tl.play()
-        });
-      });
- }
-
-
  function bgColor(){
  const sections = gsap.utils.toArray("#about");
  const container = document.querySelector('#work');
@@ -208,7 +200,7 @@ valueSetters();
 loaderAnimation();
 xAxisScroll();
 //aboutAnimation();
-workTitle();
+heroText();
 // bgColor();
 textReveal();
 titleFade();

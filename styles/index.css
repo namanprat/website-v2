@@ -3,28 +3,47 @@ main {
   max-width: 100% !important;
 }
 
-#hero,
+#hero {
+  margin: auto;
+  max-width: fit-content;
+  /* overflow: hidden !important; */
+}
+
+/* #hero h1 {
+  line-height: 0.6;
+} */
+
 .hero-container {
   max-width: 100% !important;
   overflow: hidden !important;
-}
-
-.hero-container {
   position: relative;
   height: 100vh;
   height: 100svh;
 }
 
+
+.ye {
+  text-transform: uppercase;
+  font-family: var(--text);
+}
 #hero {
   height: 100%;
 }
 /* MARQUEE */
-.marquee-content h1 {
-  color: var(--secondary);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--primary);
-  transition: 0.25s ease-in-out;
+/* .marquee {
+  border-radius: 2rem;
+  border: 2px solid var(--primary);
+  width: 100%;
+  background-color: var(--secondary);
+  height: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
 }
+.marquee-content li {
+  align-self: center;
+  font-size: var(--h2);
+  text-transform: uppercase;
+  font-family: var(--text);
+  transition: 0.25s ease-in-out;
+} */
 
 /* WORK */
 #about {

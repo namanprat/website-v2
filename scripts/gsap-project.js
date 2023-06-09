@@ -52,12 +52,6 @@ function textReveal(){
             ease: "expo.inOut",
             stagger: { amount: 0.3 }
           });
-    
-        //  ScrollTrigger.create ({
-        //    trigger: $(this),
-        //    start: "top bottom",
-        //    onEnter: () => tl.play()
-        //  });
       });
      });
 }
