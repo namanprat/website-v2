@@ -401,7 +401,7 @@ nav {
 }
 
 #nav-cluster {
-  width: clamp(15.98rem, 5.45vw + 14.62rem, 18.98rem);
+  width: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
 }
 
 #nav-color-mode {
@@ -687,9 +687,6 @@ svg {
     --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
   }
 
-  #nav-project {
-    display: none;
-  }
 }
 
 @media (max-width: 684px) {
@@ -752,8 +749,8 @@ svg {
   }
 
   .w-3 {
-    padding-left: calc(var(--uni) * 1);
-    padding-right: calc(var(--uni) * 1);
+    padding-left: calc(var(--uni) * 0.65);
+    padding-right: calc(var(--uni) * 0.65);
   }
 }
 
