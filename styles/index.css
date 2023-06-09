@@ -26,17 +26,6 @@ main {
   transition: 0.25s ease-in-out;
 }
 
-.marquee-content h1:hover {
-  color: var(--primary);
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--secondary); */
-}
-
-.marquee-content svg {
-  height: clamp(2.41rem, 0.82vw + 2.21rem, 2.86rem);
-  fill: var(--secondary);
-  transition: 0.2s ease-in-out;
-}
 /* WORK */
 #about {
   margin: 0 auto;
