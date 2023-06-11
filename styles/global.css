@@ -228,9 +228,10 @@
   }
   
   #cursor {
-    height: 20px;
-    width: 20px;
-    background-color: var(--cusror);
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    border: 2px var(--primary) solid;
     border-radius: 20px;
     position: fixed;
     left: 0px;

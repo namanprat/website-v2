@@ -5,7 +5,7 @@ const animatecursor = (e, interacting) => {
         y = e.clientY - cursor.offsetHeight / 2;
   
   const keyframes = {
-    transform: `translate(${x}px, ${y}px) scale(${interacting ? 7 : 1})`
+    transform: `translate(${x}px, ${y}px) scale(${interacting ? 0 : 1})`
   }
   
   cursor.animate(keyframes, { 
