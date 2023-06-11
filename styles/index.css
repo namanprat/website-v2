@@ -8,11 +8,13 @@ main {
   max-width: 100% !important;
   overflow: hidden !important;
 }
+
 .hero-container{
   position: relative;
   height: 100vh;
   height: 100svh;
 }
+
 #hero{
   height: 100%;
 }
@@ -20,7 +22,9 @@ main {
 /* #hero {
   height: 100%;
 } */
+
 /* MARQUEE */
+
 /* .marquee {
   color: var(--primary) !important;
   border-radius: 2rem;
@@ -29,6 +33,7 @@ main {
   background-color: var(--secondary);
   height: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
 }
+
 .marquee-content li {
   align-self: center;
   font-size: var(--h2);
