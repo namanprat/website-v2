@@ -21,15 +21,12 @@ main {
   height: 100svh;
 }
 
-.ye {
-  text-transform: uppercase;
-  font-family: var(--text);
-}
 #hero {
   height: 100%;
 }
 /* MARQUEE */
 .marquee {
+  color: var(--primary) !important;
   border-radius: 2rem;
   border: 2px solid var(--primary);
   width: 100%;

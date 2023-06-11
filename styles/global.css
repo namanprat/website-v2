@@ -411,7 +411,7 @@ nav {
 }
 
 #nav-cluster {
-  width: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
+  width: clamp(15.98rem, 5.45vw + 14.62rem, 18.98rem);
 }
 
 #nav-color-mode {
