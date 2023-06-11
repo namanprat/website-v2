@@ -3,27 +3,23 @@ main {
   max-width: 100% !important;
 }
 
-#hero {
-  margin: auto;
-  /* max-width: fit-content; */
-  /* overflow: hidden !important; */
-}
-
-/* #hero h1 {
-  line-height: 0.6;
-} */
-
-.hero-container {
+#hero,
+.hero-container{
   max-width: 100% !important;
   overflow: hidden !important;
+}
+.hero-container{
   position: relative;
   height: 100vh;
   height: 100svh;
 }
-
-#hero {
+#hero{
   height: 100%;
 }
+
+/* #hero {
+  height: 100%;
+} */
 /* MARQUEE */
 /* .marquee {
   color: var(--primary) !important;
