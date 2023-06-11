@@ -9,9 +9,9 @@ main {
   /* overflow: hidden !important; */
 }
 
-#hero h1 {
+/* #hero h1 {
   line-height: 0.6;
-}
+} */
 
 .hero-container {
   max-width: 100% !important;
@@ -25,7 +25,7 @@ main {
   height: 100%;
 }
 /* MARQUEE */
-.marquee {
+/* .marquee {
   color: var(--primary) !important;
   border-radius: 2rem;
   border: 2px solid var(--primary);
@@ -39,7 +39,7 @@ main {
   text-transform: uppercase;
   font-family: var(--text);
   transition: 0.25s ease-in-out;
-}
+} */
 
 /* WORK */
 #about {
