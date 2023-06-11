@@ -5,7 +5,7 @@ main {
 
 #hero {
   margin: auto;
-  max-width: fit-content;
+  /* max-width: fit-content; */
   /* overflow: hidden !important; */
 }
 
