@@ -406,6 +406,7 @@ nav {
 
 /* NAVBAR BACKGROUND */
 #nav-home {
+  z-index: 999;
   text-transform: none;
   font-family: var(--title);
   font-size: clamp(1.7rem, 0.58vw + 1.56rem, 2.02rem);
@@ -440,20 +441,6 @@ input[type="checkbox"] {
   text-transform: uppercase;
   font-size: var(--h4);
   transition: 0.25s ease-in-out;
-}
-
-#top-section {
-  height: 4rem;
-}
-
-#socials {
-  overflow: hidden !important;
-  height: 2.75rem;
-  width: 100%;
-}
-
-#socials a {
-  overflow: hidden !important;
 }
 
 #copyright {
@@ -525,7 +512,7 @@ input[type="checkbox"] {
   background-color: #2723206a;
 }
 
-.overlay {
+/* .overlay {
   overflow-x: hidden !important;
   width: 100%;
   background-color: var(--accent);
@@ -534,6 +521,66 @@ input[type="checkbox"] {
   top: 0;
   left: 0;
   z-index: 10;
+} */
+
+.overlay {
+  padding: calc(var(--uni) * var(--ratio-2));
+  overflow: hidden !important;
+  width: 100%;
+  background-color: var(--primary);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.social a {
+  color: var(--secondary);
+  font-family: var(--title);
+  font-size: var(--h3);
+}
+
+.social,
+.menu-item {
+  display: block;
+  overflow: hidden !important;
+}
+.social a,
+.menu-item a {
+  display: block;
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+#overlay #nav-home {
+  color: var(--secondary);
+}
+
+#overlay-text {
+  width: auto;
+  overflow: hidden;
+}
+
+#overlay-text>* {
+  overflow: hidden !important;
+  font-size: 7rem;
+  line-height: 9rem;
+  font-family: var(--title);
+  color: var(--secondary) !important;
+  -webkit-transition:1.5s;
+  transition:0.5s;
+}
+.menu-item span {
+  margin-right: 20px;
+  font-size: 20px;
+}
+#overlay-text:hover > *{
+  opacity:0.2;
+}
+
+#overlay-text > *:hover{
+   opacity:1;
 }
 
 .menu-close {
@@ -552,7 +599,6 @@ svg {
 
 .overlay>* {
   color: var(--secondary) !important;
-  text-align: center;
   width: 100%;
 }
 
