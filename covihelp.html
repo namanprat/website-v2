@@ -31,10 +31,11 @@
       </div>
       <main>
         <nav id="navbar" class="row space-bw center w-3">
-          <li><a id="nav-home" class="nav" href="./index.html">Naman Pratulya</a></li>
+          <li><a id="nav-home" class="interactable nav" href="./index.html">Naman Pratulya</a></li>
          <div id="nav-cluster" class="row space-bw">
-          <li><a id="nav-project" class="nav" href="./index.html#project-row">PROJECTS</a></li>
-          <li><a id="nav-resume" class="nav" href="./public/CV.pdf">RESUME</a></li>
+          <li><a id="nav-project" class="interactable nav" href="./index.html#project-row">WORK</a></li>
+          <li><a id="nav-resume" class="interactable nav" href="./public/CV.pdf">RESUME</a></li>
+          <li><a id="nav-contact" class="interactable nav menu-open">CONTACT</a></li>
         </nav>
         <div id="overlay" class="overlay col center space-even w-3">
           <div id="top-section" class="row center space-bw">
@@ -70,46 +71,68 @@
         </div>
         <div id="overlay-bg" class="menu-close"></div>
 
-        <div id="hero" class="col center space-bw w-3">
-          <div id="project-info" class="flex start space-bw">
-            <h4 id="about" class="col">Mobile app/ UI UX Case study</h4>
               <!-- <a href="https://www.figma.com/proto/0J8V7Ok6km4REpkYhenlAm/CoviHelp-(WIP)?page-id=0%3A1&node-id=311%3A16008&viewport=304%2C267%2C0.23&scaling=scale-down&starting-point-node-id=311%3A16008">view interactive prototype</a></h4> -->
-            <div id="crumbs"class="row center space-bw">
-              <crumb>
-                <h4>My role</h4>
-                <h4>UI and UX</h4>
-              </crumb>
-              <crumb>
-                <h4>Duration</h4>
-                <h4>2 weeks</h4>
-              </crumb>
-              <crumb>
-                <h4>The team</h4>
-                <h4>Me</h4>
-                </crumb>
-            </div>
-          </div>
+        <div id="hero" class="col center space-bw w-3">
           <h1 class="title center">Covihelp</h1>
-        </div>
-        
+          <hero-sec class="flex space-bw">
+            <div class="col">
+              <h4>( overview )</h4>
+              <h3 text-split animate>Covihelp strives to bridge the gap and streamline the process of acquiring medical aid. Its user-friendly platform seamlessly connects individuals with the necessary resources.
+            </h3>
+          </div>
+            <div id="hero-sec-header" class="col space-bw">
+              <div id="crumbs" class="row center space-bw">
+                <crumb>
+                  <h4>( Duration )</h4>
+                  <h4>2 weeks</h4>
+                </crumb>
+                <crumb>
+                  <h4>( Category )</h4>
+                  <h4>UI/UX CASE STUDY</h4>
+                  </crumb>
+              </div>
+            </div>
+          </hero-sec>
+
+    
+          <!-- <div id="project-info" class="flex">
+            <div class="col">
+              <h4>( OVERVIEW )</h4>
+              <p text-split animate id="overview-text">Covihelp strives to bridge the gap and streamline the process of acquiring medical aid. Its user-friendly platform seamlessly connects individuals with the necessary resources.
+              </p>
+            </div>
+            <div id="yo" class="col space-bw">
+              <div id="crumbs" class="row center space-bw">
+                <crumb>
+                  <h4>( Duration )</h4>
+                  <h4>2 weeks</h4>
+                </crumb>
+                <crumb>
+                  <h4>( Category )</h4>
+                  <h4>UI/UX CASE STUDY</h4>
+                  </crumb>
+              </div>
+            </div>
+        </div> -->
+      </div>
+
         <div class="coverimg flex">
           <img class="bg-section" src="images/covihelp/Project cover.webp" />
         </div>
 
         <div class="w-3">
 
-          <section class="flex start space-bw">
-            <section-header>Overview</section-header>
+          <section class="flex space-bw">
+            <h4 id="section-header" class="nowrap">( problem statement)</h4>
             <p>The coronavirus crisis has brought India's 
               public health system to its downfall with hospitals running 
               out of beds and people desperately seeking medical help for their 
               loved ones.</p>
           </section>
 
-            <section class="flex start space-bw">
-              <section-header>Understanding user needs</section-header>
-              <p class="q-box">
-                    1. ICU's
+          <section class="flex space-bw">
+            <h4 id="section-header" class="nowrap">( Understanding user needs )</h4>
+              <p>1. ICU's
                     <br>2. Availability of beds/ wards
                     <br>3. Reliable information
                     <br>4. Oxygen tanks
@@ -184,9 +207,9 @@
                   </div>
                     </showcase>
                   </div>
-                  <div id="footer" class="row w-3 space-bw dif">
+                  <div id="footer" class="row w-3 space-bw">
                     <div class="nav">open for freelance work</div>
-                    <a id="nav-contact" class="nav menu-open">CONTACT</a>
+                    <div class="nav">© 2023</div>
                   </div>
                 </main>
 

@@ -1,25 +1,18 @@
 @font-face {
   font-family: 'ivypresto';
   src: url('/fonts/ivy100.woff') format('woff');
-  font-weight: 100;
   font-style: normal;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'ivypresto';
   src: url('/fonts/ivy100italic.woff') format('woff');
-  font-weight: 100;
   font-style: italic;
-  font-display: swap;
 }
 
 @font-face {
   font-family: 'NeueMontreal';
-  src: url('/fonts/Neue\ Montreal\ Regular\ 400.woff') format('woff');
-  font-weight: 400;
-  font-display: swap;
-  font-style: normal;
+  src: url('/fonts/NeueMontreal-Regular.woff2') format('woff2');
 }
 
 :root {
@@ -71,7 +64,7 @@
   /* COLOURS */
   --primary: #fae9d5;
   --secondary: #272320;
-  --text-color: #fdf6ecb3;
+  /* --text-color: #fdf6ecb3; */
   --divider: #f1e8dc15;
   --accent: #df4f36;
   --nav-text: #fae9d5;
@@ -86,10 +79,10 @@
 /* UNIVERSAL ELEMENTS */
 [data-theme="dark"] {
   --primary: #272320;
-  --secondary: #fff0e0;
-  --text-color: rgba(0, 0, 0, 0.7);
+  --secondary: #fff7e9;
+  /* --text-color: rgba(0, 0, 0, 0.7); */
   --divider: #2723201f;
-  --cusror: #191919;
+  --cusror: #272320;
 }
 
 .disable-scroll {
@@ -117,6 +110,9 @@
   padding-right: calc(var(--uni) * var(--ratio-2));
 }
 
+.width-100 {
+  width: 100%;
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -216,6 +212,10 @@
   color: var(--secondary);
 }
 
+.nowrap {
+    flex-wrap: nowrap!important;
+}
+
 /* CURSOR */
 @media (hover: none) {
   #cursor {
@@ -228,20 +228,19 @@
   }
   
   #cursor {
-    height: 32px;
-    width: 32px;
-    background-color: transparent;
-    border: 2px var(--primary) solid;
-    border-radius: 20px;
+    border: 1.5px solid var(--primary);
+    border-radius: 1.2rem;
+    height: 2.2rem;
+    margin: auto;
+    width: 2.2rem;
     position: fixed;
     left: 0px;
     top: 0px;
     z-index: 10000;
     pointer-events: none;
     opacity: 0;
+
     transition: opacity 500ms ease;
-    display: grid;
-    place-items: center;
   }
   
   #cursor:not([data-type=""]) > #cursor-text {
@@ -302,11 +301,11 @@ plug .child {
 
 /* TYPE */
 p {
-  color: var(--text-color);
+  /* color: var(--text-color); */
   font-family: var(--text);
   font-style: normal;
   font-size: var(--p);
-  line-height: 170%;
+  line-height: 160%;
 }
 
 h1 {
@@ -333,6 +332,7 @@ h3 {
 }
 
 h4 {
+  white-space: nowrap;
   line-height: 150%;
   color: var(--primary);
   font-size: var(--h4);
@@ -347,7 +347,7 @@ spon {
   text-decoration: underline;
 }
 
-em {
+/* em {
   line-height: 0;
   font-size: var(--h1-project);
   font-family: var(--title);
@@ -366,7 +366,7 @@ em {
   -1px  1px 0 var(--primary),
   -1px  0   0 var(--primary);
 
-}
+} */
 
 /* MAIN */
 * {
@@ -383,7 +383,7 @@ html {
 
 body {
   background: var(--secondary);
-  color: var(--text-color);
+  color: var(--primary);
   font-size: var(--p);
   font-family: var(--text);
   display: flex;
@@ -398,7 +398,7 @@ main {
 /* HEADER */
 nav {
   background-image: linear-gradient(var(--secondary), transparent);
-  height: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem);
+  height: clamp(7.99rem, 2.72vw + 7.31rem, 9.49rem);
   z-index: 3;
   position: fixed;
   width: 100%;
@@ -435,7 +435,7 @@ input[type="checkbox"] {
   color: var(--primary);
 }
 
-.cta,
+#cta,
 .nav {
   text-transform: uppercase;
   font-size: var(--h4);
@@ -460,20 +460,30 @@ input[type="checkbox"] {
   margin: 1rem 0;
 }
 /* CTA */
-.cta {
+#cta {
   display: block;
   border-radius: 2em;
-  height: 4rem;
-  line-height: 4rem;
-  width: 170px;
-  background-color: transparent;
+  height: 3.4rem;
+  line-height: 3.4rem;
+  width: 185px;
+  border: none;
+  background-color: var(--primary);
+  color: var(--secondary);
+  /* background-color: transparent;
   color: var(--primary);
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary); */
   text-align: center;
   text-decoration: none;
 }
 
-.cta:hover {
+#cta:hover {
+  background-color: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.fill {
+  border: none;
   background-color: var(--primary);
   color: var(--secondary);
 }
@@ -665,6 +675,9 @@ svg {
 }
 
 @media (max-width: 768px) {
+  #nav-contact {
+    display: none;
+  }
   #cursor { 
     display: none;
   }

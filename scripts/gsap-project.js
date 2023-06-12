@@ -1,19 +1,18 @@
 function introAnimation(){
-    var tl = gsap.timeline();
-    tl
-    .from("#navbar, .coverimg , #about , .title, crumb , tag",2,
+  var tl = gsap.timeline();
+  tl
+  .from("#navbar, .coverimg , #about , .title, #hero h4 , tag",2,
     {
       y: "100",
       opacity: 0,
       ease: "expo.inOut",
-      stagger: 0.09,
+      stagger: 0.1,
     }
   )
 }
 
 function loaderAnimation() {
   var tl = gsap.timeline();
-
 tl
 .to("#loader", {
   height: 0,
@@ -30,7 +29,7 @@ function imgShrink(){
             trigger:'.bg-section',
             scrub:true
         },
-        width:'80%',
+        width:'75%',
         duration: 4,
     });
 }
@@ -48,7 +47,7 @@ function textReveal(){
             delay: 1,
             opacity: 0,
             yPercent: 100,
-            duration: 1.2,
+            duration: 1.35,
             ease: "expo.inOut",
             stagger: { amount: 0.3 }
           });
