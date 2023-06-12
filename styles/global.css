@@ -398,7 +398,7 @@ main {
 /* HEADER */
 nav {
   background-image: linear-gradient(var(--secondary), transparent);
-  height: clamp(7.99rem, 2.72vw + 7.31rem, 9.49rem);
+  height: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem);
   z-index: 3;
   position: fixed;
   width: 100%;
