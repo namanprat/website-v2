@@ -524,8 +524,6 @@ input[type="checkbox"] {
 } */
 
 .overlay {
-  padding-left: calc(var(--uni) * var(--ratio-2));
-  padding-right: calc(var(--uni) * var(--ratio-2));
   padding-bottom: 3rem;
   overflow: hidden !important;
   width: 100%;
@@ -568,9 +566,10 @@ input[type="checkbox"] {
 }
 
 #overlay-text>* {
+  font-size: 6.25rem;
+  line-height: 6.25rem;
+  max-width: 700px;
   overflow: hidden !important;
-  font-size: 7rem;
-  line-height: 9rem;
   font-family: var(--title);
   color: var(--secondary) !important;
   -webkit-transition:1.5s;
@@ -609,6 +608,10 @@ svg {
 
 .overlay h4 {
   color: var(--secondary) !important;
+}
+
+#socials {
+  flex-direction: column;
 }
 
 #footer-title a {
@@ -726,7 +729,7 @@ svg {
 }
 
 @media (max-width: 768px) {
-  #nav-contact {
+  #nav-project {
     display: none;
   }
   #cursor { 
@@ -760,7 +763,6 @@ svg {
     --h1-footer: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
     --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
   }
-
 }
 
 @media (max-width: 684px) {

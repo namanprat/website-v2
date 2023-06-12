@@ -2,15 +2,16 @@
 .title {
   /* white-space: nowrap; */
   font-family: var(--title);
-  font-size: var(--h1);
+  font-size: var(--h1-project);
+  line-height: var(--h1-project);
   color: var(--primary);
-  margin-bottom: 10rem;
+  margin: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem) 0;
   /* line-height: 0.7; */
 }
 
 /* HERO (TITLE AND OVERVIEW)*/
 #hero {
-  margin-top: clamp(8.81rem, 3vw + 8.06rem, 9.15rem);
+  /* margin: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem) 0; */
   /* height: 100%; */
 }
 hero-sec {
@@ -117,6 +118,7 @@ imgsection img {
 }
 
 #project-content {
+  width: 100%;
   z-index: 1;
   pointer-events: none;
   position: sticky;
@@ -219,9 +221,6 @@ showcase {
   #yo {
     justify-content: space-between;
     height: 20vh;
-  }
-  #page-1 {
-    margin-top: 20vh;
   }
 
   #img-showcase {
