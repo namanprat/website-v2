@@ -36,6 +36,7 @@
   --font-2: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   --font-3: clamp(1.41rem, 0.48vw + 1.29rem, 1.68rem);
   --h2: clamp(1.7rem, 0.58vw + 1.56rem, 2.02rem);
+  --h3: clamp(1.85rem, 0.63vw + 1.69rem, 2.19rem);
   --font-4: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
   --h1-footer: clamp(2.41rem, 0.82vw + 2.21rem, 2.86rem);
    --bruv: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
@@ -62,13 +63,13 @@
   --font-u: clamp(180.61rem, 61.57vw + 165.22rem, 214.47rem);*/
 
   /* COLOURS */
-  --primary: #fae9d5;
-  --secondary: #272320;
-  /* --text-color: #fdf6ecb3; */
-  --divider: #f1e8dc15;
+  --primary: #fff0d7;
+  --bg: #272320;
   --accent: #df4f36;
-  --nav-text: #fae9d5;
+  --nav: #fff0d7;
   --cusror: #f6f6f6;
+  --white: #f6f6f6;
+  --black: #272320;
 
   /* RATIOS */
   --ratio: 1.414;
@@ -77,13 +78,11 @@
 }
 
 /* UNIVERSAL ELEMENTS */
-[data-theme="dark"] {
+/* [data-theme="dark"] {
   --primary: #272320;
-  --secondary: #fff7e9;
-  /* --text-color: rgba(0, 0, 0, 0.7); */
-  --divider: #2723201f;
+  --bg: #fff7e9;
   --cusror: #272320;
-}
+} */
 
 .disable-scroll {
   overflow-y: hidden;
@@ -208,12 +207,12 @@
 
 ::-moz-selection {
   background: var(--primary);
-  color: var(--secondary);
+  color: var(--bg);
 }
 
 ::selection {
   background: var(--primary);
-  color: var(--secondary);
+  color: var(--bg);
 }
 
 .nowrap {
@@ -250,14 +249,6 @@
   #cursor:not([data-type=""]) > #cursor-text {
     opacity: 1;
   }
-  
-  #cursor-text {
-    color: var(--secondary);
-    font-size: 3px;
-    line-height: 4px;
-    opacity: 0;
-    transition: opacity 400ms ease;
-  }
 }
 /* LOADER */
 #loader {
@@ -267,7 +258,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden !important;
-  background-color: var(--primary);
+  background-color: var(--white);
 }
 
 #loader h2 {
@@ -276,7 +267,7 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--secondary);
+  color: var(--black);
   font-family: var(--title);
   font-style: normal;
 }
@@ -355,9 +346,9 @@ spon {
   line-height: 0;
   font-size: var(--h1-project);
   font-family: var(--title);
-  -webkit-text-fill-color: var(--secondary);
+  -webkit-text-fill-color: var(--bg);
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--secondary);
+  -webkit-text-stroke-color: var(--bg);
   font-style: italic;
 
   text-shadow:
@@ -386,18 +377,13 @@ html {
 }
 
 body {
-  background: var(--secondary);
+  background: var(--bg);
   color: var(--primary);
   font-size: var(--p);
   font-family: var(--text);
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  background: var(--secondary);
   transition: 0.2s ease-in-out;
 }
+
 
 /* HEADER */
 nav {
@@ -413,7 +399,8 @@ nav {
 
 /* NAVBAR BACKGROUND */
 #nav-home {
-  color: #fae9d5;
+  white-space: nowrap;
+  color: var(--nav);
   text-transform: none;
   font-family: var(--title);
   font-size: clamp(1.7rem, 0.58vw + 1.56rem, 2.02rem);
@@ -443,16 +430,17 @@ nav button {
   z-index: 100;
   background: transparent;
   border: none;
-  color: #fae9d5;
+  color: var(--nav);
 }
 
 input[type="checkbox"] {
   display: none;
 }
+
 #nav {
   text-decoration: none;
   mix-blend-mode: difference;
-  color: #fae9d5;
+  color: var(--nav);
 }
 
 #cta  {
@@ -476,7 +464,7 @@ input[type="checkbox"] {
   padding:0 2rem;
   border: none;
   background-color: var(--primary);
-  color: var(--secondary);
+  color: var(--bg);
   text-align: center;
   text-decoration: none;
 }
@@ -524,22 +512,11 @@ input[type="checkbox"] {
   background-color: #2723206a;
 }
 
-/* .overlay {
-  overflow-x: hidden !important;
-  width: 100%;
-  background-color: var(--accent);
-  height: 58vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-} */
-
 .overlay {
   padding: 3rem;
   overflow: hidden !important;
   width: 100%;
-  background-color: var(--primary);
+  background-color: var(--white);
   height: 100vh;
   position: fixed;
   top: 0;
@@ -548,7 +525,6 @@ input[type="checkbox"] {
 }
 
 .social a {
-  color: var(--secondary);
   font-family: var(--title);
   font-size: var(--h3);
 }
@@ -563,12 +539,9 @@ input[type="checkbox"] {
 .menu-item a {
   display: block;
   text-decoration: none;
-  color: var(--secondary);
+  color: var(--black);
 }
 
-#overlay #nav-home {
-  color: var(--secondary);
-}
 
 #overlay-text {
   width: auto;
@@ -581,7 +554,6 @@ input[type="checkbox"] {
   max-width: 700px;
   overflow: hidden !important;
   font-family: var(--title);
-  color: var(--secondary) !important;
   -webkit-transition:1.5s;
   transition:0.5s;
 }
@@ -612,19 +584,9 @@ input[type="checkbox"] {
   align-self: center;
 }
 
-svg {
-  height: clamp(2.41rem, 0.82vw + 2.21rem, 2.86rem);
-  fill: var(--secondary);
-  transition: 0.2s ease-in-out;
-}
-
+.overlay h4,
 .overlay>* {
-  color: var(--secondary) !important;
-  width: 100%;
-}
-
-.overlay h4 {
-  color: var(--secondary) !important;
+  color: var(--black) !important;
 }
 
 #socials {
@@ -633,7 +595,7 @@ svg {
 
 #footer-title a {
   font-family: var(--title);
-  color: var(--secondary) !important;
+  color: var(--bg) !important;
 }
 
 .stripe {
@@ -659,7 +621,7 @@ svg {
 
 .stripe-content h1 {
   transition: 0.2s ease-in-out;
-  color: var(--secondary) !important;
+  color: var(--bg) !important;
   font-size: var(--h1-footer);
 }
 
@@ -720,7 +682,7 @@ svg {
 *::-webkit-scrollbar-thumb {
   background-color: var(--accent);
   border-radius: 10px;
-  border: 7px solid var(--secondary);
+  border: 7px solid var(--bg);
 }
 
 @media (max-width: 1440px) {
@@ -742,6 +704,8 @@ svg {
 @media (max-width: 915px) {
   :root {
     --h1: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
+    --h3: clamp(1.85rem, 0.63vw + 1.69rem, 2.19rem);
+    --h1-project: clamp(9.64rem, 3.28vw + 8.82rem, 11.45rem);
   }
 }
 
@@ -774,9 +738,10 @@ svg {
 
   :root {
     --h1: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
-    --h1-project: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
+    --h1-project: clamp(8.81rem, 3vw + 8.06rem, 9.15rem);
     --h1-footer: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
     --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
+    --h3: clamp(1.7rem, 0.58vw + 1.56rem, 2.02rem);
   }
 }
 
@@ -789,7 +754,7 @@ svg {
 
   :root {
     --h1: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
-    --h1-project: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
+    --h1-project: clamp(7.99rem, 2.72vw + 7.31rem, 9.49rem);
   }
 
 }
@@ -797,6 +762,7 @@ svg {
 @media (max-width: 600px) {
   :root {
     --h1: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
+    --h1-project: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem);
   }
 }
 
@@ -821,6 +787,7 @@ svg {
 @media(max-width: 517px) {
   :root {
     --h1: clamp(4.51rem, 1.53vw + 4.32rem, 5.36rem);
+    --h1-project: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
   }
 }
 
@@ -828,7 +795,7 @@ svg {
 
   :root {
     --h1: clamp(3.41rem, 1.36vw + 3.66rem, 4.75rem);
-    --h1-project: clamp(5.23rem, 1.78vw + 4.79rem, 6.22rem);
+    --h1-project: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
   }
 
   .w-3 {
@@ -846,6 +813,9 @@ svg {
 }
 
 @media (max-width: 375px) {
+  :root {
+    --h1: clamp(3rem, 2vw + 3rem, 4rem);
+  }
   #about {
     height: 75vh;
   }
