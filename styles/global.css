@@ -798,7 +798,7 @@ input[type="checkbox"] {
 @media(max-width: 517px) {
   :root {
     --h1: clamp(4.51rem, 1.53vw + 4.32rem, 5.36rem);
-    --h1-project: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
+    
   }
 }
 
@@ -806,7 +806,7 @@ input[type="checkbox"] {
 
   :root {
     --h1: clamp(3.41rem, 1.36vw + 3.66rem, 4.75rem);
-    --h1-project: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
+    --h1-project: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
   }
 
   .w-3 {
@@ -818,13 +818,14 @@ input[type="checkbox"] {
 @media (max-width: 450px) {
   :root {
     /* --h1: clamp(3rem, 2vw + 3rem, 4rem); */
-    /* --h1-project: clamp(4rem, 1.36vw + 3.66rem, 4.75rem); */
+    --h1-project: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
     --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
   }
 }
 
 @media (max-width: 375px) {
   :root {
+    --h1-project: clamp(4.41rem, 1.5vw + 4.3rem, 5.24rem);
     --h1: clamp(3rem, 2vw + 3rem, 4rem);
   }
   #about {

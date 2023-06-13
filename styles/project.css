@@ -210,7 +210,8 @@ showcase {
     flex-direction: column;
   }
 }
-@media (max-width: 800px) {
+
+@media (max-width: 910px) {
 
   hero-sec {
     flex-direction: column;
