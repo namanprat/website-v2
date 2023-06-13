@@ -3,17 +3,54 @@ function valueSet() {
   gsap.set(".menu-item a", {y:"100%" });
   gsap.set(".social a", {y:"100%" , opacity:0});
   gsap.set("#overlay-bg", {y:"-100%", opacity:0});
+  gsap.set("#nav-cluster a", {autoAlpha:1});
+}
+
+function navScroll(){
+  let mm = gsap.matchMedia();
+mm.add("(min-width: 768px)", () => {
+  gsap.to("#nav-cluster a", {
+    autoAlpha:0,
+    ease: "power4.inOut",
+    scrollTrigger: {
+      scrub: 2,
+      trigger: '#nav-cluster',
+     start: "top",
+    scroller: "body",
+       }
+   })
+  });
+}
+
+function navFade(){
+  let mm = gsap.matchMedia();
+mm.add("(max-width: 768px)", () => {
+  gsap.to("#nav-cluster a", {
+    ease: "power4.inOut",
+    duration: 0.2,
+    stagger: 0.01,
+    autoAlpha:0,
+   })
+  });
 }
 
 function overlayAnimation() {
   var tl = gsap.timeline({paused: true, reversed:true});
 
   tl
+  .add('start')
+  .to("#nav-cluster a", {
+    ease: "power4.inOut",
+    duration: 1,
+    stagger: 0.01,
+    autoAlpha:0,
+  }, 'start')
+
   .to("#overlay", {
     y:"0",
     ease: "power4.inOut",
-    duration: 1.75,
-  })
+    duration: 1.5,
+  }, 'start')
 
   .to(".menu-item a , .social a", {
     y: "0",
@@ -31,5 +68,7 @@ function overlayAnimation() {
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.config({ nullTargetWarn: false});
+navScroll();
+navFade();
 valueSet();
 overlayAnimation();

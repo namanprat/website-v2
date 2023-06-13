@@ -175,6 +175,10 @@
   justify-content: center;
 }
 
+.justify-end {
+  justify-content: end;
+}
+
 .space-even {
   justify-content: space-evenly;
 }
@@ -259,7 +263,7 @@
 #loader {
   position: fixed;
   margin: 0;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
   height: 100%;
   overflow: hidden !important;
@@ -397,16 +401,19 @@ main {
 
 /* HEADER */
 nav {
-  background-image: linear-gradient(var(--secondary), transparent);
-  height: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem);
-  z-index: 3;
+  mix-blend-mode: difference;
+  background: transparent;
+  /* background-image: linear-gradient(var(--primary), transparent); */
+  /* height: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem); */
+  padding-top: 2rem;
+  z-index: 80;
   position: fixed;
   width: 100%;
 }
 
 /* NAVBAR BACKGROUND */
 #nav-home {
-  z-index: 999;
+  color: #fae9d5;
   text-transform: none;
   font-family: var(--title);
   font-size: clamp(1.7rem, 0.58vw + 1.56rem, 2.02rem);
@@ -414,6 +421,12 @@ nav {
 
 #nav-cluster {
   width: clamp(15.98rem, 5.45vw + 14.62rem, 18.98rem);
+  overflow: hidden;
+}
+
+.yoo {
+  display: block;
+  
 }
 
 #nav-color-mode {
@@ -422,22 +435,28 @@ nav {
   background-color: transparent;
 }
 
-.menu-close,
-#nav-contact {
-  cursor: pointer;
+nav button {
+  text-transform: uppercase;
+  font-size: var(--h4);
+  display: flex;
+  position: relative;
+  z-index: 100;
+  background: transparent;
+  border: none;
+  color: #fae9d5;
 }
 
 input[type="checkbox"] {
   display: none;
 }
-
-.nav {
-  z-index: 10;
-  color: var(--primary);
+#nav {
+  text-decoration: none;
+  mix-blend-mode: difference;
+  color: #fae9d5;
 }
 
-#cta,
-.nav {
+#cta  {
+  overflow: hidden;
   text-transform: uppercase;
   font-size: var(--h4);
   transition: 0.25s ease-in-out;
@@ -452,13 +471,12 @@ input[type="checkbox"] {
   border-radius: 2em;
   height: 3.4rem;
   line-height: 3.4rem;
-  width: 185px;
+  /* width: 185px; */
+  width: fit-content;
+  padding:0 2rem;
   border: none;
   background-color: var(--primary);
   color: var(--secondary);
-  /* background-color: transparent;
-  color: var(--primary);
-  border: 1px solid var(--primary); */
   text-align: center;
   text-decoration: none;
 }
@@ -467,12 +485,6 @@ input[type="checkbox"] {
   background-color: transparent;
   color: var(--primary);
   border: 1px solid var(--primary);
-}
-
-.fill {
-  border: none;
-  background-color: var(--primary);
-  color: var(--secondary);
 }
 
 /* H2 TEXT */
@@ -524,7 +536,7 @@ input[type="checkbox"] {
 } */
 
 .overlay {
-  padding-bottom: 3rem;
+  padding: 3rem;
   overflow: hidden !important;
   width: 100%;
   background-color: var(--primary);
@@ -532,12 +544,9 @@ input[type="checkbox"] {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 70;
 }
 
-#top-section {
-  height: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem);
-}
 .social a {
   color: var(--secondary);
   font-family: var(--title);
@@ -549,6 +558,7 @@ input[type="checkbox"] {
   display: block;
   overflow: hidden !important;
 }
+
 .social a,
 .menu-item a {
   display: block;
@@ -562,7 +572,7 @@ input[type="checkbox"] {
 
 #overlay-text {
   width: auto;
-  overflow: hidden;
+  margin: auto;
 }
 
 #overlay-text>* {
@@ -575,10 +585,12 @@ input[type="checkbox"] {
   -webkit-transition:1.5s;
   transition:0.5s;
 }
+
 .menu-item span {
   margin-right: 20px;
   font-size: 20px;
 }
+
 #overlay-text:hover > *{
   opacity:0.2;
 }
@@ -587,6 +599,11 @@ input[type="checkbox"] {
    opacity:1;
 }
 
+#bottom {
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+}
 .menu-close {
   margin: auto 0;
 }
@@ -732,19 +749,17 @@ svg {
   #nav-project {
     display: none;
   }
+
   #cursor { 
     display: none;
   }
+
   ::-webkit-scrollbar {
     display: none;
   }
 
   svg {
     height: clamp(1.7rem, 0.58vw + 1.56rem, 2.02rem);
-  }
-
-  #nav-cluster {
-    width: clamp(9.64rem, 3.28vw + 8.82rem, 11.45rem);
   }
 
   body,
@@ -824,7 +839,7 @@ svg {
 
 @media (max-width: 450px) {
   :root {
-    --h1: clamp(3rem, 2vw + 3rem, 4rem);
+    /* --h1: clamp(3rem, 2vw + 3rem, 4rem); */
     /* --h1-project: clamp(4rem, 1.36vw + 3.66rem, 4.75rem); */
     --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
   }

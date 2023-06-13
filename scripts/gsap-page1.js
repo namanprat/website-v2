@@ -193,6 +193,7 @@ function textReveal(){
      })
     });
  }
+ 
  gsap.registerPlugin(ScrollTrigger);
  gsap.config({ nullTargetWarn: false});
 revealToplug();
