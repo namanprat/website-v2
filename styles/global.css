@@ -342,14 +342,26 @@ spon {
   text-decoration: underline;
 }
 
-/* em {
-  line-height: 0;
-  font-size: var(--h1-project);
+#overlay-stripe {
+  /* background-color: rebeccapurple; */
+  opacity: 10%;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.stripe-content li {
+  display: block;
+  overflow: hidden;
+  color: var(--white);
+  white-space: nowrap;
+  /* line-height: 90vh; */
+  font-size: 80vh;
   font-family: var(--title);
-  -webkit-text-fill-color: var(--bg);
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--bg);
-  font-style: italic;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--black);
+  /* font-style: italic; */
 
   text-shadow:
   -1px -1px 0 var(--primary),
@@ -361,7 +373,7 @@ spon {
   -1px  1px 0 var(--primary),
   -1px  0   0 var(--primary);
 
-} */
+}
 
 /* MAIN */
 * {
@@ -584,8 +596,7 @@ input[type="checkbox"] {
   align-self: center;
 }
 
-.overlay h4,
-.overlay>* {
+.overlay h4 {
   color: var(--black) !important;
 }
 
@@ -601,7 +612,6 @@ input[type="checkbox"] {
 .stripe {
   padding: 0 !important;
   overflow-x: hidden !important;
-  position: relative;
   display: flex;
   width: 200vw;
   grid-column-gap: 2rem;
@@ -619,10 +629,11 @@ input[type="checkbox"] {
   grid-row-gap: 2rem;
 }
 
-.stripe-content h1 {
+.stripe-content li {
+  color: var(--white);
   transition: 0.2s ease-in-out;
-  color: var(--bg) !important;
-  font-size: var(--h1-footer);
+  /* color: var(--bg) !important;
+  font-size: var(--h1-footer); */
 }
 
 .marquee {
