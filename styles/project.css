@@ -15,15 +15,16 @@
   /* height: 100%; */
 }
 hero-sec {
-  gap: 25px;
+  gap: 30px;
   margin: 0 auto;
   max-width: 80rem;
   flex-direction: row;
   width: 100%;
+  margin-bottom: 3rem;
 }
-hero-sec p {
+hero-sec h3 {
   width: 100%;
-  padding-left: 2rem;
+  /* padding-left: 2rem; */
 }
 
 #project-info {
@@ -41,11 +42,12 @@ hero-sec p {
 }
 
 #crumbs {
+  gap: 35px;
   width: 100%;
 }
 
 crumb {
-  padding: 0 2rem;
+  padding-left:2rem;
   white-space: nowrap;
   gap: 10px;
   display: flex;
@@ -212,6 +214,13 @@ showcase {
 
   hero-sec {
     flex-direction: column;
+  }
+
+  #crumbs {
+    margin-top: 3rem;
+  }
+  crumb {
+    padding: 0;
   }
 
   hero-sec p {
