@@ -630,14 +630,9 @@ input[type="checkbox"] {
   width: 100%;
   position: absolute;
 }
+
 .menu-close {
   margin: auto 0;
-}
-
-
-#footer-title a {
-  font-family: var(--title);
-  color: var(--bg) !important;
 }
 
 .stripe {
@@ -696,13 +691,16 @@ input[type="checkbox"] {
 }
 
 #footer {
-  opacity: 60%;
-  z-index: 3;
+  opacity: 70%;
+  /* z-index: 3; */
   width: 100%;
   position: fixed;
   bottom: 3rem;
 }
 
+/* #footer>* {
+  color: var(--primary);
+} */
 /* SCROLL */
 ::-webkit-scrollbar {
   display: none;
