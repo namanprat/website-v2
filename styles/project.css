@@ -142,6 +142,10 @@ imgsection img {
   width: 80%;
 }
 
+#img-showcase img{
+  width: 38vh;
+}
+
 .cluster {
   justify-content: space-between;
   width: 100%;
