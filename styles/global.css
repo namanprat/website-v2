@@ -219,6 +219,33 @@
     flex-wrap: nowrap!important;
 }
 
+/* BACKGROUND */
+
+.bg {
+  opacity: 2%;
+  z-index: 10;
+  pointer-events: none;
+  content: "";
+  position: fixed;
+  width: 400vw;
+  height: 400vh;
+  left: -50%;
+  top: -50%;
+  overflow: hidden;
+  background: url(/public/noise.gif);
+  animation: grain 2s steps(6) infinite;
+}
+
+@keyframes grain {
+  0%, 100% {transform: translate(0,0);}
+  10% {transform: translate(-5%,-10%);}
+  30% {transform: translate(3%,-15%);}
+  50% {transform: translate(12%,9%);}
+  70% {transform: translate(9%,4%);}
+  90% {transform: translate(-1%,7%);}
+}
+
+
 /* CURSOR */
 @media (hover: none) {
   #cursor {
@@ -423,9 +450,8 @@ nav {
   overflow: hidden;
 }
 
-.yoo {
-  display: block;
-  
+#nav-cluster a {
+  z-index: 1;
 }
 
 #nav-color-mode {
@@ -537,8 +563,9 @@ input[type="checkbox"] {
 }
 
 .social a {
-  font-family: var(--title);
-  font-size: var(--h3);
+  text-transform: uppercase;
+  font-family: var(--text);
+  font-size: var(--h4);
 }
 
 .social,
@@ -561,8 +588,8 @@ input[type="checkbox"] {
 }
 
 #overlay-text>* {
-  font-size: 6.25rem;
-  line-height: 6.25rem;
+  font-size: 6rem;
+  line-height: 6rem;
   max-width: 700px;
   overflow: hidden !important;
   font-family: var(--title);
@@ -583,6 +610,17 @@ input[type="checkbox"] {
    opacity:1;
 }
 
+.overlay h4 {
+  color: var(--black) !important;
+}
+
+#socials {
+  flex-direction: column;
+}
+#overlay-bottom {
+  flex-direction: row;
+}
+
 #bottom {
   bottom: 0;
   width: 100%;
@@ -592,17 +630,6 @@ input[type="checkbox"] {
   margin: auto 0;
 }
 
-.star {
-  align-self: center;
-}
-
-.overlay h4 {
-  color: var(--black) !important;
-}
-
-#socials {
-  flex-direction: column;
-}
 
 #footer-title a {
   font-family: var(--title);
@@ -721,6 +748,17 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 768px) {
+  #socials {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+  }
+
+  #overlay-bottom {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
   #nav-project {
     display: none;
   }

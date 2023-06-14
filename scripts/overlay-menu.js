@@ -1,7 +1,7 @@
 function valueSet() {
   gsap.set("#overlay", {y:"-105%"});
   gsap.set(".menu-item a", {y:"100%" });
-  gsap.set(".social a", {y:"100%" , opacity:0});
+  gsap.set("#overlay-bottom", {opacity:0});
   gsap.set("#overlay-bg", {y:"-100%", opacity:0});
   gsap.set("#nav-cluster a", {autoAlpha:1});
 }
@@ -52,7 +52,7 @@ function overlayAnimation() {
     duration: 1.5,
   }, 'start')
 
-  .to(".menu-item a , .social a", {
+  .to(".menu-item a , #overlay-bottom", {
     y: "0",
     opacity: 1,
     delay: -1,
