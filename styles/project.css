@@ -171,7 +171,10 @@ section p {
 }
 
 .q-box {
-  padding: var(--uni);
+  pointer-events: none;
+  height: auto;
+  width: 100%;
+  padding: 1.3rem;
   background-color: var(--divider);
 }
 
@@ -201,6 +204,7 @@ showcase {
 
   .coverimg,
   .bg-section {
+    overflow: hidden !important;
     object-fit: cover;
     height: 90vh;
   }
