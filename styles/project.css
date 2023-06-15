@@ -89,12 +89,11 @@ tag {
 
 img {
   object-fit: contain;
-  width: 80%;
-  height: auto;
-  margin-top: var(--uni);
 }
 
 imgsection img {
+  width: 80%;
+  height: auto;
   margin-bottom: calc(var(--ratio) * var(--uni));
 }
 
@@ -131,18 +130,14 @@ imgsection img {
 #section-header {
   width: 50%;
 }
-.img-head {
-  width: auto;
-  margin-bottom: calc(var(--ratio) * var(--uni));
-}
 
-#img-showcase {
+#screens-showcase {
   z-index: 2;
   flex-direction: column;
   width: 80%;
 }
 
-#img-showcase img{
+#screens-showcase img{
   width: 38vh;
 }
 
@@ -241,7 +236,7 @@ showcase {
     height: 20vh;
   }
 
-  #img-showcase {
+  #screens-showcase {
     margin-top: 10vh;
     align-items: center !important;
     flex-direction: column;
@@ -263,13 +258,8 @@ showcase {
     padding-left: 0;
   }
 
-  #briv {
-    padding: 0 !important;
-  }
-
-  .img {
-    width: 100vw;
-    padding: var(--uni);
+  img {
+    width: 100%;
   }
 
   showcase {
