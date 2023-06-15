@@ -25,7 +25,7 @@
   --h4: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
   --resume: clamp(1.21rem, 0.69vw + 1.29rem, 1.43rem);
   --h3: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
-  --h2: clamp(2.83rem, 0.96vw + 2.59rem, 3.36rem);
+  --h2: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
   --h1-footer: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
   --h1: clamp(9.22rem, 3.14vw + 8.44rem, 10.3rem);
   --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
@@ -758,6 +758,11 @@ svg path {
 }
 
 @media (max-width: 768px) {
+
+  #work {
+    margin-top: 12vh;
+  }
+
   #socials {
     width: 100%;
     flex-direction: row;
@@ -864,6 +869,10 @@ svg path {
 }
 
 @media (max-width: 450px) {
+  #page-2 #cta {
+    margin-top: 7rem;
+  }
+
   :root {
     /* --h1: clamp(3rem, 2vw + 3rem, 4rem); */
     --h1-project: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
