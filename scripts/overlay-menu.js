@@ -46,20 +46,20 @@ function overlayAnimation() {
     autoAlpha:0,
   }, 'start')
 
-  .to("#overlay", {
-    y:"0",
-    ease: "power4.inOut",
-    duration: 1.5,
-  }, 'start')
+   .to("#overlay", {
+     y:"0",
+     ease: "power4.inOut",
+     duration: 1.35,
+   }, 'start')
 
   .to(".menu-item a , #overlay-bottom", {
     y: "0",
     opacity: 1,
-    delay: -1,
-    duration: 1.75,
+    // delay: -2,
+    duration: 2,
     ease: "power4.inOut",
     stagger: 0.15,
-  })
+  }, 'start')
 
   $(".menu-close, .menu-open").click (function() {
  tl.reversed() ? tl.play() : tl.reverse();

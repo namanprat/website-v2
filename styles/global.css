@@ -566,6 +566,17 @@ input[type="checkbox"] {
   z-index: 70;
 }
 
+.svg-bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+svg path {
+  fill: var(--white);
+}
 .social a {
   text-transform: uppercase;
   font-family: var(--text);
@@ -702,9 +713,6 @@ input[type="checkbox"] {
   bottom: 3rem;
 }
 
-/* #footer>* {
-  color: var(--primary);
-} */
 /* SCROLL */
 ::-webkit-scrollbar {
   display: none;
