@@ -85,6 +85,7 @@ tag {
 
 img {
   object-fit: contain;
+  margin-bottom: var(--uni);
 }
 
 imgsection img {
@@ -167,7 +168,7 @@ section p {
 
 .q-box {
   pointer-events: none;
-  height: auto;
+  height: fit-content;
   width: 100%;
   padding: 1.3rem;
   background-color: var(--divider);
@@ -258,6 +259,9 @@ showcase {
     width: 100%;
   }
 
+  .cubes {
+    flex-direction: column;
+  }
   showcase {
     flex-direction: column;
     align-items: center;
