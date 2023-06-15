@@ -10,10 +10,6 @@
 }
 
 /* HERO (TITLE AND OVERVIEW)*/
-#hero {
-  /* margin: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem) 0; */
-  /* height: 100%; */
-}
 hero-sec {
   gap: 30px;
   margin: 0 auto;

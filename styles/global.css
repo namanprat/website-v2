@@ -430,7 +430,7 @@ body {
 
 /* HEADER */
 nav {
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   background: transparent;
   /* background-image: linear-gradient(var(--primary), transparent); */
   /* height: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem); */
@@ -481,8 +481,8 @@ input[type="checkbox"] {
 
 #nav {
   text-decoration: none;
-  mix-blend-mode: difference;
-  color: var(--nav);
+  /* mix-blend-mode: difference; */
+  color: var(--primary);
 }
 
 #cta  {
