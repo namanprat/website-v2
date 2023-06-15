@@ -430,10 +430,7 @@ body {
 
 /* HEADER */
 nav {
-  /* mix-blend-mode: difference; */
   background: transparent;
-  /* background-image: linear-gradient(var(--primary), transparent); */
-  /* height: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem); */
   padding-top: 2rem;
   z-index: 80;
   position: fixed;
@@ -443,7 +440,7 @@ nav {
 /* NAVBAR BACKGROUND */
 #nav-home {
   white-space: nowrap;
-  color: var(--nav);
+  color: var(--primary);
   text-transform: none;
   font-family: var(--title);
   font-size: clamp(1.7rem, 0.58vw + 1.56rem, 2.02rem);
@@ -472,7 +469,7 @@ nav button {
   z-index: 100;
   background: transparent;
   border: none;
-  color: var(--nav);
+  color: var(--primary);
 }
 
 input[type="checkbox"] {
@@ -481,7 +478,6 @@ input[type="checkbox"] {
 
 #nav {
   text-decoration: none;
-  /* mix-blend-mode: difference; */
   color: var(--primary);
 }
 
