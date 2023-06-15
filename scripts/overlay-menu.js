@@ -4,6 +4,7 @@ function valueSet() {
   gsap.set("#overlay-bottom", {opacity:0});
   gsap.set("#overlay-bg", {y:"-100%", opacity:0});
   gsap.set("#nav-cluster a", {autoAlpha:1});
+  gsap.set("#nav-home , #nav-cluster button", {color:'var(--primary)'});
 }
 
 function navScroll(){
@@ -52,13 +53,18 @@ function overlayAnimation() {
      duration: 1.35,
    }, 'start')
 
+
   .to(".menu-item a , #overlay-bottom", {
     y: "0",
     opacity: 1,
-    // delay: -2,
     duration: 2,
     ease: "power4.inOut",
     stagger: 0.15,
+  }, 'start')
+
+  .to("#nav-home , #nav-cluster button", {
+    duration: 1,
+    color:'var(--black)',
   }, 'start')
 
   $(".menu-close, .menu-open").click (function() {
