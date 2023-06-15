@@ -606,6 +606,10 @@ input[type="checkbox"] {
   font-size: 20px;
 }
 
+#inactive {
+  opacity: 0.2;
+  /* pointer-events: none; */
+}
 #overlay-text:hover > *{
   opacity:0.2;
 }
