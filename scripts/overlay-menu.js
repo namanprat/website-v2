@@ -63,7 +63,7 @@ function overlayAnimation() {
   }, 'start')
 
   .to("#nav-home , #nav-cluster button", {
-    duration: 1,
+    // duration: 1,
     color:'var(--black)',
   }, 'start')
 
