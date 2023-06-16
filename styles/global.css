@@ -879,7 +879,7 @@ svg path {
 @media (max-width: 500px) {
 
   :root {
-    --h1: clamp(4.41rem, 1.5vw + 4.3rem, 5.24rem);
+    --h1: clamp(3.8rem, 1.3vw + 4rem, 5.24rem);
     --h1-project: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
   }
 
