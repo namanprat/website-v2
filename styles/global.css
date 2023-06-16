@@ -439,6 +439,7 @@ nav {
 
 /* NAVBAR BACKGROUND */
 #nav-home {
+  transition: 0.2s ease-in-out;
   white-space: nowrap;
   color: var(--primary);
   text-transform: none;
@@ -462,6 +463,7 @@ nav {
 }
 
 nav button {
+  transition: 0.2s ease-in-out;
   text-transform: uppercase;
   font-size: var(--h4);
   display: flex;
@@ -758,7 +760,10 @@ svg path {
 }
 
 @media (max-width: 768px) {
-
+  .w-3 {
+    padding-left: calc(var(--uni) * var(--ratio));
+    padding-right: calc(var(--uni) * var(--ratio));
+}
   #work {
     margin-top: 12vh;
   }

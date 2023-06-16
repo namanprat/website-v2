@@ -212,7 +212,9 @@ showcase {
 }
 
 @media (max-width: 910px) {
-
+  imgsection img {
+    width: 100%;
+  }
   hero-sec {
     flex-direction: column;
   }
