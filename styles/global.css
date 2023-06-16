@@ -483,18 +483,34 @@ input[type="checkbox"] {
   color: var(--primary);
 }
 
-#cta  {
-  overflow: hidden;
-  text-transform: uppercase;
-  font-size: var(--h4);
-  transition: 0.25s ease-in-out;
-}
-
 #copyright {
   margin: 1rem 0;
 }
+
 /* CTA */
+#menu {
+  text-transform: uppercase;
+  font-size: var(--h4);
+  transition: 0.25s ease-in-out;
+  display: block;
+  border-radius: 2em;
+  height: 3rem;
+  line-height: 3rem;
+  /* width: 185px; */
+  width: fit-content;
+  padding:0 1.5rem;
+  border: none;
+  background-color: transparent;
+  border: 1px solid;
+  color: var(--primary);
+  text-align: center;
+  text-decoration: none;
+}
+
 #cta {
+  text-transform: uppercase;
+  font-size: var(--h4);
+  transition: 0.25s ease-in-out;
   display: block;
   border-radius: 2em;
   height: 3.4rem;
