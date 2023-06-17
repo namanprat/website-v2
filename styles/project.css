@@ -185,8 +185,8 @@ section p {
   position: relative;
   overflow-x: scroll;
   white-space: nowrap;  
-  will-change: transform;
-  cursor: pointer;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 showcase {
