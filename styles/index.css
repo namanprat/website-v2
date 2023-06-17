@@ -21,11 +21,11 @@ main {
 
 #hero h1 {
   white-space: nowrap;
-  line-height: 1.27;
+  line-height: 1.255;
 }
 
 #hero .head-1 {
-  line-height: 0.9;
+  line-height: 0.8;
 }
 /* MARQUEE */
 

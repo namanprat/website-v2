@@ -110,9 +110,9 @@
                 competitor analysis which consisted of direct and indirect competitors.</p>
           </section>
 
-          <section class="flex space-bw">
-            <!-- <h4 id="section-header" class="nowrap">( Understanding the user's needs )</h4> -->
-              <div class="flex cubes gap-25 width-100">
+          <section class="x-scroll space-bw">
+            <h4 id="section-header" class="nowrap">( Key findings )</h4>
+              <div class="x-scroll cubes gap-25 width-100">
                 <p class="q-box">1.  The app has no option for users to find out how much they spend
                   on a specific item, such as food, and there is no search option
                   for users to find out how much they spend on food this month.</p>
@@ -167,6 +167,36 @@
     --nav: #fff;
     }
   </style>
+
+  <script>
+    const slider = document.querySelector('.cubes');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', (e) => {
+  if(!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 3; //scroll-fast
+  slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
+});
+  </script>
 
   <script src="./scripts/gsap-project.js"></script>
   <script src="./scripts/overlay-menu.js"></script>
