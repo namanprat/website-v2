@@ -4,7 +4,7 @@ function valueSet() {
   gsap.set("#overlay-bottom", {opacity:0});
   gsap.set("#overlay-bg", {y:"-100%", opacity:0});
   gsap.set("#nav-cluster a", {autoAlpha:1});
-  gsap.set("#nav-home , #menu", {color:'var(--primary)'});
+  // gsap.set("#nav-home , #menu", {color:'var(--primary)'});
 }
 
 function navScroll(){
@@ -28,8 +28,6 @@ function navFade(){
 mm.add("(max-width: 768px)", () => {
   gsap.to("#nav-cluster a", {
     ease: "power4.inOut",
-    duration: 0.2,
-    stagger: 0.01,
     autoAlpha:0,
    })
   });
@@ -62,10 +60,9 @@ function overlayAnimation() {
     stagger: 0.15,
   }, 'start')
 
-  .to("#nav-home , #menu", {
-    // duration: 1,
-    color:'var(--black)',
-  }, 'start')
+  // .to("#nav-home , #menu", {
+  //   color:'var(--black)',
+  // }, 'start')
 
   $(".menu-close, .menu-open").click (function() {
  tl.reversed() ? tl.play() : tl.reverse();

@@ -436,6 +436,7 @@ body {
 
 /* HEADER */
 nav {
+  mix-blend-mode: difference;
   background: transparent;
   padding-top: 2rem;
   z-index: 80;
@@ -445,6 +446,7 @@ nav {
 
 /* NAVBAR BACKGROUND */
 #nav-home {
+  mix-blend-mode: difference;
   transition: 0.2s ease-in-out;
   white-space: nowrap;
   color: var(--primary);
@@ -459,16 +461,12 @@ nav {
 }
 
 #nav-cluster a {
+  mix-blend-mode: difference;
   z-index: 1;
 }
 
-#nav-color-mode {
-  cursor: pointer;
-  text-decoration: none;
-  background-color: transparent;
-}
-
 nav button {
+  mix-blend-mode: difference;
   transition: 0.2s ease-in-out;
   text-transform: uppercase;
   font-size: var(--h4);
@@ -641,7 +639,6 @@ input[type="checkbox"] {
 
 #inactive {
   opacity: 0.2;
-  /* pointer-events: none; */
 }
 #overlay-text:hover > *{
   opacity:0.2;
