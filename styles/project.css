@@ -205,10 +205,6 @@ showcase {
   section-header {
     width: 100%;
   }
-
-  hero-sec-header {
-    width: 100%;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -235,8 +231,11 @@ showcase {
   }
 
   #crumbs {
+    align-self: center;
     margin-top: 3rem;
+    width: 80%;
   }
+  
   crumb {
     padding: 0;
   }
