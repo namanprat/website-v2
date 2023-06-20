@@ -43,7 +43,7 @@ function textReveal(){
     
       $("[animate]").each(function (index) {
         let tl = gsap.timeline();
-          tl.from(".char", {
+          tl.from(".word", {
             delay: 1,
             opacity: 0,
             yPercent: 100,
