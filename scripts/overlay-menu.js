@@ -33,6 +33,15 @@ mm.add("(max-width: 768px)", () => {
   });
 }
 
+function buttonAnimation () {
+  var tl = gsap.timeline({paused: true, reversed:true});
+  const navBtn = document.getElementById("menu");
+  navBtn.onclick = function (e) {
+    navBtn.classList.toggle("active");
+    tl.reversed(!tl.reversed());
+  };
+};
+
 function overlayAnimation() {
   var tl = gsap.timeline({paused: true, reversed:true});
 
@@ -75,3 +84,4 @@ navScroll();
 navFade();
 valueSet();
 overlayAnimation();
+buttonAnimation ();
