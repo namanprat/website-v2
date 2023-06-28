@@ -511,6 +511,12 @@ input[type="checkbox"] {
 } */
 
 #menu {
+  border-radius: 2em;
+  padding:1.5rem 2.2rem;
+  border: none;
+  background-color: transparent;
+  border: 1px solid;
+  color: var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -522,10 +528,19 @@ input[type="checkbox"] {
   z-index: 100;
 }
 
+.border {
+  border-radius: 2em;
+  padding:1.5rem;
+  border: none;
+  background-color: transparent;
+  border: 1px solid;
+  color: var(--primary);
+}
+
 #menu span {
   height: 2px;
   background: var(--nav);
-  width: 24px;
+  width: 40px;
   display: inline-block;
   position: absolute;
   top: 50%;
