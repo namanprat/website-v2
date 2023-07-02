@@ -171,6 +171,15 @@ section p {
   white-space: normal;
   display: inline-block;
   pointer-events: none;
+  padding: 1.3rem;
+  background-color: var(--divider);
+  margin: 2em 1em;
+}
+
+.box {
+  white-space: normal;
+  display: inline-block;
+  pointer-events: none;
   height: 200px;
   width: 400px;
   padding: 1.3rem;
