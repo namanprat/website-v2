@@ -167,11 +167,20 @@ section p {
   padding-left: 2rem;
 }
 
+section .box-container {
+  width: 100%;
+  padding-left: 2rem;
+}
+
+.box-container p{
+  width: 100%;
+}
+
 .q-box {
   white-space: normal;
   display: inline-block;
   pointer-events: none;
-  padding: 1.3rem;
+  padding: 2rem;
   background-color: var(--divider);
   margin: 2em 1em;
 }
