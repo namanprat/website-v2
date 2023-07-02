@@ -172,7 +172,15 @@ section .box-container {
   padding-left: 2rem;
 }
 
+.box-container a{
+  text-decoration: none;
+  line-height: 160%;
+  padding-bottom: 1rem;
+}
+
 .box-container p{
+  line-height: 160%;
+  padding-bottom: 1rem;
   width: 100%;
 }
 
@@ -182,7 +190,7 @@ section .box-container {
   pointer-events: none;
   padding: 2rem;
   background-color: var(--divider);
-  margin: 2em 1em;
+  margin: 1rem 0;
 }
 
 .box {
@@ -285,10 +293,14 @@ showcase {
     flex-direction: column;
   }
 
-  section p {
+  section p,
+  section .box-container  {
     padding-left: 0;
   }
 
+  .q-box {
+    margin: 0;
+  }
   img {
     width: 100%;
   }
