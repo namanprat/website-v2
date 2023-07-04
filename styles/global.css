@@ -99,6 +99,10 @@
   padding-right: var(--uni);
 }
 
+.w-0 {
+  padding: 0 !important;
+}
+
 .work-padding {
   padding-left: var(--uni);
   padding-right: var(--uni);
@@ -116,6 +120,10 @@
 
 .width-100 {
   width: 100%;
+}
+
+.vw-100 {
+  width: 100vw;
 }
 
 .gap-25 {
