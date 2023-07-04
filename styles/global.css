@@ -500,85 +500,55 @@ input[type="checkbox"] {
 }
 
 /* CTA */
-/* #menu {
-  text-transform: uppercase;
-  font-size: 1.2rem;
+#menu {
   transition: 0.25s ease-in-out;
+  height: 50px;
+  width: 50px;
   display: block;
   border-radius: 2em;
-  height: 3rem;
-  line-height: 3rem;
-  width: fit-content;
-  padding:0 1.5rem;
-  border: none;
-  background-color: transparent;
-  border: 1px solid;
-  color: var(--primary);
-  text-align: center;
-  text-decoration: none;
-} */
+  background: white;
+}
 
-#menu {
-  border-radius: 2em;
-  padding:1.25rem 2.2rem;
-  border: none;
-  background-color: transparent;
-  border: 1px solid;
-  color: var(--primary);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20px;
-  width: 20px;
+#hamburger {
   position: relative;
-  cursor: pointer;
-  transition: all 0.3s;
-  z-index: 100;
+  width: 20px;
+  height: 20px;
+  z-index: 2;
 }
 
-.border {
-  border-radius: 2em;
-  padding:1.5rem;
-  border: none;
-  background-color: transparent;
-  border: 1px solid;
-  color: var(--primary);
-}
-
-#menu span {
-  height: 2px;
-  background: var(--nav);
-  width: 40px;
-  display: inline-block;
+#hamburger span {
   position: absolute;
   top: 50%;
-  transition: all 0.3s;
-}
-
-#menu span::before {
-  content: " ";
-  position: absolute;
+  /* transform: translateX(-50%); */
   display: inline-block;
+  width: 30px;
   height: 2px;
-  background: var(--nav);
-  transform: translateY(-4px);
-  width: 24px;
-  transition: all 0.3s;
-  top: -2px;
+  background: var(--black);
+  transition: transform 0.3s;
 }
 
-.active span {
+#hamburger span::before {
+  /* transform: translateX(-50%); */
+  position: absolute;
+  right: 0;
+  display: inline-block;
+  content: " ";
+  width: 20px;
+  height: 2px;
+  background: var(--black);
+  transform: translateY(-6px);
+  transition: transform 0.3s;
+}
+
+#hamburger.active span {
   transform: rotate(45deg);
 }
 
 
-.active span::before {
+#hamburger.active span::before {
   top: unset;
+  width: 30px;
   transform: rotate(-90deg);
-}
-
-.active:hover span::before {
-  top: unset;
 }
 
 #capsule {

@@ -4,7 +4,8 @@ function valueSet() {
   gsap.set("#overlay-bottom", {opacity:0});
   gsap.set("#overlay-bg", {y:"-100%", opacity:0});
   gsap.set("#nav-cluster a", {autoAlpha:1});
-  // gsap.set("#nav-home , #menu", {color:'var(--primary)'});
+  let spanBefore = CSSRulePlugin.getRule("#hamburger span:before");
+  gsap.set(spanBefore, {background: "#000"});
 }
 
 function navScroll(){
@@ -32,12 +33,13 @@ mm.add("(max-width: 768px)", () => {
    })
   });
 }
-
 function buttonAnimation () {
+  overlayAnimation();
   var tl = gsap.timeline({paused: true, reversed:true});
-  const navBtn = document.getElementById("menu");
-  navBtn.onclick = function (e) {
-    navBtn.classList.toggle("active");
+  const toggleBtn = document.getElementById("menu");
+  const hamburger = document.getElementById("hamburger");
+  toggleBtn.onclick = function (e) {
+    hamburger.classList.toggle("active");
     tl.reversed(!tl.reversed());
   };
 };
@@ -52,13 +54,13 @@ function overlayAnimation() {
     duration: 1,
     stagger: 0.01,
     autoAlpha:0,
-  }, 'start')
+  }, "<")
 
    .to("#overlay", {
      y:"0",
      ease: "power4.inOut",
      duration: 1.35,
-   }, 'start')
+   }, "<")
 
 
   .to(".menu-item a , #overlay-bottom", {
@@ -67,7 +69,7 @@ function overlayAnimation() {
     duration: 2,
     ease: "power4.inOut",
     stagger: 0.15,
-  }, 'start')
+  }, "<")
 
   // .to("#nav-home , #menu", {
   //   color:'var(--black)',
@@ -80,8 +82,8 @@ function overlayAnimation() {
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.config({ nullTargetWarn: false});
+buttonAnimation ();
 navScroll();
 navFade();
 valueSet();
-overlayAnimation();
-buttonAnimation ();
+// overlayAnimation();

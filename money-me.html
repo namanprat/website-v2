@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./styles/project.css" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
@@ -34,7 +35,10 @@
         <div id="nav-cluster" class="row space-bw center">
             <a id="nav" class="interactable overflow-hidden" href="./index.html#project-row">WORK</a>
             <a id="nav" class="interactable overflow-hidden" href="./public/CV.pdf">RESUME</a> 
-            <button id="menu" class="interactable nav menu-open border"><span></span></button>
+            <button id="menu" class="interactable nav menu-open"><div id="hamburger">
+              <span></span>
+             </div>
+            </button>
         </div>
       </nav>
       <div id="overlay" class="col overlay w-3">
