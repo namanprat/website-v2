@@ -78,10 +78,30 @@ main {
 }
 
 .image-capusle>img {
+  /* max-width: 450px;
+  aspect-ratio: 3 / 4; */
+  display: inline-block;
+  object-fit: cover !important;
+}
+
+.aspect-1-1 {
+  max-width: 600px;
+  aspect-ratio: 1/1;
+}
+
+.aspect-2-3 {
   max-width: 450px;
-  aspect-ratio: 3 / 4;
-  display: block;
-  object-fit: cover;
+  aspect-ratio: 2/3;
+}
+
+.aspect-3-4 {
+  max-width: 450px;
+  aspect-ratio: 3/4;
+}
+
+.aspect-16-10 {
+  max-width: 600px;
+  aspect-ratio: 16/10;
 }
 
 #project-row {
@@ -157,15 +177,24 @@ capsule {
   }
 
   #project-row>a {
-    /* align-items: center !important; */
-    object-fit: cover;
-    width: auto;
-    /* width: 100%; */
     margin: 3vh 0;
   }
 
+  #project-row .self-start,
+  #project-row .self-end {
+    align-self: center;
+  }
+
+  .aspect-1-1,
+  .aspect-16-10,
+  .aspect-2-3,
+  .aspect-3-4 {
+    max-width: 500px;
+  }
   .image-capusle>img {
+    /* max-width: 500px; */
+    aspect-ratio: 3/4 !important;
     width: 100%;
-    min-height: auto;
+    height: auto;
   }
 }
