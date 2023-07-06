@@ -89,6 +89,11 @@ main {
   aspect-ratio: 1/1;
 }
 
+.aspect-1-2 {
+  max-width: 600px;
+  aspect-ratio: 1/2;
+}
+
 .aspect-2-3 {
   max-width: 450px;
   aspect-ratio: 2/3;
@@ -101,7 +106,7 @@ main {
 
 .aspect-16-10 {
   max-width: 600px;
-  aspect-ratio: 16/10;
+  aspect-ratio: 3/2;
 }
 
 #project-row {
@@ -186,6 +191,7 @@ capsule {
   }
 
   .aspect-1-1,
+  .aspect-1-2,
   .aspect-16-10,
   .aspect-2-3,
   .aspect-3-4 {

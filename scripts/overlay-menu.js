@@ -1,8 +1,8 @@
 function valueSet() {
-  gsap.set("#overlay", {y:"-105%"});
-  gsap.set(".menu-item a", {y:"100%" });
+  gsap.set("#overlay-bg", {autoAlpha:0});
+  gsap.set(".menu-item a", {y:"100%"});
   gsap.set("#overlay-bottom", {opacity:0});
-  gsap.set("#overlay-bg", {y:"-100%", opacity:0});
+  gsap.set("#overlay", {x:"100%"});
   gsap.set("#nav-cluster a", {autoAlpha:1});
   let spanBefore = CSSRulePlugin.getRule("#hamburger span:before");
   gsap.set(spanBefore, {background: "#000"});
@@ -48,7 +48,6 @@ function overlayAnimation() {
   var tl = gsap.timeline({paused: true, reversed:true});
 
   tl
-  .add('start')
   .to("#nav-cluster a", {
     ease: "power4.inOut",
     duration: 1,
@@ -56,11 +55,17 @@ function overlayAnimation() {
     autoAlpha:0,
   }, "<")
 
-   .to("#overlay", {
-     y:"0",
-     ease: "power4.inOut",
-     duration: 1.35,
-   }, "<")
+  .to("#overlay-bg", {
+    ease: "power4.inOut",
+    duration: 1,
+    autoAlpha:1,
+  }, "<")
+
+  .to("#overlay", {
+    x:"0",
+    ease: "power4.inOut",
+    duration: 1.5,
+  }, "<")
 
 
   .to(".menu-item a , #overlay-bottom", {
