@@ -517,24 +517,25 @@ input[type="checkbox"] {
 }
 
 #hamburger span {
+  border-radius: 10px;
   position: absolute;
   top: 50%;
   /* transform: translateX(-50%); */
   display: inline-block;
   width: 30px;
-  height: 2px;
+  height: 2.3px;
   background: var(--black);
   transition: transform 0.3s;
 }
 
 #hamburger span::before {
-  /* transform: translateX(-50%); */
+  border-radius: 10px;
   position: absolute;
   right: 0;
   display: inline-block;
   content: " ";
   width: 20px;
-  height: 2px;
+  height: 2.3px;
   background: var(--black);
   transform: translateY(-6px);
   transition: transform 0.3s;
