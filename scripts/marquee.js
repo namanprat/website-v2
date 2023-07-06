@@ -17,7 +17,7 @@ function stripeloop() {
       { xPercent: 0 },
       {
         xPercent: -dist,
-        duration: 20,
+        duration: 10,
         ease: "none",
         repeat: -1
       }

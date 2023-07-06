@@ -1,0 +1,70 @@
+body,
+main {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+#page-1 {
+  height: 150vh;
+  width: 100%;
+  margin: auto;
+  /* background-color: red; */
+}
+
+#section-2 {
+  width: 60%;
+}
+desc {
+  font-size: var(--h2);
+  font-family: var(--title);
+}
+
+form {
+  width: 100%;
+  gap: 50px;
+}
+entry {
+  border-bottom: 2px solid var(--placeholder);
+}
+input,
+textarea {
+  text-transform: uppercase;
+  padding: 1rem 0;
+  font-family: var(--text);
+  font-size: var(--p);
+  color: var(--placeholder);
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}
+/* MARQUEE */
+
+.stripe {
+  margin-top: 10vh;
+  /* background-color: var(--accent); */
+  height: fit-content;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  position: relative;
+  display: flex;
+  width: 100vw;
+  gap: 10rem;
+  border-top: 3px solid var(--primary);
+  border-bottom: 3px solid var(--primary);
+}
+
+.stripe-content {
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100%;
+  justify-content: space-around;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+}
+
+.stripe-content h1 {
+  text-transform: uppercase;
+  font-size: var(--h1);
+}
