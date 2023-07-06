@@ -5,43 +5,62 @@ main {
   }
 
 #page-1 {
-  height: 150vh;
+  height: 200vh;
   width: 100%;
   margin: auto;
   /* background-color: red; */
 }
 
 #section-2 {
-  width: 60%;
+  width: 75%;
 }
+
 desc {
   font-size: var(--h2);
   font-family: var(--title);
+  margin-bottom: 10vh;
 }
 
 form {
   width: 100%;
   gap: 50px;
 }
+
 entry {
   border-bottom: 2px solid var(--placeholder);
 }
 input,
 textarea {
-  text-transform: uppercase;
+  border-bottom: 2px solid var(--placeholder);
+  /* text-transform: uppercase; */
   padding: 1rem 0;
   font-family: var(--text);
   font-size: var(--p);
   color: var(--placeholder);
   text-decoration: none;
-  background-color: transparent;
+  background-color: transparent !important;
   border: none;
+  resize: none;
+}
+
+h4 span {
+  margin-left: 10px;
+  color: var(--accent);
+}
+
+input:focus,
+textarea:focus {
+  outline: none !important;
+  width: 100%;
+  text-transform: none;
+  text-decoration: none;
+  background-color: transparent;
+  resize: none;
 }
 /* MARQUEE */
 
 .stripe {
   margin-top: 10vh;
-  /* background-color: var(--accent); */
   height: fit-content;
   padding: 0 !important;
   overflow-x: hidden !important;
@@ -67,4 +86,11 @@ textarea {
 .stripe-content h1 {
   text-transform: uppercase;
   font-size: var(--h1);
+}
+
+@media (max-width: 768px) {
+  #section-2 {
+    width: 100%;
+  }
+  
 }
