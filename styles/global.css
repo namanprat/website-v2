@@ -292,7 +292,14 @@
     transition: opacity 500ms ease;
   }
   
-  #cursor:not([data-type=""]) > #cursor-text {
+  #cursor-icon {
+      font-size: 6px;
+      line-height: 4px;
+      opacity: 0;
+      transition: opacity 400ms ease;
+  }
+  
+  #cursor:not([data-type="project"]) > #cursor-icon {
     opacity: 1;
   }
 }
