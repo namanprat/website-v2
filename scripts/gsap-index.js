@@ -93,8 +93,9 @@ function xAxisScroll(){
     .to("#left" ,{
         opacity: '0',
         x:-200,
+        stagger: 0.07,
         scrollTrigger:{
-            delay: -3,
+            delay: -2,
             trigger:".hero-container" ,
             scroller: "body",
             ease: "power4.inOut",

@@ -15,7 +15,7 @@ main {
   height: 100svh;
 }
 
-#hero {
+/* #hero {
   height: 100%;
 }
 
@@ -26,7 +26,40 @@ main {
 
 #hero .head-1 {
   line-height: 0.8;
+} */
+
+/* VERSION 2 */
+
+#hero {
+  margin-top: 10vh;
+  height: 80vh;
 }
+
+#name-year {
+  flex-wrap: wrap;
+}
+
+#name-year .col plug .child {
+  font-family: var(--title);
+  line-height: 1.25;
+}
+
+.year {
+  font-family: var(--text);
+  font-size: var(--h1);
+}
+
+.markesh {
+  font-family: var(--text);
+  font-size: var(--h1);
+  line-height: 0.8;
+}
+
+/* #hero .col .head-1 {
+  font-family: var(--text);
+  line-height: 0.8;
+}  */
+
 /* MARQUEE */
 
 /* .marquee {

@@ -10,7 +10,7 @@ function valueSet() {
 
 function navScroll(){
   let mm = gsap.matchMedia();
-mm.add("(min-width: 768px)", () => {
+mm.add("(min-width: 915px)", () => {
   gsap.to("#nav-cluster a", {
     autoAlpha:0,
     ease: "power4.inOut",
@@ -26,7 +26,7 @@ mm.add("(min-width: 768px)", () => {
 
 function navFade(){
   let mm = gsap.matchMedia();
-mm.add("(max-width: 768px)", () => {
+mm.add("(max-width: 915px)", () => {
   gsap.to("#nav-cluster a", {
     ease: "power4.inOut",
     autoAlpha:0,

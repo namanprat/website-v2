@@ -16,11 +16,13 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/index.css" />
 
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    
     <script src="https://unpkg.com/split-type"></script>
   </head>
   <body>
@@ -32,10 +34,11 @@
       <h2 class="reveal">Naman Pratulya</h2>
     </div>
 
-    <main id="home" class="smooth-scroll">
+    <main id="home">
       <nav class="row space-bw center w-3">
+        <h4 id="time" class="center"></h4>
         <a id="nav-home" class="interactable nav" href="#hero">Naman Pratulya</a>
-        <div id="nav-cluster" class="row space-bw center">
+        <div id="nav-cluster" class="row space-bw center self-end">
             <a id="nav" class="interactable overflow-hidden" href="#project-row">WORK</a>
             <a id="nav" class="interactable overflow-hidden" href="./public/CV.pdf">RESUME</a> 
            <button id="menu" class="interactable nav menu-open"><div id="hamburger">
@@ -77,12 +80,25 @@
         </div>
       </div>
       
-      <div class="hero-container center">
-        <div id="hero" class="col self-center justify-center w-3">
-          <h4 id="scroll-fade" class="center reveal self-center">( your friendly neighbourhood )</h4>
-          <h1 id="left" class="head-1 center reveal self-center">Product</h1>
-          <h1 id="right" class="reveal self-center"><em>Designer</em></h1>
+      <div class="hero-container jusctify-center w-3">
+        <div id="hero" class="col space-bw self-center">
+          <div id="name-year" class="row space-bw width-100 self-start">
+            <div class="col">
+              <h1 id="left" class="head-1 reveal">product</h1>
+              <h1 id="left" class="reveal">designer</h1>
+
+            </div>
+            <div id="right" class="year reveal self-end">( 2023 )</div>
+          </div>
+          <div id="scroll-fade" class="markesh self-center reveal">PORTFOLIO *</div>
       </div>
+
+      <!-- <div id="hero" class="col self-center justify-center w-3">
+        <h4 id="scroll-fade" class="center reveal self-center">( your friendly neighbourhood )</h4>
+        <h1 id="left" class="head-1 center reveal self-center">Product</h1>
+        <h1 id="right" class="reveal self-center"><em>Designer</em></h1>
+    </div> -->
+
   </div>
   <div id="page-2" class="col overflow-hidden space-even w-3">
     <section class="flex space-bw">
@@ -213,5 +229,6 @@ section {
 <script src="./scripts/gsap-index.js"></script>
 <script src="./scripts/cursor.js"></script>
 <script src="./scripts/lenis.js"></script>
+<script src="./scripts/time.js"></script>
 </body>
 </html>
