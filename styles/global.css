@@ -395,26 +395,23 @@ spon {
   text-decoration: underline;
 }
 
-#overlay-stripe {
-  /* background-color: rebeccapurple; */
+/* #overlay-stripe {
   opacity: 10%;
   position: absolute;
   top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
-.stripe-content li {
+/* .stripe-content li {
   display: block;
   overflow: hidden;
   color: var(--white);
   white-space: nowrap;
-  /* line-height: 90vh; */
   font-size: 80vh;
   font-family: var(--title);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--black);
-  /* font-style: italic; */
 
   text-shadow:
   -1px -1px 0 var(--primary),
@@ -426,7 +423,7 @@ spon {
   -1px  1px 0 var(--primary),
   -1px  0   0 var(--primary);
 
-}
+} */
 
 /* MAIN */
 * {
@@ -670,9 +667,9 @@ input[type="checkbox"] {
 }
 
 #overlay-text>* {
-  font-size: 6rem;
-  line-height: 6rem;
-  max-width: 700px;
+  font-size: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
+  line-height: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
+  /* max-width: 700px; */
   overflow: hidden !important;
   font-family: var(--title);
   -webkit-transition:1.5s;

@@ -84,7 +84,7 @@ textarea:focus {
 }
 
 .stripe-content h1 {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-size: var(--h1);
 }
 
