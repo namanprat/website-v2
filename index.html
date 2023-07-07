@@ -18,6 +18,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CSSRulePlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
@@ -83,14 +84,23 @@
           <h1 id="right" class="reveal self-center"><em>Designer</em></h1>
       </div>
   </div>
-  <div id="page-2" class="col center overflow-hidden space-even w-3">
-    <div id="about" class="col center">
-      <h4>( about me )</h4>
+  <div id="page-2" class="col overflow-hidden space-even w-3">
+    <section class="flex space-bw">
+      <h4 id="section-header" class="nowrap">( who am i? )</h4>
+      <div class="col">
+        <h3 text-split animate>I am a designer passionate about creating functional 
+          and visually pleasing experiences to drive tangible 
+          outcomes for mission-driven organizations.
+        </h3>
+        <a href="./contact.html" id="cta" class="interactable self-end">LET'S TALK</a>
+      </div>
+    </section>
+    <!-- <div id="about" class="col center">
+      <h4>( Who am i? )</h4>
     <h2 text-split animate class="copy">
       I am a designer passionate about creating functional and visually pleasing experiences to drive tangible outcomes for mission-driven organizations.
     </h2>
-    </div>
-    <a href="./contact.html" id="cta" class="interactable">LET'S TALK</a>
+    </div> -->
   </div>
 
     <div id="work" class="col space-bw center">
@@ -118,7 +128,7 @@
               <capsule>UI | UX CASE STUDY</capsule>
               <capsule>year: 2022</capsule>
             </div>
-            <img class="aspect-3-4" src="./images/tsn/cover.webp" alt="Decentralized news platform for the people, by the people."/>
+            <img class="aspect-1-1" src="./images/tsn/cover.webp" alt="Decentralized news platform for the people, by the people."/>
           </div>
           <h2 id="project-cta">Sage</h2>
         </a>
@@ -129,7 +139,7 @@
               <capsule>UI | UX CASE STUDY</capsule>
               <capsule>year: 2021</capsule>
             </div>
-            <img class="aspect-1-1" src="./images/covihelp/cover.webp"/>
+            <img class="aspect-16-10" src="./images/covihelp/cover.webp"/>
           </div>
           <h2 id="project-cta">Covihelp</h2>
         </a>
@@ -163,8 +173,45 @@
     </div>
 </main>
 
+<style>
+  #section-header {
+    margin-top: 15px;
+  width: 50%;
+}
+
+  section {
+  gap: 25px;
+  padding: calc(var(--ratio-2) * var(--uni)) 0;
+  margin: 0 auto;
+  max-width: 80rem;
+  flex-direction: row;
+  width: 100%;
+}
+section h3 {
+  width: 100%;
+  padding-left: 2rem;
+}
+
+@media (max-width: 1200px) {
+  section-header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 910px) {
+section {
+    flex-direction: column;
+  }
+
+  section p,
+  section {
+    padding-left: 0;
+  }
+}
+</style>
 <script src="./scripts/overlay-menu.js"></script>
-<script src="./scripts/gsap-page1.js"></script>
+<script src="./scripts/gsap-index.js"></script>
 <script src="./scripts/cursor.js"></script>
+<script src="./scripts/lenis.js"></script>
 </body>
 </html>

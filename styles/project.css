@@ -125,6 +125,7 @@ imgsection img {
   height: 100vh;
   height: 100svh;
 }
+
 #section-header {
   width: 50%;
 }
@@ -294,7 +295,7 @@ showcase {
   }
 
   section p,
-  section .box-container  {
+  section .box-container {
     padding-left: 0;
   }
 
