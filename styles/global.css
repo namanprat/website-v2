@@ -839,6 +839,10 @@ input[type="checkbox"] {
   :root {
     --h1: clamp(7.99rem, 2.72vw + 7.31rem, 9.49rem);
   }
+
+  #nav-cluster {
+    width: 100%;
+  }
 }
 
 @media (max-width: 915px) {
@@ -847,11 +851,6 @@ input[type="checkbox"] {
     --h3: clamp(1.85rem, 0.63vw + 1.69rem, 2.19rem);
     --h1-project: clamp(9.64rem, 3.28vw + 8.82rem, 11.45rem);
   }
-
-  #nav-cluster {
-    width: 100%;
-  }
-
 }
 
 @media (max-width: 768px) {
