@@ -62,23 +62,37 @@ main {
 
 /* MARQUEE */
 
-/* .marquee {
-  color: var(--primary) !important;
-  border-radius: 2rem;
-  border: 2px solid var(--primary);
-  width: 100%;
-  background-color: var(--secondary);
-  height: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
+.heroMarquee {
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  overflow-x: visible !important;
+  position: relative;
+  display: flex;
+  width: 200vw;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
 }
 
-.marquee-content li {
+.heroMarquee-content {
   align-self: center;
-  font-size: var(--h2);
-  text-transform: uppercase;
-  font-family: var(--text);
-  transition: 0.25s ease-in-out;
-} */
+  height: var(--h1-project);
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  overflow-x: visible !important;
+  display: flex;
+  flex-shrink: 0;
+  min-width: 100%;
+  justify-content: space-around;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
 
+.heroMarquee-content h1 {
+  font-size: var(--h1);
+  line-height: var(--h1);
+  font-family: var(--title);
+  text-transform: capitalize;
+}
 /* WORK */
 #page-2 {
   margin: 0 auto;

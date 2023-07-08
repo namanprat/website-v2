@@ -1,19 +1,17 @@
-const stripeContent = document.querySelector('.stripe-content');
+const heroMarqueeContent = document.querySelector('.heroMarquee-content');
+let heroMarquee = heroMarqueeContent.cloneNode(true);
+heroMarqueeContent.parentElement.append(heroMarquee);
+let heroMarqueeTween;
 
-let stripe = stripeContent.cloneNode(true);
-stripeContent.parentElement.append(stripe);
-
-let stripeTween;
-
-function stripeloop() {
-  // let prog = stripeTween ? tween.prog() : 0;
-  // stripeTween && tween.prog(0).kill();
-  let stripeGap = parseInt(getComputedStyle(stripeContent).gap);
-  let stripeWidth = parseInt(getComputedStyle(stripeContent).width);
-  let gapPercent = (stripeGap / stripeWidth) * 100;
+function heroMarqueeloop() {
+  // let prog = heroMarqueeTween ? tween.prog() : 0;
+  // heroMarqueeTween && tween.prog(0).kill();
+  let heroMarqueeGap = parseInt(getComputedStyle(heroMarqueeContent).gap);
+  let heroMarqueeWidth = parseInt(getComputedStyle(heroMarqueeContent).width);
+  let gapPercent = (heroMarqueeGap / heroMarqueeWidth) * 100;
   let dist = gapPercent + 100;
 
-  stripeTween = gsap.fromTo('.stripe-content',
+  heroMarqueeTween = gsap.fromTo('.heroMarquee-content',
       { xPercent: 0 },
       {
         xPercent: -dist,
@@ -23,6 +21,6 @@ function stripeloop() {
       }
   );
 }
-stripeloop();
-window.addEventListener("resize",stripeloop);
+heroMarqueeloop();
+window.addEventListener("resize",heroMarqueeloop);
 gsap.config({ nullTargetWarn: false});

@@ -16,7 +16,7 @@ function revealToplug() {
 }
 
 function valueSetters(){
-    gsap.set ("header" , { y: "-100%"});
+    gsap.set(".heroMarquee" , {y: "100%"});
     gsap.set("main .parent .child" , {y: "100%"});
     gsap.set ("#left" , {x:0 , opacity: '1'});
     gsap.set ("#right" , {x:0 , opacity: '1'});
@@ -69,8 +69,14 @@ function animateHomepage(){
         delay: -1.2,
         duration: 3,
         stagger: 0.135,
+        ease: "expo.inOut",
+    }, "<")
+    .to(".heroMarquee", {
+        y: 0,
+        duration: 3,
+        stagger: 0.135,
         ease: "expo.inOut"
-    })
+    }, "<")
 }
 function xAxisScroll(){
     var tl = gsap.timeline();
@@ -136,10 +142,10 @@ function textReveal(){
 
         $("[animate]").each(function (index) {
           let tl = gsap.timeline({paused:true});
-          tl.from($(this).find(".word"), {
+          tl.from($(this).find(".char"), {
             opacity: 0,
             yPercent: 100,
-            duration: 1.2,
+            duration: 1.3,
             ease: "expo.inOut",
             stagger: { amount: 0.3 }
           });
