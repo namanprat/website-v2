@@ -1,8 +1,54 @@
+function revealToplug() {
+    document.querySelectorAll(".reveal")
+.forEach(function(elem){
+    var parent = document.createElement("plug");
+    var child = document.createElement("plug");
+
+    parent.classList.add("parent");
+    child.classList.add("child");
+
+    child.innerHTML= elem.innerHTML;
+    parent.appendChild(child);
+
+    elem.innerHTML = "";
+    elem.appendChild(parent);
+})
+}
+
 function valueSetters(){
+    gsap.set ("header" , { y: "-100%"});
+    gsap.set("main .parent .child" , {y: "100%"});
     gsap.set ("#left" , {x:0 , opacity: '1'});
     gsap.set ("#right" , {x:0 , opacity: '1'});
 }
 
+function loaderAnimation() {
+    var tl = gsap.timeline();
+
+tl
+.from("#loader .child plug", {
+    y:"100%",
+    duration: 1,
+    stagger: 0.2,
+    ease: "expo.inOut"
+})
+.to("#loader .parent .child", {
+    yPercent: -100,
+    duration: 1,
+    delay: 1,
+    stagger: 0.2,
+    ease: "expo.inOut"
+})
+.to("#loader", {
+    height: 0,
+    duration: 0.75,
+    stagger: 0.2,
+    ease: "circ.inOut",
+    onComplete: function(){
+        animateHomepage();
+    }
+})
+}
 function heroText(){
     $("[hero]").each(function (index) {
         let tl = gsap.timeline({paused:true});
@@ -15,7 +61,17 @@ function heroText(){
         })
     })
    }
-
+function animateHomepage(){
+    var tl = gsap.timeline();
+    tl
+    .to("main .parent .child", {
+        y: 0,
+        delay: -1.2,
+        duration: 3,
+        stagger: 0.135,
+        ease: "expo.inOut"
+    })
+}
 function xAxisScroll(){
     var tl = gsap.timeline();
     tl
@@ -71,7 +127,6 @@ function xAxisScroll(){
         }
     })
 }
-
 function textReveal(){
     window.addEventListener("DOMContentLoaded", (event) => {
         let typeSplit = new SplitType("[text-split]", {
@@ -140,13 +195,14 @@ function textReveal(){
  
  gsap.registerPlugin(ScrollTrigger);
  gsap.config({ nullTargetWarn: false});
+revealToplug();
 valueSetters();
+loaderAnimation();
 xAxisScroll();
 //aboutAnimation();
 heroText();
 // bgColor();
 textReveal();
 titleFade();
-
 
 
