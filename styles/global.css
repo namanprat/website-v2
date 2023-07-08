@@ -334,6 +334,7 @@
 
 .parent {
   height: 100%;
+  padding: 0 3px;
   overflow-y: hidden;
   overflow-x: visible;
   display: block;
