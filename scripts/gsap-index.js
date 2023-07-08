@@ -16,7 +16,7 @@ function revealToplug() {
 }
 
 function valueSetters(){
-    gsap.set(".heroMarquee" , {y: "100%"});
+    gsap.set(".heroMarquee h1" , {y: "100%"});
     gsap.set("main .parent .child" , {y: "100%"});
     gsap.set ("#left" , {x:0 , opacity: '1'});
     gsap.set ("#right" , {x:0 , opacity: '1'});
@@ -71,10 +71,11 @@ function animateHomepage(){
         stagger: 0.135,
         ease: "expo.inOut",
     }, "<")
-    .to(".heroMarquee", {
+    .to(".heroMarquee h1", {
         y: 0,
+        delay: 0.35,
         duration: 3,
-        stagger: 0.135,
+        stagger: 0.05,
         ease: "expo.inOut"
     }, "<")
 }
