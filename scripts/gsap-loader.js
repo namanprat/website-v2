@@ -53,8 +53,8 @@ function animatePage(){
     .to("main .parent .child", {
         y: 0,
         delay: -1.2,
-        duration: 3,
-        stagger: 0.135,
+        duration: 3.2,
+        stagger: 0.145,
         ease: "expo.inOut"
     })
 }

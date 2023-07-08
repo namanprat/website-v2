@@ -63,9 +63,10 @@ main {
 /* MARQUEE */
 
 .heroMarquee {
+  /* height: var(--h1-project); */
   padding: 0 !important;
-  overflow-x: hidden !important;
-  overflow-x: visible !important;
+  overflow: hidden !important;
+  /* overflow-x: visible !important; */
   position: relative;
   display: flex;
   width: 200vw;
@@ -75,10 +76,9 @@ main {
 
 .heroMarquee-content {
   align-self: center;
-  height: var(--h1-project);
+  height: 100%;
   padding: 0 !important;
-  overflow-x: hidden !important;
-  overflow-x: visible !important;
+  overflow: hidden !important;
   display: flex;
   flex-shrink: 0;
   min-width: 100%;
@@ -90,8 +90,8 @@ main {
 .heroMarquee-content h1 {
   font-size: var(--h1);
   line-height: var(--h1);
-  font-family: var(--title);
-  text-transform: capitalize;
+  font-family: var(--text);
+  text-transform: uppercase;
 }
 /* WORK */
 #page-2 {
