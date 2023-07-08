@@ -763,21 +763,23 @@ input[type="checkbox"] {
 .stripe-content li {
   color: var(--white);
   transition: 0.2s ease-in-out;
-}
+}*/
 
-.marquee {
+.heroMarquee {
   padding: 0 !important;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
   position: relative;
   display: flex;
-  width: 200vw;
+  width: 170vw;
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
 }
 
-.marquee-content {
+.heroMarquee-content {
+  align-self: center;
+  height: 100%;
   padding: 0 !important;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
   display: flex;
   flex-shrink: 0;
   min-width: 100%;
@@ -786,12 +788,10 @@ input[type="checkbox"] {
   grid-row-gap: 3rem;
 }
 
-.marquee-content img {
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  max-width: 250px;
-  height: 80%;
-} */
+.heroMarquee-content h1 {
+  font-family: var(--text);
+  text-transform: uppercase;
+}
 
 #footer {
   background-color: transparent;

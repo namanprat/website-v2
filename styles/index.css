@@ -63,10 +63,8 @@ main {
 /* MARQUEE */
 
 .heroMarquee {
-  /* height: var(--h1-project); */
   padding: 0 !important;
   overflow: hidden !important;
-  /* overflow-x: visible !important; */
   position: relative;
   display: flex;
   width: 200vw;
@@ -93,6 +91,7 @@ main {
   font-family: var(--text);
   text-transform: uppercase;
 }
+
 /* WORK */
 #page-2 {
   margin: 0 auto;
