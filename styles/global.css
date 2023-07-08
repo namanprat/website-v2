@@ -855,11 +855,10 @@ input[type="checkbox"] {
   #overlay {
     width: 100%;
   }
-}
 
-@media (max-width: 1000px) {
   :root {
-    --h1: clamp(7.99rem, 2.72vw + 7.31rem, 9.49rem);
+    /* --h1: clamp(7.99rem, 2.72vw + 7.31rem, 9.49rem); */
+    --h1: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
   }
 
   #nav-cluster {
