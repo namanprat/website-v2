@@ -63,11 +63,18 @@
   --font-u: clamp(180.61rem, 61.57vw + 165.22rem, 214.47rem);*/
 
   /* COLOURS */
-  --primary: #fff0d7;
+  /* --primary: #fff0d7;
   --bg: #272320;
+  --cusror: #f6f6f6;
+  --nav: #fff0d7; */
+
+  --primary: #272320;
+  --bg: #fff7e9;
+  --cusror: #272320;
+  --nav: #272320;
+
   --accent: #df4f36;
   --nav: #fff0d7;
-  --cusror: #f6f6f6;
   --white: #f6f6f6;
   --black: #272320;
   --placeholder: #fff0d75a;
@@ -452,11 +459,23 @@ body {
 
 /* HEADER */
 nav {
+  background-color: transparent;
   mix-blend-mode: difference;
   padding-top: 2rem;
   z-index: 80;
   position: fixed;
   width: 100%;
+}
+
+#nav {
+  text-decoration: none;
+  color: var(--nav);
+}
+
+nav #time {
+  background-color: transparent;
+  mix-blend-mode: difference;
+  color: var(--nav);
 }
 
 /* NAVBAR BACKGROUND */
@@ -468,7 +487,7 @@ nav {
   mix-blend-mode: difference;
   transition: 0.2s ease-in-out;
   white-space: nowrap;
-  color: var(--primary);
+  color: var(--nav);
   text-transform: none;
   font-family: var(--title);
   font-size: clamp(1.85rem, 0.63vw + 1.69rem, 2.19rem);
@@ -498,16 +517,11 @@ nav button {
   z-index: 100;
   background: transparent;
   border: none;
-  color: var(--primary);
+  color: var(--nav);
 }
 
 input[type="checkbox"] {
   display: none;
-}
-
-#nav {
-  text-decoration: none;
-  color: var(--primary);
 }
 
 #copyright {
@@ -778,11 +792,17 @@ input[type="checkbox"] {
 } */
 
 #footer {
+  background-color: transparent;
+  mix-blend-mode: difference;
   opacity: 70%;
   z-index: 3;
   width: 100%;
   position: fixed;
   bottom: 3rem;
+}
+#footer h4 {
+  mix-blend-mode: difference;
+  color: var(--nav);
 }
 
 /* SCROLL */

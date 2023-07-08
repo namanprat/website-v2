@@ -4,23 +4,12 @@ function introAnimation(){
   .from("#navbar, .coverimg , #about , .title, #hero h4 , tag",2,
     {
       y: "100",
+      delay: 1,
       opacity: 0,
       ease: "expo.inOut",
       stagger: 0.1,
     }
   )
-}
-
-function loaderAnimation() {
-  var tl = gsap.timeline();
-tl
-.to("#loader", {
-  height: 0,
-  duration: 1.75,
-  stagger: 0,
-  ease: "circ.inOut"
-  }
-)
 }
 
 function imgShrink(){
@@ -43,8 +32,8 @@ function textReveal(){
     
       $("[animate]").each(function (index) {
         let tl = gsap.timeline();
-          tl.from(".word", {
-            delay: 1,
+          tl.from(".char", {
+            delay: 2.5,
             opacity: 0,
             yPercent: 100,
             duration: 1.35,
@@ -72,7 +61,6 @@ function titleFade(){
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.config({ nullTargetWarn: false});
-loaderAnimation();
 introAnimation();
 imgShrink();
 textReveal();
