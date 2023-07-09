@@ -92,6 +92,24 @@ main {
   text-transform: uppercase;
 }
 
+#section-header {
+  margin-top: 15px;
+width: 50%;
+}
+
+section {
+gap: 25px;
+padding: calc(var(--ratio-2) * var(--uni)) 0;
+margin: 0 auto;
+max-width: 80rem;
+flex-direction: row;
+width: 100%;
+}
+section h3 {
+width: 100%;
+padding-left: 2rem;
+}
+
 /* WORK */
 #page-2 {
   margin: 0 auto;
@@ -205,6 +223,21 @@ capsule {
   transform: translateY(0%);
 }
 
+@media (max-width: 1200px) {
+  section-header {
+    width: 100%;
+  }
+}
+
+@media (max-width: 910px) {
+section {
+    flex-direction: column;
+  }
+
+  section h3 {
+    padding-left: 0;
+  }
+}
 @media (max-width: 800px) {
 
   body,
