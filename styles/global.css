@@ -500,7 +500,7 @@ nav #time {
 }
 
 #nav-cluster {
-  width: clamp(13rem, 4.5vw + 14rem, 17rem);
+  width: clamp(16rem, 5.7vw + 15rem, 19rem);
   overflow: hidden;
 }
 
