@@ -247,7 +247,7 @@
 /* BACKGROUND */
 
 .bg {
-  opacity: 2%;
+  opacity: 3%;
   z-index: 10;
   pointer-events: none;
   content: "";
