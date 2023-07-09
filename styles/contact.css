@@ -1,8 +1,7 @@
 body,
 main {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-  }
+  max-width: 100% !important;
+}
 
 #page-1 {
   height: 200vh;
@@ -27,6 +26,7 @@ form {
 entry {
   border-bottom: 2px solid var(--placeholder);
 }
+
 input,
 textarea {
   border-bottom: 2px solid var(--placeholder);
@@ -48,6 +48,7 @@ h4 span {
 
 input:focus,
 textarea:focus {
+  color: var(--primary);
   outline: none !important;
   width: 100%;
   text-transform: none;

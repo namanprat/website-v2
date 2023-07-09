@@ -219,6 +219,7 @@ section .box-container {
 .cubes:active:hover {
   cursor: -webkit-grabbing; cursor: grabbing;
 }
+
 showcase {
   flex-direction: row;
 }

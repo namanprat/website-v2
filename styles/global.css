@@ -66,18 +66,19 @@
   /* --primary: #fff0d7;
   --bg: #272320;
   --cusror: #f6f6f6;
-  --nav: #fff0d7; */
+  --nav: #fff0d7;
+  --placeholder: #fff0d75a;*/
 
   --primary: #272320;
   --bg: #fff7e9;
   --cusror: #272320;
   --nav: #272320;
+  --placeholder: #2723205a;
 
   --accent: #df4f36;
   --nav: #fff0d7;
   --white: #f6f6f6;
   --black: #272320;
-  --placeholder: #fff0d75a;
 
   /* RATIOS */
   --ratio: 1.414;
