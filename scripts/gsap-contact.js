@@ -1,37 +1,26 @@
 function valueSetters(){
     gsap.set(".heroMarquee h1" , {y: "100%"});
+    gsap.set("#social-cluster h4" , {y: "-100%"});
 }
-
-function heroText(){
-    $("[hero]").each(function (index) {
-        let tl = gsap.timeline({paused:true});
-        tl.from(".char", {
-          opacity: 0,
-          yPercent: 100,
-          duration: 1.35,
-          ease: "expo.inOut",
-          stagger: { amount: 0.3 }
-        })
-    })
-   }
 
 function animatePage(){
     var tl = gsap.timeline();
     tl
     .to(".heroMarquee h1", {
         y: 0,
-        delay: 1.35,
+        delay: 1,
         duration: 3,
         stagger: 0.05,
         ease: "expo.inOut"
-    })
-    .from("#social-cluster a h4",2,
+    }, "<")
+    .from("#social-cluster h4",
       {
-        y: "100",
+        y: 0,
+        duration: 2,
         opacity: 0,
         ease: "expo.inOut",
         stagger: 0.1,
-      })
+      }, "<")
 }
 
 function textReveal(){
@@ -57,7 +46,6 @@ function textReveal(){
  
  gsap.registerPlugin(ScrollTrigger);
  gsap.config({ nullTargetWarn: false});
-revealToplug();
 valueSetters();
 animatePage();
 textReveal();
