@@ -91,4 +91,3 @@ buttonAnimation ();
 navScroll();
 navFade();
 valueSet();
-// overlayAnimation();
