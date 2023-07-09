@@ -86,7 +86,7 @@
         </div>
 
         <div id="section-2" class="col space-even gap-25 w-3">
-          <div class="row space-even">
+          <div id="social-cluster" class="row space-even">
             <div class="interactable">
               <a href="https://www.linkedin.com/in/namanprat/" target="_blank"><h4>linkedin</h4></a>
             </div>
@@ -126,10 +126,15 @@
 
 <script src="./scripts/overlay-menu.js"></script>
 <script src="./scripts/gsap-loader.js"></script>
-<script src="./scripts/gsap-index.js"></script>
+<script src="./scripts/gsap-contact.js"></script>
 <script src="./scripts/marquee.js"></script>
 <script src="./scripts/cursor.js"></script>
 <script src="./scripts/lenis.js"></script>
 <script src="./scripts/time.js"></script>
+<script>
+  window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+</script>
 </body>
 </html>
