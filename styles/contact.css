@@ -1,6 +1,7 @@
 body,
 main {
   max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
 #page-1 {
@@ -58,33 +59,34 @@ textarea:focus {
 }
 /* MARQUEE */
 
-.stripe {
-  margin-top: 10vh;
-  height: var(--h1-project);
+.heroMarquee {
   padding: 0 !important;
   overflow: hidden !important;
   position: relative;
   display: flex;
-  width: 100vw;
-  gap: 10rem;
-  border-top: 3px solid var(--primary);
-  border-bottom: 3px solid var(--primary);
+  width: 200vw;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
 }
 
-.stripe-content {
+.heroMarquee-content {
+  align-self: center;
+  height: 100%;
   padding: 0 !important;
   overflow: hidden !important;
   display: flex;
   flex-shrink: 0;
   min-width: 100%;
   justify-content: space-around;
-  grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
 }
 
-.stripe-content h1 {
-  text-transform: uppercase;
+.heroMarquee-content h1 {
   font-size: var(--h1);
+  line-height: var(--h1);
+  font-family: var(--text);
+  text-transform: uppercase;
 }
 
 @media (max-width: 768px) {

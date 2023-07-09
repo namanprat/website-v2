@@ -1,4 +1,4 @@
-const marqueeContent = document.querySelector('.marquee-content');
+const marqueeContent = document.querySelector('.stripe-content');
 
 let marquee = marqueeContent.cloneNode(true);
 marqueeContent.parentElement.append(marquee);
@@ -11,7 +11,7 @@ function loop() {
   let gapPercent = (marqueeGap / marqueeWidth) * 100;
   let dist = gapPercent + 100;
 
-  marqueeTween = gsap.fromTo('.marquee-content',
+  marqueeTween = gsap.fromTo('.stripe-content',
       { xPercent: 0 },
       {
         xPercent: -dist,

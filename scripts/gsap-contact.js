@@ -1,5 +1,5 @@
 function valueSetters(){
-    gsap.set(".heroMarquee h1" , {y: "100%"});
+  gsap.set(".heroMarquee h1" , {y: "100%"});
     gsap.set("#social-cluster h4" , {y: "-100%"});
 }
 
@@ -7,12 +7,12 @@ function animatePage(){
     var tl = gsap.timeline();
     tl
     .to(".heroMarquee h1", {
-        y: 0,
-        // delay: 1,
-        duration: 3,
-        stagger: 0.05,
-        ease: "expo.inOut"
-    }, "<")
+      y: 0,
+      delay: 0.35,
+      duration: 3,
+      stagger: 0.05,
+      ease: "expo.inOut"
+  }, "<")
     .from("#social-cluster h4",
       {
         y: 0,
