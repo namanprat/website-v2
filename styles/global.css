@@ -247,7 +247,7 @@
 /* BACKGROUND */
 
 .bg {
-  opacity: 3%;
+  opacity: 5.5%;
   z-index: 10;
   pointer-events: none;
   content: "";
@@ -257,7 +257,7 @@
   left: -50%;
   top: -50%;
   overflow: hidden;
-  background: url(/public/noise.gif);
+  background: url(/public/noise.webp);
   animation: grain 2s steps(6) infinite;
 }
 
