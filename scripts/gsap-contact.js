@@ -8,7 +8,7 @@ function animatePage(){
     tl
     .to(".heroMarquee h1", {
         y: 0,
-        delay: 1,
+        // delay: 1,
         duration: 3,
         stagger: 0.05,
         ease: "expo.inOut"
