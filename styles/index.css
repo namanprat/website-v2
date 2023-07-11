@@ -177,12 +177,6 @@ padding-left: 2rem;
   z-index: 2;
   flex-direction: column;
   width: 85%;
-  opacity: 1;
-}
-
-#project-row *{
-transition:0.5s;
-filter: grayscale(1);
 }
 
 #project-cta {
@@ -193,10 +187,6 @@ filter: grayscale(1);
 .image-capusle {
   display: inline-block;
   position: relative;
-}
-
-#project-row > *:hover{
-  filter: grayscale(0);
 }
 
 /* CAPSULE */
@@ -271,7 +261,6 @@ section {
   }
 
   #project-row>a {
-    filter: grayscale(0);
     margin: 3vh 0;
   }
 
