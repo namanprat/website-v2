@@ -267,6 +267,7 @@ section {
 
   #project-row>a {
     margin: 3vh 0;
+    filter: grayscale(0);
   }
 
   #project-row .self-start,
