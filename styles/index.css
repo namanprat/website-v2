@@ -182,6 +182,7 @@ padding-left: 2rem;
 
 #project-row *{
 transition:0.5s;
+filter: grayscale(1);
 }
 
 #project-cta {
@@ -192,10 +193,6 @@ transition:0.5s;
 .image-capusle {
   display: inline-block;
   position: relative;
-}
-
-#project-row:hover > *{
-  filter: grayscale(1);
 }
 
 #project-row > *:hover{
@@ -274,6 +271,7 @@ section {
   }
 
   #project-row>a {
+    filter: grayscale(0);
     margin: 3vh 0;
   }
 
