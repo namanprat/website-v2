@@ -153,7 +153,7 @@ function textReveal(){
 
           ScrollTrigger.create ({
             trigger: $(this),
-            delay: -1,
+            // delay: -1,
             start: "top 80%",
             onEnter: () => tl.play()
           });
