@@ -138,8 +138,13 @@ padding-left: 2rem;
 }
 
 #project-row>a {
+  filter: grayscale(1);
   margin-bottom: 12vh;
 }
+
+#project-row>a:hover {
+  filter: grayscale(0);
+  }
 
 .image-capusle>img {
   /* max-width: 450px;
