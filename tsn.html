@@ -5,214 +5,169 @@
     <meta name="author" content="Naman Pratulya">
     <meta name="description" content="Naman Pratulya's Portfolio">
     <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv='expires' content='0'>
-    <meta http-equiv='pragma' content='no-cache'>
-    
-    <title>The Sage Network</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Sage</title>
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/project.css" />
-
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/project.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script> -->
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
   </head>
   <body>
-    <div id="loader">
-      <h2 class="reveal">The Sage Network</h2>
+    <body>
+      <div class="bg"></div>
+      <div id="cursor"></div>
+      <div id="loader">
+        <h2 class="reveal">Sage</h2>
       </div>
       <main>
-        <nav id="navbar" class="row space-bw center w-3">
-          <li><a id="nav-home" class="nav" href="./index.html">Naman Pratulya</a></li>
-         <div id="nav-cluster" class="row space-bw">
-          <li><a id="nav-playground" class="nav" href="./playground.html">PROJECTS</a></li>
-          <li><a id="nav-resume" class="nav" href="./public/CV.pdf">RESUME</a></li>
-          <li><a id="nav-contact" class="nav menu-open">CONTACT</a></li>
+        <nav class="row space-bw center w-3">
+          <h4 id="time" class="center"></h4>
+          <a id="nav-home" class="interactable nav" href="./index.html">Naman Pratulya</a>
+          <div id="nav-cluster" class="row space-bw center self-center">
+            <a id="nav" class="interactable overflow-hidden" href="./index.html#project-row">WORK</a>
+            <a id="nav" class="interactable overflow-hidden" href="./public/CV.pdf">RESUME</a>
+            <a id="nav" class="interactable overflow-hidden" href="./contact.html">CONTACT</a>
+            <button id="menu" class="interactable menu-open">
+              <div id="hamburger">
+                <span></span>
+              </div>
+            </button>
+          </div>
         </nav>
-
-        <div id="overlay" class="overlay col center space-even w-3">
-          <div id="top-section" class="row center space-bw">
-          <label class="theme-switch" for="checkbox"><input type="checkbox" id="checkbox"/>TOOGLE THEME</label>
-          <div id="close-button"><a class="menu-close">CLOSE</a></div>
-          </div>
-          <h4 class="nav">TAKE THE NEXT STEP AND SHOOT ME AN EMAIL</h4>
-          <div class="stripe w-3">
-            <div class="stripe-content">
-              <a href="mailto:a.namanprat@gmail.com"><h1>Let's do this</h1></a>
-              <div class="star"><svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M99.9994 0L112.891 68.878L170.71 29.2889L131.122 87.1082L200 99.9994L131.122 112.891L170.71 170.71L112.891 131.122L99.9994 200L87.1082 131.122L29.2889 170.71L68.878 112.891L0 99.9994L68.878 87.1082L29.2889 29.2889L87.1082 68.878L99.9994 0Z"/>
-                </svg>
-                </div>
-              <a href="mailto:a.namanprat@gmail.com"><h1>Let's do this</h1></a>
-              <div class="star"><svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M99.9994 0L112.891 68.878L170.71 29.2889L131.122 87.1082L200 99.9994L131.122 112.891L170.71 170.71L112.891 131.122L99.9994 200L87.1082 131.122L29.2889 170.71L68.878 112.891L0 99.9994L68.878 87.1082L29.2889 29.2889L87.1082 68.878L99.9994 0Z"/>
-                </svg>
-                </div>
-              <a href="mailto:a.namanprat@gmail.com"><h1>Let's do this</h1></a>
-              <div class="star"><svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M99.9994 0L112.891 68.878L170.71 29.2889L131.122 87.1082L200 99.9994L131.122 112.891L170.71 170.71L112.891 131.122L99.9994 200L87.1082 131.122L29.2889 170.71L68.878 112.891L0 99.9994L68.878 87.1082L29.2889 29.2889L87.1082 68.878L99.9994 0Z"/>
-                </svg>
-                </div>
-            </div>
-          </div>
-          <div id="socials" class="row space-even center">
-            <a href="https://www.linkedin.com/in/namanprat/"><h4>LinkedIn</h4></a>
-            <a href="tel: +919742813515"><h4>TELEPHONE</h4></a>
-            <a href="https://instagram.com/namanprat_"><h4>Instagram</h4></a>
-          </div>
-          <p class="nav">(2023), ALL RIGHTS RESERVED</p>
-        </div>
-
-    <div id="hero" class="col center space-bw w-3">
-      <div id="briv" class="flex start space-bw">
-        <h4 id="info">Mobile app/ UI UX Case study</h4>
-        <div id="crumbs"class="row center space-bw">
-          <crumb class="col center">
-            <h4>My role</h4>
-            <h4>UI and UX</h4>
-          </crumb>
-          <crumb class="col center">
-            <h4>Duration</h4>
-            <h4>20 Hours</h4>
-          </crumb>
-          <crumb class="col center">
-            <h4>The team</h4>
-            <h4>Me</h4>
-            </crumb>
-        </div>
-      </div>
-          <h1 class="title center">The Sage Network</h1>
-    </div>
-    <div class="coverimg flex">
-      <img class="bg-section" src="images/tsn/projectcover.webp" />
-    </div>
-
-
-      <div class="w-3">
-
-        <section class="flex center space-bw">
-            <h3>The Sage</h3>
-            <p>In the context of branding, a "brand archetype" is a set of 
-            characteristics and traits associated with a particular brand that helps 
-            to differentiate it from its competitors and give it a unique identity 
-            in the marketplace. These characteristics are often based on the psychological
-             archetypes described by Carl Jung, and they can help to create a strong 
-             emotional connection with consumers by appealing to their innate psychological 
-             needs and desires. Some common brand archetypes include the hero, the 
-             magician, the lover, and the caregiver. By defining their brand archetype, 
-             businesses can create a clear and consistent brand identity that resonates 
-             with their target audience.
-            <br>The Sage is the expert and counsellor, possessing wisdom who devote 
-            themselves to the truth. They represent enlightenment and knowledge, research 
-            and understanding. Because they pursue the truth, no matter how crushing that 
-            truth may be, Sages tell you what you need to hear and not what you want to 
-            hear. Sages are dedicated to finding answers. The knowledge gained by Sages 
-            allows them to process events logically and brings unparalleled wisdom to 
-            decision-making.
-            <br>Sages need to be more prominent in today’s society, where modern media 
-            plays to the reader’s emotions. They can provide guidance and insight that 
-            can help people make better decisions and navigate complex issues. News 
-            outlets should be thoughtful and trusted sources with unbiased opinions 
-            whose sole objective is to provide clear answers. They should ensure that 
-            people are fully aware of their surroundings. News outlets should not be 
-            limited to a single media. Adopting an omnichannel strategy ensures the 
-            youth and elders are informed using their preferred medium.</p>
-        </section>
-        
-        <section class="flex center space-bw">
-      <h3>The rise of modern news outlets</h3>
-      <p>The rise of digital media has led to an increase in the use of clickbait headlines and the spread of false or misleading news stories that prioritize attracting clicks and ad revenue over factual reporting. This has distorted the public's understanding of current events and eroded trust in journalism. Many websites exist solely to propagate flimsy and baseless stories, prioritizing clicks and impressions over factual reporting.
-        <br>Reporters are facing increasing pressure to produce sensationalized content that panders to readers' short attention spans to attract clicks and views. This type of content, which is often exaggerated or sensationalized, performs better than more accurate and thorough reporting. Partisan contributors often share completely fabricated stories from the fringe and alternative news websites, further fueling confirmation bias and political polarization. In some ways, social media is contributing to a decline in the quality of public discourse and political polarization.</p>
-    </section>
-
-    <section class="flex center space-bw">
-      <h3>The rise of partisan media</h3>
-      <p>The rise of online partisan media has had several negative consequences. One of the main consequences is the spread of false or misleading information, which can distort the public's understanding of current events. This can lead to political polarization, as people are exposed only to information that confirms their existing beliefs. Additionally, the pressure to produce sensationalized content that attracts clicks and views can lead to a decline in the quality of journalism and a lack of trust in the media. The use of algorithms to determine which posts users see can also create "filter bubbles" where people are only exposed to certain types of information, further contributing to political polarization.
-       <br>Facebook's news feed algorithm has the power to manipulate which posts users see by determining their visibility and order. The algorithm tries to choose posts that users are likely to engage with to keep them on the platform. However, this can create a "filter bubble" where users are only exposed to certain types of content and are not exposed to differing viewpoints. This can have dangerous consequences, as it can lead to a distorted understanding of events and fuel confirmation bias.</p>
-    </section>
-
-    <section class="col center">
-      <h3>Using the How Might I tool</h3>
-       <img class="img" alt="" loading="lazy" src="images/tsn/HMI.webp" />
-     </section>
-
-     <section class="flex center space-bw">
-      <h3>final ideation</h3>
-      <p>My final idea is a self-funded news platform that serves the youth by aggregating news from various sources. The platform is community-driven with members voting on what they want topic is of interest to them to know more about see using polls. In a world where news is published to create a sensation, this platform aims to raise awareness by providing balanced, actionable insights that are relevant to the intended demographic. The AI-powered algorithm examines all news, collates it, and categorizes it to ensure that both sides of the story are presented, allowing users to make informed decisions. This platform offers the news behind the news, providing perspective and knowledge.
-       <br>One way to make reading more engaging and easier to comprehend is by using a non-linear approach, which allows for greater flexibility in navigating complex information. This method of reading can be particularly useful when skimming through articles, as it allows the reader to focus on the most important points rather than being tied to a linear progression. This can be especially useful when consuming news or social media, where the abundance of information can be overwhelming. By using a non-linear approach, readers can break up the monotony and more effectively process the information being presented.</p>
-    </section>
-
-    <imgsection class="col center w">
-      <h3>User persona</h3>
-      <img class="img" alt="" loading="lazy" src="images/tsn/user-persona.webp" />
-    </imgsection>
-
-    <imgsection class="col center w">
-      <h3>Empathy mapping</h3>
-      <img class="img" alt="" loading="lazy" src="images/tsn/Empathy Map.webp" />
-    </imgsection>
-
-    <imgsection class="col center w">
-      <h3>Systems map</h3>
-      <img class="img" alt="" loading="lazy" src="images/tsn/System Map.webp" />
-    </imgsection>
-
-    <!-- <imgsection class="col center w">
-      <h3>Visual Representation of a Sage</h3>
-      <img class="img" alt="" loading="lazy" src="images/tsn/Visual Representation of a Sage.webp" />
-    </imgsection> -->
-
-    <imgsection class="col center w">
-      <h3>Information architecture</h3>
-      <img class="img" alt="" loading="lazy" src="images/tsn/Information Architecture.webp" />
-    </imgsection>
-
-    <showcase class="flex start space-bw">
-      <div class="showcase-header center flex">
-        <h3>Final screens</h3>
-        </div>
-            <div class="col center space-bw prev-screens">
-              <div class="cluster">
-                <img class="prev" alt="" loading="lazy" src="images/tsn/left-img.webp" />
-              <img class="prev" alt="" loading="lazy" src="images/tsn/hamburger.webp" />
+        <div id="overlay-bg" class="col menu-open">
+          <div id="overlay" class="col overlay w-3 self-end">
+            <div id="overlay-text" class="col self-center start overflow-hidden">
+              <div class="menu-item interactable">
+                <a href="./index.html">
+                  <span>I</span>Home </a>
               </div>
-              <div class="cluster">
-                <img class="prev" alt="" loading="lazy" src="images/tsn/news-overview.webp" />
-              <img class="prev" alt="" loading="lazy" src="images/tsn/news-sentimeter.webp" />
+              <div class="menu-item interactable">
+                <a href="./index.html#project-row">
+                  <span>II</span>Work </a>
               </div>
-              <div class="cluster">
-                <img class="prev" alt="" loading="lazy" src="images/tsn/news-perspective.webp" />
-              <img class="prev" alt="" loading="lazy" src="images/tsn/profile-page.webp" />
+              <div class="menu-item interactable">
+                <a href="./public/CV.pdf">
+                  <span>III</span>Resume </a>
               </div>
-              <div class="cluster">
-                <img class="prev" alt="" loading="lazy" src="images/tsn/search.webp" />
-              <img class="prev" alt="" loading="lazy" src="images/tsn/topics.webp" />
-              </div>
-              <div class="cluster">
-                <img class="prev" alt="" loading="lazy" src="images/tsn/statistics.webp" />
+              <div class="menu-item interactable">
+                <a href="./contact.html">
+                  <span>IV</span>Contact </a>
               </div>
             </div>
-          </showcase>
+            <div id="overlay-bottom" class="flex space-bw end w-3">
+              <h4>(2023), ALL RIGHTS RESERVED</h4>
+              <div id="socials" class="flex space-bw start">
+                <div class="social interactable">
+                  <a href="https://www.linkedin.com/in/namanprat/" target="_blank">linkedIn</a>
+                </div>
+                <div class="social interactable">
+                  <a href="https://instagram.com/namanprat_" target="_blank">instagram</a>
+                </div>
+                <div class="social interactable">
+                  <a href="mailto:a.namanprat@gmail.com">email</a>
+                </div>
+              </div>
+            </div>
           </div>
-      </div>
-    </main>
-   
-  <script src="./scripts/gsap-project.js"></script>
-  <script src="./scripts/overlay-menu.js"></script>
-  <script src="./scripts/color-mode.js"></script>
-  <script src="./scripts/marquee.js"></script>
-  <script src="./scripts/lenis.js"></script>
-</body>
-<script>
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
-</script>
-</html>
-
-
+        </div>
+        <div id="hero" class="col center space-bw w-3">
+          <h1 class="title center">Sage</h1>
+          <hero-sec class="flex space-bw">
+            <div class="col">
+              <h4>( overview )</h4>
+              <h3 text-split animate>A decentralized news aggregation platform that sources news from various sources. It aims to raise awareness by providing unbiased insights for users to make an informed decision.</h3>
+            </div>
+            <div id="crumbs" class="row start space-bw">
+              <crumb>
+                <h4>( Category )</h4>
+                <h4>UI/UX CASE STUDY</h4>
+              </crumb>
+              <crumb>
+                <h4>( software )</h4>
+                <h4>figma</h4>
+                <h4>Miro</h4>
+              </crumb>
+            </div>
+          </hero-sec>
+        </div>
+        <div class="coverimg flex">
+          <img class="bg-section" src="images/tsn/projectcover.webp">
+        </div>
+        <div class="w-3">
+          <section class="flex space-bw">
+            <h4 id="section-header" class="nowrap">( The rise of modern news outlets )</h4>
+            <p>The rise of digital media has led to an increase in the use of clickbait headlines and the spread of false or misleading news stories that prioritize attracting clicks and ad revenue over factual reporting. This has distorted the public's understanding of current events and eroded trust in journalism. Many websites exist solely to propagate flimsy and baseless stories, prioritizing clicks and impressions over factual reporting. <br>Reporters are facing increasing pressure to produce sensationalized content that panders to readers' short attention spans to attract clicks and views. This type of content, which is often exaggerated or sensationalized, performs better than more accurate and thorough reporting. Partisan contributors often share completely fabricated stories from the fringe and alternative news websites, further fueling confirmation bias and political polarization. In some ways, social media is contributing to a decline in the quality of public discourse and political polarization. </p>
+          </section>
+          <section class="flex space-bw">
+            <h4 id="section-header" class="nowrap">( The rise of partisan media )</h4>
+            <p>The rise of online partisan media has had several negative consequences. One of the main consequences is the spread of false or misleading information, which can distort the public's understanding of current events. This can lead to political polarization, as people are exposed only to information that confirms their existing beliefs. Additionally, the pressure to produce sensationalized content that attracts clicks and views can lead to a decline in the quality of journalism and a lack of trust in the media. The use of algorithms to determine which posts users see can also create "filter bubbles" where people are only exposed to certain types of information, further contributing to political polarization. <br>Facebook's news feed algorithm has the power to manipulate which posts users see by determining their visibility and order. The algorithm tries to choose posts that users are likely to engage with to keep them on the platform. </p>
+          </section>
+          <imgsection class="col center">
+            <h4>( Using the How Might I tool )</h4>
+            <img class="center" alt="" loading="lazy" src="images/tsn/HMI.webp">
+          </imgsection>
+          <section class="flex space-bw">
+            <h4 id="section-header" class="nowrap">( the moneymaker)</h4>
+            <p>My final idea is a self-funded news platform that serves the youth by aggregating news from various sources. The platform is community-driven with members voting on what they want topic is of interest to them to know more about using polls. In a world where news is published to create a sensation, this platform aims to raise awareness by providing balanced, actionable insights that are relevant to the intended demographic. The AI-powered algorithm examines all news, collates it, and categorizes it to ensure that both sides of the story are presented, allowing users to make informed decisions. This platform offers the news behind the news, providing perspective and knowledge.
+              One way to make reading more engaging and easier to comprehend is by using a non-linear approach, which allows for greater flexibility in navigating complex information. This method of reading can be particularly useful when skimming through articles, as it allows the reader to focus on the most important points rather than being tied to a linear progression. This can be especially useful when consuming news or social media, where the abundance of information can be overwhelming. By using a non-linear approach, readers can break up the monotony and more effectively process the information being presented.</p>
+          </section>
+          <imgsection class="col center w">
+            <!-- <h4 id="section-header" class="nowrap self-start">( Empathy mapping )</h4> -->
+            <img class="center" alt="" loading="lazy" src="images/tsn/Empathy Map.webp">
+          </imgsection>
+          <imgsection class="col center w">
+            <!-- <h4 id="section-header" class="nowrap">( Systems map )</h4> -->
+            <img class="center" alt="" loading="lazy" src="images/tsn/System Map.webp">
+          </imgsection>
+          <imgsection class="col center w">
+            <!-- <h4 id="section-header" class="nowrap">( Information architecture )</h4> -->
+            <img class="center" alt="" loading="lazy" src="images/tsn/Information Architecture.webp">
+          </imgsection>
+          <imgsection class="col center w">
+          <!-- <h4 id="section-header" class="nowrap">( journey map )</h4> -->
+          <img class="width-100" alt="" loading="lazy" src="images/tsn/journey-map.webp">
+        </imgsection>
+          <div id="page-1" class="col space-bw center">
+            <div id="screens-showcase" class="flex space-even work-padding">
+              <img class="self-start" alt="" loading="lazy" src="images/tsn/left-img.webp">
+              <img class="self-end" alt="" loading="lazy" src="images/tsn/hamburger.webp">
+              <img class="self-start" alt="" loading="lazy" src="images/tsn/news-overview.webp">
+              <img class="self-end" alt="" loading="lazy" src="images/tsn/news-sentimeter.webp">
+              <img class="self-start" alt="" loading="lazy" src="images/tsn/news-perspective.webp">
+              <img class="self-end" alt="" loading="lazy" src="images/tsn/profile-page.webp">
+              <img class="self-start" alt="" loading="lazy" src="images/tsn/search.webp">
+              <img class="self-end" alt="" loading="lazy" src="images/tsn/topics.webp">
+              <img class="self-start" alt="" loading="lazy" src="images/tsn/statistics.webp">
+            </div>
+          </div>
+        </div>
+        <div id="footer" class="row w-3 space-bw">
+          <h4>sage</h4>
+          <h4>© 2022</h4>
+        </div>
+      </main>
+      <style>
+        :root {
+          --primary: #121212;
+          --bg: #fbf9f0;
+          --nav: #fbf9f0
+        }
+      </style>
+      <script src="./scripts/gsap-project.js"></script>
+      <script src="./scripts/overlay-menu.js"></script>
+      <script src="./scripts/gsap-loader.js"></script>
+      <script src="./scripts/cursor.js"></script>
+    </body>
+    <script>
+      window.onbeforeunload = function() {
+        window.scrollTo(0, 0)
+      }
+    </script>
+  </html>
