@@ -2,24 +2,29 @@ function valueSetters() {
     gsap.set(".heroMarquee h1", {
         y: "100%"
     });
+     gsap.set("#social-cluster > *", {
+        y: "100%",
+        opacity: 0
+    })
 }
 
 function animatePage() {
     var tl = gsap.timeline();
     tl.to(".heroMarquee h1", {
         y: 0,
-        delay: 0.7,
+        delay: 0.35,
         duration: 3,
         stagger: 0.05,
         ease: "expo.inOut"
-    },)
-    .from("#social-cluster h4", {
+    }, "<")
+    .to("#social-cluster > *", {
         y: 0,
-        duration: 1.5,
-        opacity: 0,
+        delay: -1,
+        duration: 2,
+        opacity: 1,
         ease: "expo.inOut",
         stagger: 0.1
-    },)
+    })
 }
 
 function textReveal() {
@@ -34,7 +39,7 @@ function textReveal() {
                 delay: 1.5,
                 opacity: 0,
                 yPercent: 100,
-                duration: 1.35,
+                duration: 1.5,
                 ease: "expo.inOut",
                 stagger: {
                     amount: 0.3
