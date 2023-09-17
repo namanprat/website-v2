@@ -35,10 +35,10 @@
         <div id="overlay-bg" class="col menu-open">
             <div id="overlay" class="col overlay w-3 self-end">
                 <div id="overlay-text" class="col self-center start overflow-hidden">
-                    <div class="menu-item interactable menu-open"><a href="./index.html"><span>I</span>Home</a></div>
+                    <div class="menu-item interactable"><a href="./index.html"><span>I</span>Home</a></div>
                     <div class="menu-item interactable"><a href="./index.html#project-row"><span>II</span>Work</a></div>
                     <div class="menu-item interactable"><a href="./public/CV.pdf"><span>III</span>Resume</a></div>
-                    <div class="menu-item interactable"><a href="#"><span>IV</span>Contact</a></div>
+                    <div id="inactive" class="menu-item interactable menu-open"><a href="#"><span>IV</span>Contact</a></div>
                 </div>
                 <div id="overlay-bottom" class="flex space-bw end w-3">
                     <h4>(2023), ALL RIGHTS RESERVED</h4>
@@ -77,11 +77,11 @@
                 <desc text-split animate>I'm always available to discuss your projects and potential collaboration opportunities. Let's get in touch to see how I can add value to your projects.</desc>
                 <form class="col self-center space-even" target="_blank" action="https://formsubmit.co/06c4c788c0e0834d5b8d4fa45bed9776" method="POST"><input type="text" name="_honey" style="display:none"> <input type="hidden" name="_captcha" value="false">
                     <entry class="col">
-                        <h4>Name<span>*</span></h4><input type="text" name="name" class="form-control" placeholder="John Wick" required></entry>
+                        <h4>Name<span>*</span></h4><input type="text" name="name" class="form-control interactable" placeholder="John Wick" required></entry>
                     <entry class="col">
-                        <h4>email<span>*</span></h4><input type="email" name="email" class="form-control" placeholder="baba@yaga.com" required></entry>
+                        <h4>email<span>*</span></h4><input type="email" name="email" class="form-control interactable" placeholder="baba@yaga.com" required></entry>
                     <entry class="col">
-                        <h4>What services do you require?</h4><textarea placeholder="talk a little bit about your project" class="form-control" name="message" rows="10"></textarea></entry><button id="cta" class="self-end interactable" type="submit">Submit</button></form>
+                        <h4>What services do you require?</h4><textarea placeholder="talk a little bit about your project" class="form-control interactable" name="message" rows="10"></textarea></entry><button id="cta" class="self-end interactable" type="submit">Submit</button></form>
             </div>
         </div>
         <div id="footer" class="row w-3 space-bw">
@@ -96,7 +96,7 @@
     <script src="./scripts/cursor.js"></script>
     <script src="./scripts/time.js"></script>
     <script>
-        window.onbeforeunload=function(){window.scrollTo(0,0)}
+        window.onbeforeunload = function () {window.scrollTo(0, 0);}
     </script>
 </body>
 
