@@ -459,6 +459,23 @@
     color: var(--primary);
     border: 1px solid var(--primary);
   }
+  #cta-alt {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: var(--h4);
+    transition: 0.25s ease-in-out;
+    display: block;
+    border-radius: 2em;
+    height: 3.4rem;
+    line-height: 3.4rem;
+    width: fit-content;
+    padding: 0 2rem;
+    border: 1px solid var(--primary);
+    background-color: transparent;
+    color: var(--primary) !important;
+    text-align: center;
+    text-decoration: none;
+  }
   .copy {
     align-self: center;
     position: relative;
