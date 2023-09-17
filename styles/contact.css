@@ -4,7 +4,7 @@ main {
   overflow-x: hidden !important;
 }
 #page-1 {
-  height: 200vh;
+  height: 180vh;
   width: 100%;
 }
 #section-2 {
@@ -13,7 +13,7 @@ main {
 desc {
   font-size: var(--h2);
   font-family: var(--title);
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 form {
   width: 100%;
