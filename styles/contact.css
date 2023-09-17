@@ -4,7 +4,7 @@ main {
   overflow-x: hidden !important;
 }
 #page-1 {
-  height: 180vh;
+  height: 170vh;
   width: 100%;
 }
 #section-2 {
@@ -79,11 +79,19 @@ textarea:focus {
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
-    #page-1 {
-        height: 150vh;
-      }
     #button-cluster,
     #section-2 {
+    width: 100%;
+  }
+  #button-cluster{
+    flex-direction: column-reverse;
+    gap: 15px;
+    align-items: center;
+  }
+  #cta {
+    width: 100%;
+  }
+  #cta-alt {
     width: 100%;
   }
 }
