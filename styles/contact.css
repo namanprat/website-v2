@@ -35,7 +35,7 @@ textarea {
   resize: none;
 }
 #button-cluster {
-    width: 100%;
+    width: clamp(30rem, 15vw + 45rem, 33rem);
 }
 h4 span {
   margin-left: 10px;
@@ -79,6 +79,10 @@ textarea:focus {
   text-transform: uppercase;
 }
 @media (max-width: 768px) {
+    #page-1 {
+        height: 150vh;
+      }
+    #button-cluster,
     #section-2 {
     width: 100%;
   }
