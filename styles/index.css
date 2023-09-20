@@ -101,16 +101,16 @@ section h3 {
     overflow: hidden;
   margin-bottom: 12vh;
 }
-.image-capusle img:hover {
-    filter: grayscale(0.5) sepia(0.5) brightness(0.75);
-    transform: scale(1.25);
-}
 .image-capusle img {
     filter: grayscale(0) sepia(0) brightness(1);
     transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     transform: scale(1);
     display: inline-block;
     object-fit: cover !important;
+}
+.image-capusle img:hover {
+    filter: grayscale(0.5) sepia(0.5) brightness(0.75);
+    transform: scale(1.25);
 }
 .aspect-1-1 {
   max-width: 540px;
@@ -209,6 +209,10 @@ capsule {
     margin: 3vh 0;
     /* filter: grayscale(0); */
   }
+  .image-capusle img:hover {
+    filter: grayscale(0) sepia(0) brightness(1);
+    transform: scale(1);
+}
   #project-row .self-end,
   #project-row .self-start {
     align-self: center;
@@ -220,7 +224,7 @@ capsule {
   .aspect-3-4 {
     max-width: 500px;
   }
-  .image-capusle > img {
+  .image-capusle  img {
     aspect-ratio: 3/4 !important;
     width: 100%;
     height: auto;
