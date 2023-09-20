@@ -101,16 +101,21 @@ section h3 {
     overflow: hidden;
   margin-bottom: 12vh;
 }
-.image-capusle img {
+#project-img img {
     filter: grayscale(0) sepia(0) brightness(1);
     transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     transform: scale(1);
-    display: inline-block;
     object-fit: cover !important;
+    overflow: hidden !important;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.image-capusle img:hover {
+#project-img img:hover {
     filter: grayscale(0.5) sepia(0.5) brightness(0.75);
-    transform: scale(1.25);
+    transform: scale(1.35);
 }
 .aspect-1-1 {
   max-width: 540px;
@@ -126,7 +131,7 @@ section h3 {
 }
 .aspect-3-4 {
   max-width: 390px;
-  aspect-ratio: 3/4;
+  aspect-ratio: 3/5;
 }
 .aspect-16-10 {
   max-width: 540px;
@@ -136,10 +141,11 @@ section h3 {
   z-index: 2;
   flex-direction: column;
   width: 85%;
+  margin-bottom: 10vh;
 }
 #project-cta {
   font-family: var(--title);
-  font-size: var(--h3);
+  font-size: var(--h2);
 }
 .image-capusle {
   display: inline-block;
@@ -202,7 +208,6 @@ capsule {
   #project-row {
     align-items: center;
     flex-direction: column;
-    margin-bottom: 0;
     width: auto;
   }
   #project-row > a {

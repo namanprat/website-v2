@@ -705,7 +705,7 @@
       --h1: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
       --h1-project: clamp(8.81rem, 3vw + 8.06rem, 9.15rem);
       --h1-footer: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
-      --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
+      /* --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem); */
       --h3: clamp(1.7rem, 0.58vw + 1.56rem, 2.02rem);
     }
   }
@@ -761,7 +761,7 @@
     }
     :root {
       --h1-project: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
-      --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
+      /* --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem); */
     }
   }
   @media (max-width: 375px) {
