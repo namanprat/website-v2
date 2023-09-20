@@ -59,6 +59,9 @@ main {
   font-family: var(--text);
   text-transform: uppercase;
 }
+#union {
+  height: 90%;
+}
 #section-header {
   margin-top: 15px;
   width: 50%;
