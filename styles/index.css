@@ -60,7 +60,8 @@ main {
   text-transform: uppercase;
 }
 #union {
-  height: 90%;
+  fill: var(--primary);
+  height: 85%;
 }
 #section-header {
   margin-top: 15px;
