@@ -161,7 +161,11 @@ function textReveal() {
                 trigger: $(this),
                 start: "top 70%",
                 onEnter: () => tl.play()
-            })
+            });
+            ScrollTrigger.create({
+                trigger: $(this),
+                onLeaveBack: () => tl.pause(0)
+            });
         })
     })
 }

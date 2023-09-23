@@ -59,10 +59,10 @@ main {
   font-family: var(--text);
   text-transform: uppercase;
 }
-#union {
-  fill: var(--primary);
-  height: 85%;
-}
+  #union {
+    fill: var(--primary);
+    height: 75%;
+  }
 #section-header {
   margin-top: 15px;
   width: 50%;
