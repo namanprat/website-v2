@@ -1,12 +1,12 @@
 @font-face {
     font-family: "ivypresto";
-    src: url("/fonts/editorial.woff") format("woff");
+    src: url("/fonts/ivy100.woff") format("woff");
     font-style: normal;
     font-display: swap;
   }
   @font-face {
     font-family: "ivypresto";
-    src: url("/fonts/editorialitalic.woff") format("woff");
+    src: url("/fonts/ivy100italic.woff") format("woff");
     font-style: italic;
     font-display: swap;
   }
