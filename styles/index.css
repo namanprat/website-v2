@@ -112,7 +112,7 @@ section h3 {
     overflow: hidden;
     margin-bottom: 10vh;
     opacity: 1;
-    transition: 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.2s ease-in-out;
 }
 #project-row:has(.project:hover:hover) > .project:not(:hover){
   opacity: 0;
@@ -154,7 +154,7 @@ section h3 {
   margin-bottom: 10vh;
 }
 #project-cta {
-  display: none;
+  /* display: none; */
   font-family: var(--title);
   font-size: var(--h2);
 }
