@@ -107,14 +107,18 @@ section h3 {
   height: 100vh;
   height: 100svh;
 }
-#project-row > a {
+#project-row a {
+    display: block;
     overflow: hidden;
-  margin-bottom: 12vh;
+    margin-bottom: 10vh;
+    opacity: 1;
+    transition: 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+#project-row:has(.project:hover:hover) > .project:not(:hover){
+  opacity: 0;
+}
+
 #project-img img {
-    filter: grayscale(0) sepia(0) brightness(1);
-    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    transform: scale(1);
     object-fit: cover !important;
     overflow: hidden !important;
     width: 100%;
@@ -122,10 +126,6 @@ section h3 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-#project-img img:hover {
-    filter: grayscale(0.5) sepia(0.5) brightness(0.75);
-    transform: scale(1.35);
 }
 .aspect-1-1 {
   max-width: 540px;
@@ -154,6 +154,7 @@ section h3 {
   margin-bottom: 10vh;
 }
 #project-cta {
+  display: none;
   font-family: var(--title);
   font-size: var(--h2);
 }
