@@ -26,18 +26,18 @@
     --h1-footer: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
     --h1: clamp(9.22rem, 3.14vw + 8.44rem, 10.3rem);
     --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
-    /* --primary: #0E0E0E;
+
+    --primary: #0E0E0E;
     --bg: #ECEBE4;
     --cusror: #0E0E0E;
     --nav: #0E0E0E;
     --placeholder: #0E0E0E5a;
-    --nav: #fff0d7; */
 
-    --primary: #f8debb;
+    /* --primary: #f8debb;
     --bg: #1a1515;
     --cusror: #f8debb;
     --nav: #f8debb;
-    --placeholder: #f8debb5a;
+    --placeholder: #f8debb5a; */
 
     --accent: #df4f36;
     --white: #f6f6f6;
