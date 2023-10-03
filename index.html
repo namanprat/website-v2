@@ -93,9 +93,17 @@
           <div id="scroll-fade" class="heroMarquee">
             <div class="heroMarquee-content self-center">
               <h1>experiences</h1>
-              <h1><img id="union" src="/icons/union.svg"></h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                  </svg>
+              </div>
               <h1>experiences</h1>
-              <h1><img id="union" src="/icons/union.svg"></h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                  </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -194,7 +202,7 @@
       let isScrollingDown = true;
       
       let tween = gsap
-      .to(".marquee-part" , {
+      .to(".heroMarquee-content" , {
     xPercent: -100,
     repeat: -1,
     duration: 5,
@@ -202,7 +210,58 @@
 })
 .totalProgress(0.5);
 
-gsap.set
-    </script> -->
+gsap.set("heroMarquee", { xPercent: -50});
+
+window.addEventListener("scroll", function() {
+  if(window.pageYOffset > currentScroll) {
+    isScrollingDown = true;
+  } else {
+    isScrollingDown = false;
+  }
+
+  gsap.to(tween, {
+    timeScale: isScrollingDown ? 1 : -1,
+  });
+
+  currentScroll = window.pageYOffset;
+});
+</script> -->
+<!-- <script>
+  const rotatingText = document.querySelector("#union");
+
+const t = gsap.to(rotatingText, {
+  rotation: -360,
+  duration: 4,
+  ease: "none",
+  repeat: -1
+});
+t.iteration(1000);
+
+const speedFactor = 1;
+let tl;
+
+var rotate = gsap.timeline({
+  scrollTrigger: {
+    trigger: "html",
+    start: "top top",
+    end: "+=10000",
+    onUpdate: (self) => {
+      tl && tl.kill();
+      tl = gsap
+        .timeline()
+        .to(t, { timeScale: speedFactor * self.direction, duration: 0.1 })
+        .to(t, { timeScale: self.direction, duration: 1 }, "+=0.5");
+    }
+  }
+});
+</script> -->
+<script>
+  gsap.to('#union', {
+  rotation: -360,
+  duration: 4,
+  ease: "none",
+  repeat: -1
+})
+</script>
   </body>
 </html>

@@ -59,9 +59,15 @@ main {
   font-family: var(--text);
   text-transform: uppercase;
 }
-  #union {
+#union {
+  align-self: center;
+}
+  #union svg path{
     fill: var(--primary);
-    height: 75%;
+  }
+  #union svg{
+    width: 100%;
+
   }
 #section-header {
   margin-top: 15px;
