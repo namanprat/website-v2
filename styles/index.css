@@ -128,23 +128,23 @@ section h3 {
     margin-right: auto;
 }
 .aspect-1-1 {
-  max-width: 540px;
+  max-width: 530px;
   aspect-ratio: 1/1;
 }
 .aspect-1-2 {
-  max-width: 540px;
+  max-width: 530px;
   aspect-ratio: 1/2;
 }
 .aspect-2-3 {
-  max-width: 390px;
+  max-width: 380px;
   aspect-ratio: 2/3;
 }
 .aspect-3-4 {
-  max-width: 390px;
+  max-width: 380px;
   aspect-ratio: 3/5;
 }
 .aspect-16-10 {
-  max-width: 540px;
+  max-width: 530px;
   aspect-ratio: 3/2;
 }
 #project-row {
@@ -223,7 +223,6 @@ capsule {
   }
   #project-row > a {
     margin: 3vh 0;
-    /* filter: grayscale(0); */
   }
   .image-capusle img:hover {
     filter: grayscale(0) sepia(0) brightness(1);
@@ -239,6 +238,9 @@ capsule {
   .aspect-2-3,
   .aspect-3-4 {
     max-width: 500px;
+  }
+  #project-row:has(.project:hover:hover) > .project:not(:hover){
+    opacity: 1;
   }
   .image-capusle  img {
     aspect-ratio: 3/4 !important;
