@@ -125,7 +125,7 @@
         </section>
       </div>
       <div id="work" class="col space-bw center">
-        <div id="work-title" class="flex justify-center center">
+        <div id="work-title" class="flex justify-center center" data-scroll-sticky>
           <div class="col justify-center center">
             <h4>( SELECTED BETWEEN 2021-2023 )</h4>
             <h1>Featured Work</h1>
@@ -268,13 +268,30 @@ var rotate = gsap.timeline({
   }
 });
 </script> -->
-<script>
+<!-- <script>
   gsap.to('#union', {
   rotation: -360,
   duration: 4,
   ease: "none",
   repeat: -1
 })
-</script>
+</script> -->
+<!-- <script>
+gsap.set('#union', {xPercent:-50});
+
+var rotate = gsap.timeline({
+  scrollTrigger:{
+    trigger: "html",
+    pin: true,
+    scrub:0.2,
+    start: 'top top',
+    end:'+=10000',
+  }
+})
+.to('#union', {
+  rotation:360*5,
+  duration:1, ease:'none',
+})
+</script> -->
   </body>
 </html>
