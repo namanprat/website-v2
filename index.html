@@ -24,7 +24,7 @@
     <script src="https://unpkg.com/split-type"></script>
   </head>
   <body>
-    <div class="bg"></div>
+    <!-- <div class="bg"></div> -->
     <div id="cursor"></div>
     <div id="loader">
       <h2 text-split class="reveal">Naman Pratulya</h2>
@@ -84,12 +84,12 @@
         <div id="hero" class="col space-bw self-center">
           <div id="name-year" class="row space-bw width-100 self-start w-3">
             <div class="col">
-              <h1 id="left" class="head-1 reveal">I design</h1>
+              <h1 id="left" class="head-1 reveal">Quality</h1>
               <h1 id="left" class="reveal">
-                <em>& create</em>
+                <em>& stunning</em>
               </h1>
             </div>
-            <div id="right" class="year reveal self-end">STUNNING</div>
+            <div id="right" class="year reveal self-end">DIGITAL</div>
           </div>
           <div id="scroll-fade" class="heroMarquee">
             <div class="heroMarquee-content self-center">
@@ -139,7 +139,7 @@
                 <capsule>year: 2022</capsule>
               </div>
               <div id="project-img" class="overflow-hidden">
-              <img class="aspect-2-3" src="./images/money-me/Project-Cover.webp">
+              <img class="aspect-2-3" data-scroll data-scroll-speed="-0.1" src="./images/money-me/Project-Cover.webp">
               </div>
             </div>
             <h2 id="project-cta">money.me</h2>
@@ -151,7 +151,7 @@
                 <capsule>year: 2022</capsule>
               </div>
               <div id="project-img" class="overflow-hidden">
-              <img class="aspect-3-4" src="./images/tsn/cover.webp" alt="Decentralized news platform for the people, by the people.">
+              <img class="aspect-3-4" src="./images/tsn/cover.webp" data-scroll data-scroll-speed="-0.1" alt="Decentralized news platform for the people, by the people.">
               </div>
             </div>
             <h2 id="project-cta">Sage</h2>
@@ -163,7 +163,7 @@
                 <capsule>year: 2021</capsule>
               </div>
               <div id="project-img" class="overflow-hidden">
-              <img class="aspect-16-10" src="./images/covihelp/cover.webp">
+              <img class="aspect-16-10" data-scroll data-scroll-speed="-0.1" src="./images/covihelp/cover.webp">
             </div>
             </div>
             <h2 id="project-cta">Covihelp</h2>
@@ -175,7 +175,7 @@
                 <capsule>year: 2023</capsule>
               </div>
               <div id="project-img" class="overflow-hidden">
-              <img class="aspect-16-10" src="./images/aspen/Project cover.webp">
+              <img class="aspect-16-10" data-scroll data-scroll-speed="-0.1" src="./images/aspen/Project cover.webp">
 
               </div>
             </div>
@@ -188,7 +188,7 @@
                 <capsule>year: 2023</capsule>
               </div>
               <div id="project-img" class="overflow-hidden">
-              <img class="aspect-3-5" src="./images/collective/cover.webp">
+              <img class="aspect-3-5" data-scroll data-scroll-speed="-0.1" src="./images/collective/cover.webp">
               </div>
             </div>
             <h2 id="project-cta">The Collective</h2>
@@ -204,13 +204,13 @@
     <script src="./scripts/gsap-index.js"></script>
     <script src="./scripts/marquee.js"></script>
     <script src="./scripts/cursor.js"></script>
+    <script src="./scripts/loco.js"></script>
+    <!-- <style>
+      #project-img img {
+        scale: 1.25;
+      }
+    </style>
     <script>
-      (function () {
-          const locomotiveScroll = new LocomotiveScroll();
-      })();
-  </script>
-
-    <!-- <script>
       let currentScroll = 0;
       let isScrollingDown = true;
       
@@ -218,7 +218,7 @@
       .to(".heroMarquee-content" , {
     xPercent: -100,
     repeat: -1,
-    duration: 5,
+    duration: 7,
     ease: "linear",
 })
 .totalProgress(0.5);
@@ -240,11 +240,11 @@ window.addEventListener("scroll", function() {
 });
 </script> -->
 <!-- <script>
-  const rotatingText = document.querySelector("#union");
+  const rotatingText = document.querySelectorAll("#union svg");
 
 const t = gsap.to(rotatingText, {
   rotation: -360,
-  duration: 4,
+  duration: 5,
   ease: "none",
   repeat: -1
 });
@@ -255,8 +255,9 @@ let tl;
 
 var rotate = gsap.timeline({
   scrollTrigger: {
-    trigger: "html",
-    start: "top top",
+    trigger: "main",
+    start: "top",
+    markers: true,
     end: "+=10000",
     onUpdate: (self) => {
       tl && tl.kill();
@@ -267,31 +268,6 @@ var rotate = gsap.timeline({
     }
   }
 });
-</script> -->
-<!-- <script>
-  gsap.to('#union', {
-  rotation: -360,
-  duration: 4,
-  ease: "none",
-  repeat: -1
-})
-</script> -->
-<!-- <script>
-gsap.set('#union', {xPercent:-50});
-
-var rotate = gsap.timeline({
-  scrollTrigger:{
-    trigger: "html",
-    pin: true,
-    scrub:0.2,
-    start: 'top top',
-    end:'+=10000',
-  }
-})
-.to('#union', {
-  rotation:360*5,
-  duration:1, ease:'none',
-})
 </script> -->
   </body>
 </html>
