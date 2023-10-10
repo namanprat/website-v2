@@ -78,7 +78,7 @@ function textReveal() {
                 opacity: 0,
                 yPercent: 100,
                 duration: 1.2,
-                ease: "ease.inOut",
+                ease: "expo.inOut",
                 stagger: {
                     amount: 0.3
                 }
