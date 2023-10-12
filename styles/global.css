@@ -28,10 +28,10 @@
     --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
 
     --primary: #0E0E0E;
-    --bg: #ECEBE4;
+    --bg: #ECE5D8;
     --cusror: #0E0E0E;
     --placeholder: #0E0E0E5a;
-    --nav: #fff0d7;
+    --nav: #ECE5D8;
 
     /* --primary: #f8debb;
     --bg: #1a1515;
@@ -331,6 +331,7 @@
     transition: 0.2s ease-in-out;
   }
   nav {
+    /* font-size: 1.1rem; */
     mix-blend-mode: difference;
     height: 12vh;
     z-index: 80;
@@ -393,7 +394,7 @@
     width: 50px;
     display: block;
     border-radius: 2em;
-    background: var(--nav);
+    /* background: var(--nav); */
   }
   #hamburger {
     position: relative;
@@ -408,7 +409,7 @@
     display: inline-block;
     width: 30px;
     height: 2.3px;
-    background: var(--black);
+    background: var(--nav);
     transition: transform 0.3s;
   }
   #hamburger span::before {
@@ -419,7 +420,7 @@
     content: " ";
     width: 20px;
     height: 2.3px;
-    background: var(--black);
+    background: var(--nav);
     transform: translateY(-6px);
     transition: transform 0.3s;
   }
