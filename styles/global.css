@@ -28,10 +28,16 @@
     --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
 
     --primary: #302521;
+    --bg: #fff;
+    --cusror: #302521;
+    --placeholder: #3025215a;
+    --nav: #CCD7DB;
+
+    /* --primary: #302521;
     --bg: #f6f2ed;
     --cusror: #302521;
     --placeholder: #3025215a;
-    --nav: #f6f2ed;
+    --nav: #f6f2ed; */
 
     /* --primary: #f8debb;
     --bg: #1a1515;
