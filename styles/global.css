@@ -27,11 +27,11 @@
     --h1: clamp(9.22rem, 3.14vw + 8.44rem, 10.3rem);
     --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
 
-    --primary: #0E0E0E;
-    --bg: #ECE5D8;
-    --cusror: #0E0E0E;
-    --placeholder: #0E0E0E5a;
-    --nav: #ECE5D8;
+    --primary: #302521;
+    --bg: #f6f2ed;
+    --cusror: #302521;
+    --placeholder: #3025215a;
+    --nav: #f6f2ed;
 
     /* --primary: #f8debb;
     --bg: #1a1515;
@@ -165,7 +165,8 @@
     flex-wrap: nowrap !important;
   }
   .bg {
-    opacity: 3.75%;
+    mix-blend-mode: darken;
+    opacity: 2.5%;
     z-index: 10;
     pointer-events: none;
     content: "";
@@ -175,7 +176,7 @@
     left: -50%;
     top: -50%;
     overflow: hidden;
-    background: url("/public/noise.webp");
+    background: url("/public/noise.png");
     animation: grain 2s steps(6) infinite;
   }
   @keyframes grain {
@@ -331,9 +332,10 @@
     transition: 0.2s ease-in-out;
   }
   nav {
+    margin-top: 4.5vh;
     /* font-size: 1.1rem; */
     mix-blend-mode: difference;
-    height: 12vh;
+    /* height: 12vh; */
     z-index: 80;
     position: fixed;
     width: 100%;
@@ -349,7 +351,7 @@
   }
   #nav-home {
     position: absolute;
-    top: 47%;
+    top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
     mix-blend-mode: difference;
@@ -364,8 +366,12 @@
     display: block;
   }
   #nav-cluster {
-    width: clamp(17rem, 6.5vw + 15.6rem, 20rem);
+    width: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
     overflow: hidden;
+  }
+  .nav-menu {
+    /* background-color: red; */
+    /* width: clamp(17rem, 6.5vw + 15.6rem, 20rem); */
   }
   #nav-cluster a {
     mix-blend-mode: difference;
@@ -390,7 +396,7 @@
   }
   #menu {
     transition: 0.25s ease-in-out;
-    height: 50px;
+    height: var(--h4);
     width: 50px;
     display: block;
     border-radius: 2em;
@@ -577,7 +583,7 @@
   .menu-close {
     margin: auto 0;
   }
-  .heroMarquee {
+  /* .heroMarquee {
     padding: 0 !important;
     overflow: hidden !important;
     position: relative;
@@ -597,8 +603,20 @@
     justify-content: space-around;
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
+  } */
+  .marquee__inner {
+    display: flex;
+    width: fit-content;
+    flex: auto;
+    flex-direction: row;
   }
-  .heroMarquee-content h1 {
+  .marquee__part {
+    display:flex;
+    align-items: center;
+    flex-shrink: 0;
+    grid-column-gap: 5rem;
+  }
+  .marquee__inner h1 {
     font-family: var(--text);
     text-transform: uppercase;
   }
@@ -620,6 +638,7 @@
     scrollbar-color: var(--primary) rgba(0, 0, 0, 0);
   }
   *::-webkit-scrollbar {
+    display: none;
     width: 22px;
   }
   *::-webkit-scrollbar-track {

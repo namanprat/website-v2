@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./styles/locomotive-scroll.css">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
@@ -30,13 +30,15 @@
       <h2 text-split class="reveal">Naman Pratulya</h2>
     </div>
     <main data-scroll-container>
-      <nav class="row space-bw center w-3">
-        <h4 id="time" class="center"></h4>
+      <nav class="row space-bw start w-3">
+        <h4 id="nav">open for freelance work</h4>
         <a id="nav-home" class="interactable nav" href="#">Naman Pratulya</a>
-        <div id="nav-cluster" class="row space-bw center self-center">
-          <a id="nav" class="interactable overflow-hidden" href="#project-row">WORK</a>
-          <a id="nav" class="interactable overflow-hidden" href="./public/CV.pdf">RESUME</a>
-          <a id="nav" class="interactable overflow-hidden" href="./contact.html">CONTACT</a>
+        <div id="nav-cluster" class="row space-bw start">
+          <div id="nav-menu" class="col self-start nav-menu">
+            <a id="nav" class="interactable overflow-hidden" href="#project-row">WORK</a>
+            <a id="nav" class="interactable overflow-hidden" href="./public/CV.pdf">RESUME</a>
+            <a id="nav" class="interactable overflow-hidden" href="./contact.html">CONTACT</a>
+          </div>
           <button id="menu" class="interactable menu-open">
             <div id="hamburger">
               <span></span>
@@ -91,25 +93,75 @@
             </div>
             <div id="right" class="year reveal self-end">DIGITAL</div>
           </div>
-          <div id="scroll-fade" class="heroMarquee">
-            <div class="heroMarquee-content self-center">
-              <h1>experiences</h1>
-              <div id="union">
-                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                  </svg>
-              </div>
-              <h1>experiences</h1>
-              <div id="union">
-                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                  </svg>
-              </div>
-              <h1>experiences</h1>
-              <div id="union">
-                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                  </svg>
+          <div class="marquee">
+            <div class="marquee__inner">
+              <div class="marquee__part">
+                <h1>experiences</h1>
+                <div id="union">
+                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                    </svg>
+                </div>
+                <h1>experiences</h1>
+                <div id="union">
+                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                    </svg>
+                </div>
+                <h1>experiences</h1>
+                <div id="union">
+                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                    </svg>
+                </div>
+                <h1>experiences</h1>
+                <div id="union">
+                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                    </svg>
+                </div>
+                <h1>experiences</h1>
+                <div id="union">
+                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                    </svg>
+                </div>
+                <h1>experiences</h1>
+                <div id="union">
+                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                    </svg>
+                </div>
+                <h1>experiences</h1>
+                <div id="union">
+                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                    </svg>
+                </div>
+                <h1>experiences</h1>
+                <div id="union">
+                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                    </svg>
+                </div>
+                <h1>experiences</h1>
+                <div id="union">
+                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                    </svg>
+                </div>
+                <h1>experiences</h1>
+                <div id="union">
+                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                    </svg>
+                </div>
+                <h1>experiences</h1>
+                <div id="union">
+                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
+                    </svg>
+                </div>
               </div>
             </div>
           </div>
@@ -195,50 +247,16 @@
           </a>
         </div>
       </div>
-      <div id="footer" class="row w-3 space-bw">
+      <!-- <div id="footer" class="row w-3 space-bw">
         <h4>open for freelance work</h4>
         <h4>© 2023</h4>
-      </div>
+      </div> -->
     </main>
     <script src="./scripts/overlay-menu.js"></script>
     <script src="./scripts/gsap-index.js"></script>
-    <script src="./scripts/marquee.js"></script>
+    <!-- <script src="./scripts/marquee.js"></script> -->
     <script src="./scripts/cursor.js"></script>
     <!-- <script src="./scripts/loco.js"></script> -->
-    <!-- <style>
-      #project-img img {
-        scale: 1.25;
-      }
-    </style>
-    <script>
-      let currentScroll = 0;
-      let isScrollingDown = true;
-      
-      let tween = gsap
-      .to(".heroMarquee-content" , {
-    xPercent: -100,
-    repeat: -1,
-    duration: 7,
-    ease: "linear",
-})
-.totalProgress(0.5);
-
-gsap.set("heroMarquee", { xPercent: -50});
-
-window.addEventListener("scroll", function() {
-  if(window.pageYOffset > currentScroll) {
-    isScrollingDown = true;
-  } else {
-    isScrollingDown = false;
-  }
-
-  gsap.to(tween, {
-    timeScale: isScrollingDown ? 1 : -1,
-  });
-
-  currentScroll = window.pageYOffset;
-});
-</script> -->
 <script>
   const rotatingText = document.querySelectorAll("#union svg");
 
@@ -269,5 +287,35 @@ var rotate = gsap.timeline({
   }
 });
 </script>
-  </body>
+
+<script>
+  let currentScroll = 0;
+  let isScrollingDown = true;
+
+  let tween = gsap
+  .to(".marquee__part", {
+    xPercent: -100,
+    repeat: -1,
+    duration: 30,
+    ease: "linear",
+  })
+  .totalProgress(0.5);
+
+  gsap.set("marquee__inner", { xPercent: -50});
+
+  window.addEventListener("scroll", function() {
+    if (window.pageYOffset > currentScroll) {
+      isScrollingDown = true;
+    } else {
+      isScrollingDown = false;
+    }
+
+    gsap.to(tween, {
+      timeScale: isScrollingDown ? 1 : -1,
+    });
+
+    currentScroll = window.pageYOffset;
+  })
+</script>
+</body>
 </html>
