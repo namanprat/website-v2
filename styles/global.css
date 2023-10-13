@@ -275,7 +275,7 @@
     font-family: var(--text);
     font-style: normal;
     font-size: var(--p);
-    line-height: 160%;
+    line-height: 140%;
   }
   h1 {
     line-height: var(--h1);
