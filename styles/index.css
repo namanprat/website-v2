@@ -32,42 +32,11 @@ main {
   font-size: var(--h1);
   line-height: 0.8;
 }
-.heroMarquee {
-  padding: 0 !important;
-  overflow: hidden !important;
-  position: relative;
-  display: flex;
-  width: 200vw;
-  grid-column-gap: 3rem;
-  grid-row-gap: 3rem;
-}
-.heroMarquee-content {
-  align-self: center;
-  height: 100%;
-  padding: 0 !important;
-  overflow: hidden !important;
-  display: flex;
-  flex-shrink: 0;
-  min-width: 100%;
-  justify-content: space-around;
-  grid-column-gap: 3rem;
-  grid-row-gap: 3rem;
-}
-.heroMarquee-content h1 {
-  font-size: var(--h1);
-  line-height: var(--h1);
-  font-family: var(--text);
-  text-transform: uppercase;
-}
 #union {
   align-self: center;
 }
   #union svg path{
     fill: var(--primary);
-  }
-  #union svg{
-    width: 100%;
-
   }
 #section-header {
   margin-top: 15px;
@@ -251,5 +220,10 @@ capsule {
     aspect-ratio: 3/4 !important;
     width: 100%;
     height: auto;
+  }
+  #union {
+    align-self: center;
+    transform: scale(0.7);
+  
   }
 }

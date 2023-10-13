@@ -397,7 +397,7 @@
   #menu {
     transition: 0.25s ease-in-out;
     height: var(--h4);
-    width: 50px;
+    width: 30px;
     display: block;
     border-radius: 2em;
     /* background: var(--nav); */
@@ -411,6 +411,7 @@
   #hamburger span {
     border-radius: 10px;
     position: absolute;
+    left: 0%;
     top: 50%;
     display: inline-block;
     width: 30px;
@@ -614,7 +615,7 @@
     display:flex;
     align-items: center;
     flex-shrink: 0;
-    grid-column-gap: 5rem;
+    grid-column-gap: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
   }
   .marquee__inner h1 {
     font-family: var(--text);
