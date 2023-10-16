@@ -28,10 +28,10 @@
     --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
 
     --primary: #302521;
-    --bg: #fff;
+    --bg: #DED8D6;
     --cusror: #302521;
     --placeholder: #3025215a;
-    --nav: #CCD7DB;
+    --nav: #DED8D6;
 
     /* --primary: #302521;
     --bg: #f6f2ed;
@@ -340,21 +340,21 @@
   nav {
     margin-top: 4.5vh;
     /* font-size: 1.1rem; */
-    mix-blend-mode: difference;
+    /* mix-blend-mode: difference; */
     /* height: 12vh; */
-    z-index: 80;
+    z-index: 10;
     position: fixed;
     width: 100%;
   }
   #nav {
     text-decoration: none;
-    color: var(--nav);
+    color: var(--primary);
   }
-  nav #time {
+  /* nav #time {
     background-color: transparent;
     mix-blend-mode: difference;
     color: var(--nav);
-  }
+  } */
   #nav-home {
     position: absolute;
     top: 17%;
@@ -363,10 +363,13 @@
     mix-blend-mode: difference;
     transition: 0.2s ease-in-out;
     white-space: nowrap;
-    color: var(--nav);
-    text-transform: none;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-family: var(--body);
+    font-size: var(--p);
+    /* font-size: clamp(1.85rem, 0.63vw + 1.69rem, 2.19rem);
     font-family: var(--title);
-    font-size: clamp(1.85rem, 0.63vw + 1.69rem, 2.19rem);
+    text-transform: none; */
   }
   #time {
     display: block;
@@ -421,8 +424,8 @@
     top: 50%;
     display: inline-block;
     width: 30px;
-    height: 2.3px;
-    background: var(--nav);
+    height: 2px;
+    background: var(--primary);
     transition: transform 0.3s;
   }
   #hamburger span::before {
@@ -432,8 +435,8 @@
     display: inline-block;
     content: " ";
     width: 20px;
-    height: 2.3px;
-    background: var(--nav);
+    height: 2px;
+    background: var(--primary);
     transform: translateY(-6px);
     transition: transform 0.3s;
   }
@@ -523,7 +526,7 @@
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.309);
-    z-index: 70;
+    z-index: 9;
   }
   #overlay {
     padding: 3rem;
@@ -587,9 +590,9 @@
     width: 100%;
     position: absolute;
   }
-  .menu-close {
+  /* .menu-close {
     margin: auto 0;
-  }
+  } */
   /* .heroMarquee {
     padding: 0 !important;
     overflow: hidden !important;
@@ -716,6 +719,12 @@
     #time {
       display: none;
     }
+    #nav-home {
+      position: relative;
+      top: 0; 
+      left: 0;
+      transform: translate(0);
+    }
     ::-webkit-scrollbar {
       display: none;
     }
@@ -799,4 +808,3 @@
       height: 75vh;
     }
   }
-  

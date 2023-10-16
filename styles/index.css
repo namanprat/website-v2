@@ -68,19 +68,19 @@ section h3 {
 #work {
   width: 100%;
 }
+/* #werk * {
+  mix-blend-mode: difference;
+  color: var(--bg);
+} */
 #work-title {
-  /* mix-blend-mode: difference;
-  z-index: 10; */
-  z-index: 1;
+  /* color: var(--bg); */
+  /* z-index: 10; */
   pointer-events: none;
   position: sticky;
   top: 0;
   height: 100vh;
   height: 100svh;
 }
-/* #work-title * {
-  color: var(--bg);
-} */
 #project-row a {
     display: block;
     overflow: hidden;

@@ -88,6 +88,28 @@ function overlayAnimation() {
         tl.reversed() ? tl.play() : tl.reverse()
     })
 }
+// var tl2 = gsap.timeline({
+//     paused: true
+// });
+// tl2.to("#overlay", {
+//     x: "100",
+//     ease: "power4.inOut",
+//     duration: 1.5
+// }, "<").to(".menu-item a , #overlay-bottom", {
+//     opacity: 0,
+//     duration: 2,
+//     ease: "power4.inOut",
+//     stagger: 0.15
+// }, "<");
+
+// $(".menu-close, .menu-open").click(function() {
+//     if (tl.reversed()) {
+//         tl2.play();
+//     } else {
+//         tl.play();
+//     }
+// });
+
 gsap.registerPlugin(ScrollTrigger);
 gsap.config({
     nullTargetWarn: false
@@ -96,3 +118,4 @@ buttonAnimation();
 navScroll();
 navFade();
 valueSet();
+overlayAnimation();
