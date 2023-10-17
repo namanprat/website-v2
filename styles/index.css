@@ -59,6 +59,15 @@ section h3 {
   height: min-content;
   width: 100%;
 }
+#page-2 .word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+/* span spon {
+  transform: translateY(100%);
+  will-change: transform;
+} */
 #page-2 #cta {
   margin-top: 10rem;
 }
