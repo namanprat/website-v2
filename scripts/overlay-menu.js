@@ -40,6 +40,7 @@ function navFade() {
     mm.add("(max-width: 1000px)", () => {
         gsap.to("#nav-menu a", {
             ease: "power4.inOut",
+            stagger: 1,
             autoAlpha: 0
         })
     })
@@ -59,7 +60,7 @@ function buttonAnimation() {
     }
 };
 
-function overlayAnimation() {
+function Animation() {
     var tl = gsap.timeline({
         paused: true,
         reversed: true
@@ -67,7 +68,7 @@ function overlayAnimation() {
     tl.to("#nav-menu a", {
         ease: "power4.inOut",
         duration: 1,
-        stagger: 0.01,
+        stagger: 1,
         autoAlpha: 0
     }, "<").to("#overlay-bg", {
         ease: "power4.inOut",
@@ -88,28 +89,58 @@ function overlayAnimation() {
         tl.reversed() ? tl.play() : tl.reverse()
     })
 }
-// var tl2 = gsap.timeline({
-//     paused: true
-// });
-// tl2.to("#overlay", {
-//     x: "100",
-//     ease: "power4.inOut",
-//     duration: 1.5
-// }, "<").to(".menu-item a , #overlay-bottom", {
-//     opacity: 0,
-//     duration: 2,
-//     ease: "power4.inOut",
-//     stagger: 0.15
-// }, "<");
 
-// $(".menu-close, .menu-open").click(function() {
-//     if (tl.reversed()) {
-//         tl2.play();
-//     } else {
-//         tl.play();
-//     }
-// });
+function overlayAnimation() {
+    var timelines = [
+        gsap.timeline({
+            paused: true,
+            reversed: true
+        }),
+        gsap.timeline({
+            paused: true,
+            reversed: true
+        }),
+    ];
 
+
+    timelines[0].to("#nav-menu a", {
+        ease: "power4.inOut",
+        duration: 1,
+        stagger: 1,
+        autoAlpha: 0
+    }, "<").to("#overlay-bg", {
+        ease: "power4.inOut",
+        duration: 1,
+        autoAlpha: 1
+    }, "<").to("#overlay", {
+        x: "0",
+        ease: "power4.inOut",
+        duration: 1.5
+    }, "<").to(".menu-item a , #overlay-bottom", {
+        y: "0",
+        opacity: 1,
+        duration: 2,
+        ease: "power4.inOut",
+        stagger: 0.15
+    }, "<");
+
+
+    timelines[1].to("#overlay", {
+        x: "100",
+        opacity: 0,
+        ease: "power4.inOut",
+        duration: 1.5
+    });
+
+
+    var currentIndex = 0;
+
+    $(".menu-close, .menu-open").click(function() {
+        var currentTimeline = timelines[currentIndex];
+        currentTimeline.reversed(!currentTimeline.reversed()); 
+        currentIndex = (currentIndex + 1) % timelines.length; 
+    });
+}
 gsap.registerPlugin(ScrollTrigger);
 gsap.config({
     nullTargetWarn: false
@@ -118,4 +149,4 @@ buttonAnimation();
 navScroll();
 navFade();
 valueSet();
-overlayAnimation();
+// overlayAnimation();

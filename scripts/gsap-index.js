@@ -140,10 +140,6 @@ function xAxisScroll() {
 
 function textReveal() {
     window.addEventListener("DOMContentLoaded", (event) => {
-        // let typeSplit = new SplitType("[text-split]", {
-        //     types: "words",
-        //     tagName: "div"
-        // });
         const splitted = new SplitType("[text-split]", {types: "words"});
         this.splitWords = new SplitType(splitted.words, {types: "words",tagName: "spun"});
         $("[animate]").each(function(index) {
@@ -164,7 +160,7 @@ function textReveal() {
             });
             ScrollTrigger.create({
                 trigger: $(this),
-                start: "top 70%",
+                start: "top 80%",
                 onEnter: () => tl.play()
             });
             ScrollTrigger.create({
@@ -223,4 +219,4 @@ loaderAnimation();
 xAxisScroll();
 heroText();
 textReveal();
-titleFade();
+// titleFade();
