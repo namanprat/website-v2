@@ -60,7 +60,7 @@ function buttonAnimation() {
     }
 };
 
-function Animation() {
+function overlayAnimation() {
     var tl = gsap.timeline({
         paused: true,
         reversed: true
@@ -68,7 +68,7 @@ function Animation() {
     tl.to("#nav-menu a", {
         ease: "power4.inOut",
         duration: 1,
-        stagger: 1,
+        stagger: 0.01,
         autoAlpha: 0
     }, "<").to("#overlay-bg", {
         ease: "power4.inOut",
@@ -89,58 +89,6 @@ function Animation() {
         tl.reversed() ? tl.play() : tl.reverse()
     })
 }
-
-function overlayAnimation() {
-    var timelines = [
-        gsap.timeline({
-            paused: true,
-            reversed: true
-        }),
-        gsap.timeline({
-            paused: true,
-            reversed: true
-        }),
-    ];
-
-
-    timelines[0].to("#nav-menu a", {
-        ease: "power4.inOut",
-        duration: 1,
-        stagger: 1,
-        autoAlpha: 0
-    }, "<").to("#overlay-bg", {
-        ease: "power4.inOut",
-        duration: 1,
-        autoAlpha: 1
-    }, "<").to("#overlay", {
-        x: "0",
-        ease: "power4.inOut",
-        duration: 1.5
-    }, "<").to(".menu-item a , #overlay-bottom", {
-        y: "0",
-        opacity: 1,
-        duration: 2,
-        ease: "power4.inOut",
-        stagger: 0.15
-    }, "<");
-
-
-    timelines[1].to("#overlay", {
-        x: "100",
-        opacity: 0,
-        ease: "power4.inOut",
-        duration: 1.5
-    });
-
-
-    var currentIndex = 0;
-
-    $(".menu-close, .menu-open").click(function() {
-        var currentTimeline = timelines[currentIndex];
-        currentTimeline.reversed(!currentTimeline.reversed()); 
-        currentIndex = (currentIndex + 1) % timelines.length; 
-    });
-}
 gsap.registerPlugin(ScrollTrigger);
 gsap.config({
     nullTargetWarn: false
@@ -149,4 +97,3 @@ buttonAnimation();
 navScroll();
 navFade();
 valueSet();
-// overlayAnimation();
