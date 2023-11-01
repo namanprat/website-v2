@@ -219,4 +219,4 @@ loaderAnimation();
 xAxisScroll();
 heroText();
 textReveal();
-// titleFade();
+titleFade();
