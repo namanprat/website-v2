@@ -340,7 +340,7 @@
   nav {
     margin-top: 4.5vh;
     /* font-size: 1.1rem; */
-    /* mix-blend-mode: difference; */
+    mix-blend-mode: difference;
     /* height: 12vh; */
     z-index: 10;
     position: fixed;
@@ -348,13 +348,13 @@
   }
   #nav {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--nav);
   }
-  /* nav #time {
+  nav #time {
     background-color: transparent;
     mix-blend-mode: difference;
     color: var(--nav);
-  } */
+  }
   #nav-home {
     position: absolute;
     top: 17%;
@@ -363,7 +363,7 @@
     mix-blend-mode: difference;
     transition: 0.2s ease-in-out;
     white-space: nowrap;
-    color: var(--primary);
+    color: var(--nav);
     text-transform: uppercase;
     font-family: var(--body);
     font-size: var(--p);
@@ -425,7 +425,7 @@
     display: inline-block;
     width: 30px;
     height: 2px;
-    background: var(--primary);
+    background: var(--nav);
     transition: transform 0.3s;
   }
   #hamburger span::before {
@@ -436,7 +436,7 @@
     content: " ";
     width: 20px;
     height: 2px;
-    background: var(--primary);
+    background: var(--nav);
     transform: translateY(-6px);
     transition: transform 0.3s;
   }
