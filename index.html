@@ -207,43 +207,43 @@
           </div>
         </div>
         <div id="project-row" class="flex center space-even w-3">
-          <a href="./money-me.html" class="interactable project self-start" data-type="project" >
+          <a href="./money-me.html" class="interactable project self-start" data-type="project" data-title="money.me">
             <div class="image-capusle">
               <div id="capsule-container" class="col start overflow-hidden">
-                <capsule>UI | UX CASE STUDY</capsule>
+                <capsule>UI | UX</capsule>
                 <capsule>year: 2022</capsule>
               </div>
               <div id="project-img" class="overflow-hidden">
-              <img class="aspect-2-3" data-scroll data-scroll-speed="-0.1" src="./images/money-me/Project-Cover.webp">
+              <img class="aspect-2-3" src="./images/money-me/Project-Cover.webp">
               </div>
             </div>
             <h2 id="project-cta">money.me</h2>
           </a>
-          <a href="./tsn.html" class="interactable project self-end" data-type="project">
+          <a href="./sage.html" class="interactable project self-end" data-type="project" data-title="Sage">
             <div class="image-capusle">
               <div id="capsule-container" class="col start overflow-hidden">
-                <capsule>UI | UX CASE STUDY</capsule>
+                <capsule>UI | UX</capsule>
                 <capsule>year: 2022</capsule>
               </div>
               <div id="project-img" class="overflow-hidden">
-              <img class="aspect-3-4" src="./images/tsn/cover.webp" data-scroll data-scroll-speed="-0.1" alt="Decentralized news platform for the people, by the people.">
+              <img class="aspect-3-4" src="./images/tsn/cover.webp" alt="Decentralized news platform for the people, by the people.">
               </div>
             </div>
             <h2 id="project-cta">Sage</h2>
           </a>
-          <a class="interactable project self-center" data-type="project">
+          <a class="interactable project self-center" data-type="project" data-title="Covihelp">
             <div class="image-capusle">
               <div id="capsule-container" class="col start overflow-hidden">
-                <capsule>UI | UX CASE STUDY</capsule>
+                <capsule>UI | UX</capsule>
                 <capsule>year: 2021</capsule>
               </div>
               <div id="project-img" class="overflow-hidden">
-              <img class="aspect-16-10" data-scroll data-scroll-speed="-0.1" src="./images/covihelp/Project cover.webp">
+              <img class="aspect-16-10" src="./images/covihelp/Project cover.webp">
             </div>
             </div>
             <h2 id="project-cta">Covihelp</h2>
           </a>
-          <a href="./aspen.html" class="interactable project self-end" data-type="project">
+          <a href="./aspen.html" class="interactable project self-end" data-type="project" data-title="Aspen">
             <div class="image-capusle">
               <div id="capsule-container" class="col start overflow-hidden">
                 <capsule>Service design</capsule>
@@ -256,10 +256,10 @@
             </div>
             <h2 id="project-cta">Aspen</h2>
           </a>
-          <a class="interactable project self-start" data-type="project">
+          <a class="interactable project self-start" data-type="project" data-title="The Collective">
             <div class="image-capusle">
               <div id="capsule-container" class="col start overflow-hidden">
-                <capsule>UI | UX CASE STUDY</capsule>
+                <capsule>UI | UX</capsule>
                 <capsule>year: 2023</capsule>
               </div>
               <div id="project-img" class="overflow-hidden">
@@ -340,6 +340,31 @@ var rotate = gsap.timeline({
 
     currentScroll = window.pageYOffset;
   })
+</script>
+<script>
+  const title = document.querySelector('#werk h1')
+const links = document.querySelectorAll('#project-row a')
+const body = document.querySelector('body')
+
+links.forEach((link) => {
+  link.addEventListener('mouseenter', () => {
+    title.innerText = link.getAttribute('data-title')
+
+    body.classList.add('hovered')
+    link.classList.add('hovered')
+
+    body.classList.add(link.getAttribute('data-color'))
+  })
+
+  link.addEventListener('mouseleave', () => {
+    title.innerText = 'Featured Work'
+
+    body.classList.remove('hovered')
+    link.classList.remove('hovered')
+
+    body.classList.remove(link.getAttribute('data-color'))
+  })
+})
 </script>
 </body>
 </html>

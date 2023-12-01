@@ -77,10 +77,10 @@ section h3 {
 #work {
   width: 100%;
 }
-/* #werk * {
-  mix-blend-mode: difference;
-  color: var(--bg);
-} */
+#werk h1 {
+  opacity: 1;
+    transition: 0.3s ease-in-out;
+}
 #work-title {
   /* color: var(--bg); */
   /* z-index: 10; */
