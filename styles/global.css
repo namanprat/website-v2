@@ -27,11 +27,11 @@
     --h1: clamp(9.22rem, 3.14vw + 8.44rem, 10.3rem);
     --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
 
-    --primary: #302521;
-    --bg: #DED8D6;
-    --cusror: #302521;
+    --primary: #222;
+    --bg: #EBE5DF;
+    --cusror: #222;
     --placeholder: #3025215a;
-    --nav: #DED8D6;
+    --nav: #EBE5DF;
 
     /* --primary: #302521;
     --bg: #f6f2ed;
@@ -279,9 +279,10 @@
   }
   p {
     font-family: var(--text);
+    font-weight: 500;
     font-style: normal;
     font-size: var(--p);
-    line-height: 140%;
+    line-height: 135%;
   }
   h1 {
     line-height: var(--h1);
