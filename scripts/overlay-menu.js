@@ -53,9 +53,9 @@ function buttonAnimation() {
         reversed: true
     });
     const toggleBtn = document.getElementById("menu");
-    const hamburger = document.getElementById("hamburger");
+    // const hamburger = document.getElementById("hamburger");
     toggleBtn.onclick = function(e) {
-        hamburger.classList.toggle("active");
+        // hamburger.classList.toggle("active");
         tl.reversed(!tl.reversed())
     }
 };

@@ -141,27 +141,26 @@ function xAxisScroll() {
 
 function textReveal() {
     window.addEventListener("DOMContentLoaded", (event) => {
-        const splitted = new SplitType("[text-split]", {types: "words"});
-        this.splitWords = new SplitType(splitted.words, {types: "words",tagName: "spun"});
-        $("[animate]").each(function(index) {
+        let typeSplit = new SplitType("[line-split]", {
+            types: "words",
+            tagName: "spun"
+        });
+        $("[reveal]").each(function(index) {
             let tl = gsap.timeline({
                 paused: true
             });
             tl.from($(this).find(".word"), {
-                // opacity: 0,
+                opacity: 0,
                 yPercent: 100,
-                duration: 2.5,
+                duration: 1.2,
                 ease: "expo.inOut",
-            });
-            tl.from($(this).find(".spon"), {
-                // opacity: 0,
-                yPercent: 100,
-                duration: 3,
-                ease: "expo.inOut",
+                stagger: {
+                    amount: 0.3
+                }
             });
             ScrollTrigger.create({
                 trigger: $(this),
-                start: "top 80%",
+                start: "top 30%",
                 onEnter: () => tl.play()
             });
             ScrollTrigger.create({
@@ -200,7 +199,7 @@ function titleFade() {
     let mm = gsap.matchMedia();
     mm.add("(min-width: 768px)", () => {
         gsap.to("#work-title", {
-            opacity: 0.065,
+            opacity: 0.1,
             scrollTrigger: {
                 scrub: true,
                 trigger: '#work-title',

@@ -33,17 +33,11 @@
       <nav class="row space-bw center w-3">
         <h4 id="time" class="center"></h4>
         <a id="nav-home" class="interactable nav" href="#">Naman Pratulya</a>
-        <div id="nav-cluster" class="row space-bw start">
           <div id="nav-menu" class="row space-bw center nav-menu">
-            <a id="nav" class="interactable overflow-hidden" href="#project-row">WORK</a>
-            <a id="nav" class="interactable overflow-hidden" href="./public/CV.pdf">RESUME</a>
-            <a id="nav" class="interactable overflow-hidden" href="./contact.html">CONTACT</a>
-            <button id="menu" class="interactable menu-open">
-              <div id="hamburger">
-                <span></span>
-              </div>
+            <a id="nav" class="interactable" href="#project-row">WORK</a>
+            <a id="nav" class="interactable" href="./contact.html">CONTACT</a>
+            <button id="menu"><h4 class="interactable menu-open">MENU</h4></button>
           </div>
-        </div>
       </nav>
       <div id="overlay-bg" class="col menu-open">
         <div id="overlay" class="col overlay w-3 self-end">
@@ -201,12 +195,12 @@
       <div id="work" class="col space-bw center">
         <div id="work-title" class="flex justify-center center" data-scroll-sticky>
           <div id="werk" class="col justify-center center">
-            <h4>( SELECTED BETWEEN 2021-2023 )</h4>
+            <!-- <h4>( SELECTED BETWEEN 2021-2023 )</h4> -->
             <h1>Featured Work</h1>
           </div>
         </div>
         <div id="project-row" class="flex center space-even w-3">
-          <a href="./money-me.html" class="interactable project self-start" data-type="project" data-title="money.me">
+          <a href="./money-me.html" class="interactable project self-start" data-type="project" data-title="money.me" data-year="2022">
             <div class="image-capusle">
               <div id="capsule-container" class="col start overflow-hidden">
                 <capsule>UI | UX</capsule>
@@ -218,7 +212,7 @@
             </div>
             <h2 id="project-cta">money.me</h2>
           </a>
-          <a href="./sage.html" class="interactable project self-end" data-type="project" data-title="Sage">
+          <a href="./sage.html" class="interactable project self-end" data-type="project" data-title="Sage" data-year="2022">
             <div class="image-capusle">
               <div id="capsule-container" class="col start overflow-hidden">
                 <capsule>UI | UX</capsule>
@@ -230,7 +224,7 @@
             </div>
             <h2 id="project-cta">Sage</h2>
           </a>
-          <a class="interactable project self-center" data-type="project" data-title="Covihelp">
+          <a class="interactable project self-center" data-type="project" data-title="Covihelp" data-year="2021">
             <div class="image-capusle">
               <div id="capsule-container" class="col start overflow-hidden">
                 <capsule>UI | UX</capsule>
@@ -242,7 +236,7 @@
             </div>
             <h2 id="project-cta">Covihelp</h2>
           </a>
-          <a href="./aspen.html" class="interactable project self-end" data-type="project" data-title="Aspen">
+          <a href="./aspen.html" class="interactable project self-end" data-type="project" data-title="Aspen" data-year="2023">
             <div class="image-capusle">
               <div id="capsule-container" class="col start overflow-hidden">
                 <capsule>Service design</capsule>
@@ -255,7 +249,7 @@
             </div>
             <h2 id="project-cta">Aspen</h2>
           </a>
-          <a class="interactable project self-start" data-type="project" data-title="The Collective">
+          <a class="interactable project self-start" data-type="project" data-title="The Collective" data-year="2023">
             <div class="image-capusle">
               <div id="capsule-container" class="col start overflow-hidden">
                 <capsule>UI | UX</capsule>
@@ -342,7 +336,7 @@ var rotate = gsap.timeline({
   })
 </script>
 <script>
-  const title = document.querySelector('#werk h1')
+const title = document.querySelector('#werk h1')
 const links = document.querySelectorAll('#project-row a')
 const body = document.querySelector('body')
 
@@ -366,5 +360,29 @@ links.forEach((link) => {
   })
 })
 </script>
+<!-- <script>
+  const date = document.querySelector('#werk h4')
+  
+  links.forEach((link) => {
+    link.addEventListener('mouseenter', () => {
+      title.innerText = link.getAttribute('data-title')
+      date.innerText = link.getAttribute('data-date')
+  
+      body.classList.add('hovered')
+      link.classList.add('hovered')
+  
+      body.classList.add(link.getAttribute('data-color'))
+    })
+  
+    link.addEventListener('mouseleave', () => {
+      date.innerText = '( SELECTED BETWEEN 2021-2023 )'
+  
+      body.classList.remove('hovered')
+      link.classList.remove('hovered')
+  
+      body.classList.remove(link.getAttribute('data-color'))
+    })
+  })
+  </script> -->
 </body>
 </html>

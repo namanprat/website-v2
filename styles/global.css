@@ -340,31 +340,22 @@
     transition: 0.2s ease-in-out;
   }
   nav {
-    position: absolute;
+    position: fixed;
+    width: 93%;
     top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
-
-    list-style: none;
-    position: fixed;
-    width: 93%;
-    text-align:center;
-
-
-    border: 2px solid var(--black);
+    border: 2px solid var(--primary);
     border-radius: 100px;
     backdrop-filter: blur(10px);
     margin-top: 3vh;
     z-index: 10;
     height: 7.5vh;
   }
-  nav #time {
-    background-color: transparent;
-    color: var(--black);
-  }
   #nav {
+    overflow: hidden;
     text-decoration: none;
-    color: var(--black);
+    color: var(--primary);
   }
   #nav-home {
     position: absolute;
@@ -386,19 +377,15 @@
     overflow: hidden;
   }
   .nav-menu {
-    width: clamp(17rem, 6.5vw + 15.6rem, 20rem);
+    width: clamp(12rem, 4vw + 12rem, 15rem);
   }
   nav button {
-    mix-blend-mode: difference;
     transition: 0.2s ease-in-out;
-    text-transform: uppercase;
-    font-size: var(--h4);
     display: flex;
     position: relative;
     z-index: 100;
     background: transparent;
     border: none;
-    color: var(--nav);
   }
   input[type="checkbox"] {
     display: none;
@@ -406,9 +393,8 @@
   #copyright {
     margin: 1rem 0;
   }
-  #menu {
+  /* #menu {
     transition: 0.25s ease-in-out;
-    /* height: var(--h4); */
     width: 30px;
     display: block;
     border-radius: 2em;
@@ -449,7 +435,7 @@
     top: unset;
     width: 30px;
     transform: rotate(-90deg);
-  }
+  } */
   #capsule {
     display: block;
     border-radius: 2em;
