@@ -42,10 +42,11 @@ function loaderAnimation() {
         stagger: 0.2,
         ease: "expo.inOut"
     }).to("#loader", {
-        height: 0,
-        duration: 0.75,
-        stagger: 0.2,
-        ease: "circ.inOut",
+        autoAlpha: 0,
+        // height: 0,
+        duration: 1,
+        // stagger: 0.2,
+        ease: "ease.inOut",
         onComplete: function() {
             animateHomepage()
         }
@@ -138,61 +139,29 @@ function xAxisScroll() {
     })
 }
 
-// function textReveal() {
-//     window.addEventListener("DOMContentLoaded", (event) => {
-//         const splitted = new SplitType("[text-split]", {types: "words"});
-//         this.splitWords = new SplitType(splitted.words, {types: "words",tagName: "spun"});
-//         $("[animate]").each(function(index) {
-//             let tl = gsap.timeline({
-//                 paused: true
-//             });
-//             tl.from($(this).find(".word"), {
-//                 // opacity: 0,
-//                 yPercent: 100,
-//                 duration: 2.5,
-//                 ease: "expo.inOut",
-//             });
-//             tl.from($(this).find(".spon"), {
-//                 // opacity: 0,
-//                 yPercent: 100,
-//                 duration: 3,
-//                 ease: "expo.inOut",
-//             });
-//             ScrollTrigger.create({
-//                 trigger: $(this),
-//                 start: "top 80%",
-//                 onEnter: () => tl.play()
-//             });
-//             ScrollTrigger.create({
-//                 trigger: $(this),
-//                 onLeaveBack: () => tl.pause(0)
-//             });
-//         })
-//     })
-// }
-
 function textReveal() {
     window.addEventListener("DOMContentLoaded", (event) => {
-        let typeSplit = new SplitType("[text-split]", {
-            types: "words, chars",
-            tagName: "span"
-        });
+        const splitted = new SplitType("[text-split]", {types: "words"});
+        this.splitWords = new SplitType(splitted.words, {types: "words",tagName: "spun"});
         $("[animate]").each(function(index) {
             let tl = gsap.timeline({
                 paused: true
             });
-            tl.from($(this).find(".char"), {
-                opacity: 0,
+            tl.from($(this).find(".word"), {
+                // opacity: 0,
                 yPercent: 100,
-                duration: 1.3,
+                duration: 2.5,
                 ease: "expo.inOut",
-                stagger: {
-                    amount: 0.3
-                }
+            });
+            tl.from($(this).find(".spon"), {
+                // opacity: 0,
+                yPercent: 100,
+                duration: 3,
+                ease: "expo.inOut",
             });
             ScrollTrigger.create({
                 trigger: $(this),
-                start: "top 70%",
+                start: "top 80%",
                 onEnter: () => tl.play()
             });
             ScrollTrigger.create({

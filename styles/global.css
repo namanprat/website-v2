@@ -28,7 +28,7 @@
     --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
 
     --primary: #222;
-    --bg: #EBE5DF;
+    --bg: #f8ebdf;
     --cusror: #222;
     --placeholder: #3025215a;
     --nav: #EBE5DF;
@@ -340,52 +340,53 @@
     transition: 0.2s ease-in-out;
   }
   nav {
-    margin-top: 4.5vh;
-    /* font-size: 1.1rem; */
-    mix-blend-mode: difference;
-    /* height: 12vh; */
-    z-index: 10;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    list-style: none;
     position: fixed;
-    width: 100%;
-  }
-  #nav {
-    text-decoration: none;
-    color: var(--nav);
+    width: 93%;
+    text-align:center;
+
+
+    border: 2px solid var(--black);
+    border-radius: 100px;
+    backdrop-filter: blur(10px);
+    margin-top: 3vh;
+    z-index: 10;
+    height: 7.5vh;
   }
   nav #time {
     background-color: transparent;
-    mix-blend-mode: difference;
-    color: var(--nav);
+    color: var(--black);
+  }
+  #nav {
+    text-decoration: none;
+    color: var(--black);
   }
   #nav-home {
     position: absolute;
-    top: 17%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    mix-blend-mode: difference;
     transition: 0.2s ease-in-out;
     white-space: nowrap;
-    color: var(--nav);
+    color: var(--black);
     text-transform: uppercase;
     font-family: var(--body);
     font-size: var(--p);
-    /* font-size: clamp(1.85rem, 0.63vw + 1.69rem, 2.19rem);
-    font-family: var(--title);
-    text-transform: none; */
   }
   #time {
     display: block;
   }
   #nav-cluster {
-    width: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
+    width: 20rem;
     overflow: hidden;
   }
   .nav-menu {
-    /* background-color: red; */
-    /* width: clamp(17rem, 6.5vw + 15.6rem, 20rem); */
-  }
-  #nav-cluster a {
-    mix-blend-mode: difference;
+    width: clamp(17rem, 6.5vw + 15.6rem, 20rem);
   }
   nav button {
     mix-blend-mode: difference;
@@ -407,16 +408,15 @@
   }
   #menu {
     transition: 0.25s ease-in-out;
-    height: var(--h4);
+    /* height: var(--h4); */
     width: 30px;
     display: block;
     border-radius: 2em;
-    /* background: var(--nav); */
   }
   #hamburger {
     position: relative;
     width: 20px;
-    height: 20px;
+    height: 100%;
     z-index: 2;
   }
   #hamburger span {
@@ -427,7 +427,7 @@
     display: inline-block;
     width: 30px;
     height: 2px;
-    background: var(--nav);
+    background: var(--black);
     transition: transform 0.3s;
   }
   #hamburger span::before {
@@ -438,7 +438,7 @@
     content: " ";
     width: 20px;
     height: 2px;
-    background: var(--nav);
+    background: var(--black);
     transform: translateY(-6px);
     transition: transform 0.3s;
   }
@@ -684,9 +684,9 @@
     :root {
       --h1: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
     }
-    #nav-cluster {
+    /* #nav-cluster {
       width: 100%;
-    }
+    } */
   }
   @media (max-width: 915px) {
     :root {

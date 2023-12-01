@@ -21,21 +21,23 @@ function loaderAnimation() {
     var tl = gsap.timeline();
     tl.from("#loader .child plug", {
         y: "100%",
-        duration: 0.8,
+        duration: 1,
         stagger: 0.2,
         ease: "expo.inOut"
     }).to("#loader .parent .child", {
         yPercent: -100,
-        duration: 0.8,
+        duration: 1,
+        delay: 1,
         stagger: 0.2,
         ease: "expo.inOut"
     }).to("#loader", {
-        height: 0,
-        duration: 0.8,
-        stagger: 0.2,
-        ease: "circ.inOut",
+        autoAlpha: 0,
+        // height: 0,
+        duration: 1,
+        // stagger: 0.2,
+        ease: "ease.inOut",
         onComplete: function() {
-            animatePage()
+            animateHomepage()
         }
     })
 }
