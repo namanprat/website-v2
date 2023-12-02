@@ -38,14 +38,11 @@ function loaderAnimation() {
     }).to("#loader .parent .child", {
         yPercent: -100,
         duration: 1,
-        delay: 1,
-        stagger: 0.2,
+        stagger: 1,
         ease: "expo.inOut"
     }).to("#loader", {
         autoAlpha: 0,
-        // height: 0,
-        duration: 1,
-        // stagger: 0.2,
+        duration: 0.9,
         ease: "ease.inOut",
         onComplete: function() {
             animateHomepage()
@@ -53,38 +50,32 @@ function loaderAnimation() {
     })
 }
 
-function heroText() {
-    $("[hero]").each(function(index) {
-        let tl = gsap.timeline({
-            paused: true
-        });
-        tl.from(".char", {
-            opacity: 0,
-            yPercent: 100,
-            duration: 1.35,
-            ease: "expo.inOut",
-            stagger: {
-                amount: 0.3
-            }
-        })
-    })
-}
+// function heroText() {
+//     $("[hero]").each(function(index) {
+//         let tl = gsap.timeline({
+//             paused: true
+//         });
+//         tl.from(".char", {
+//             opacity: 0,
+//             yPercent: 100,
+//             duration: 1.35,
+//             ease: "expo.inOut",
+//             stagger: {
+//                 amount: 0.3
+//             }
+//         })
+//     })
+// }
 
 function animateHomepage() {
     var tl = gsap.timeline();
     tl.to("main .parent .child", {
         y: 0,
-        delay: -1.2,
+        delay: -1.35,
         duration: 3,
         stagger: 0.135,
         ease: "expo.inOut"
-    }, "<").to(".heroMarquee h1", {
-        y: 0,
-        delay: 0.35,
-        duration: 3,
-        stagger: 0.05,
-        ease: "expo.inOut"
-    }, "<")
+    })
 }
 
 function xAxisScroll() {
@@ -141,18 +132,18 @@ function xAxisScroll() {
 
 function textReveal() {
     window.addEventListener("DOMContentLoaded", (event) => {
-        let typeSplit = new SplitType("[line-split]", {
-            types: "words",
-            tagName: "spun"
+        let typeSplit = new SplitType("[text-split]", {
+            types: "words, chars",
+            tagName: "span"
         });
-        $("[reveal]").each(function(index) {
+        $("[animate]").each(function(index) {
             let tl = gsap.timeline({
                 paused: true
             });
-            tl.from($(this).find(".word"), {
+            tl.from($(this).find(".char"), {
                 opacity: 0,
                 yPercent: 100,
-                duration: 1.2,
+                duration: 1.3,
                 ease: "expo.inOut",
                 stagger: {
                     amount: 0.3
@@ -160,7 +151,7 @@ function textReveal() {
             });
             ScrollTrigger.create({
                 trigger: $(this),
-                start: "top 30%",
+                start: "top 70%",
                 onEnter: () => tl.play()
             });
             ScrollTrigger.create({

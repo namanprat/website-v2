@@ -292,7 +292,7 @@
     font-weight: 250;
     font-style: normal;
     color: var(--primary);
-    
+    letter-spacing: -0.5px;
   }
   h2 {
     font-size: var(--h2);
@@ -304,7 +304,7 @@
     line-height: 150%;
     font-size: var(--h3);
     font-family: var(--title);
-    font-weight: 200;
+    font-weight: 250;
     color: var(--primary);
   }
   h4 {

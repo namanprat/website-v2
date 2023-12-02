@@ -27,13 +27,13 @@ function loaderAnimation() {
     }).to("#loader .parent .child", {
         yPercent: -100,
         duration: 1,
-        delay: 1,
+        // delay: 1,
         stagger: 0.2,
         ease: "expo.inOut"
     }).to("#loader", {
         autoAlpha: 0,
         // height: 0,
-        duration: 1,
+        duration: 0.9,
         // stagger: 0.2,
         ease: "ease.inOut",
         onComplete: function() {
