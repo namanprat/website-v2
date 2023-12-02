@@ -348,6 +348,7 @@
     border: 2px solid var(--primary);
     border-radius: 100px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     margin-top: 3vh;
     z-index: 10;
     height: 7.5vh;
