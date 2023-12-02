@@ -11,13 +11,13 @@
     font-display: swap;
   }
   @font-face {
-    font-family: "NeueMontreal";
-    src: url("/fonts/NeueMontreal-Regular.woff2") format("woff2");
+    font-family: "NeueHaasGrotesk";
+    src: url("/fonts/NHG-55.woff2") format("woff2");
     font-display: swap;
   }
   :root {
     --title: "ivypresto";
-    --text: "NeueMontreal";
+    --text: "NeueHaasGrotesk";
     --p: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
     --h4: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
     --resume: clamp(1.21rem, 0.69vw + 1.29rem, 1.43rem);
@@ -283,6 +283,7 @@
     font-style: normal;
     font-size: var(--p);
     line-height: 135%;
+    letter-spacing: -0.5px;
   }
   h1 {
     line-height: var(--h1);
@@ -308,12 +309,13 @@
   }
   h4 {
     white-space: nowrap;
-    line-height: 150%;
+    /* line-height: 150%; */
     color: var(--primary);
     font-size: var(--h4);
-    font-weight: 400;
+    font-weight: 500;
     font-family: var(--text);
     text-transform: uppercase;
+    letter-spacing: -0.5px;
   }
   spon {
     font-family: var(--title);
