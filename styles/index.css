@@ -13,8 +13,8 @@ main {
   height: 100svh;
 }
 #hero {
-  margin-top: 10vh;
-  height: 80vh;
+  margin-top: 5vh;
+  height: 85vh;
 }
 #name-year {
   flex-wrap: wrap;
@@ -78,11 +78,9 @@ section h3 {
 #work {
   width: 100%;
 }
-#werk h1 {
-  opacity: 1;
-    transition: 0.3s ease-in-out;
-}
 #work-title {
+  opacity: 1;
+  mix-blend-mode: difference;
   /* color: var(--bg); */
   z-index: 3;
   pointer-events: none;

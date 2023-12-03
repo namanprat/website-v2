@@ -38,7 +38,8 @@ function loaderAnimation() {
     }).to("#loader .parent .child", {
         yPercent: -100,
         duration: 1,
-        stagger: 1,
+        // delay: 1,
+        stagger: 0.2,
         ease: "expo.inOut"
     }).to("#loader", {
         autoAlpha: 0,
@@ -50,30 +51,13 @@ function loaderAnimation() {
     })
 }
 
-// function heroText() {
-//     $("[hero]").each(function(index) {
-//         let tl = gsap.timeline({
-//             paused: true
-//         });
-//         tl.from(".char", {
-//             opacity: 0,
-//             yPercent: 100,
-//             duration: 1.35,
-//             ease: "expo.inOut",
-//             stagger: {
-//                 amount: 0.3
-//             }
-//         })
-//     })
-// }
-
 function animateHomepage() {
     var tl = gsap.timeline();
     tl.to("main .parent .child", {
         y: 0,
-        delay: -1.35,
-        duration: 3,
-        stagger: 0.135,
+        delay: -1.2,
+        duration: 3.2,
+        stagger: 0.145,
         ease: "expo.inOut"
     })
 }
@@ -130,67 +114,10 @@ function xAxisScroll() {
     })
 }
 
-function textReveal() {
-    window.addEventListener("DOMContentLoaded", (event) => {
-        let typeSplit = new SplitType("[text-split]", {
-            types: "words, chars",
-            tagName: "span"
-        });
-        $("[animate]").each(function(index) {
-            let tl = gsap.timeline({
-                paused: true
-            });
-            tl.from($(this).find(".char"), {
-                opacity: 0,
-                yPercent: 100,
-                duration: 1.3,
-                ease: "expo.inOut",
-                stagger: {
-                    amount: 0.3
-                }
-            });
-            ScrollTrigger.create({
-                trigger: $(this),
-                start: "top 70%",
-                onEnter: () => tl.play()
-            });
-            ScrollTrigger.create({
-                trigger: $(this),
-                onLeaveBack: () => tl.pause(0)
-            });
-        })
-    })
-}
-
-function bgColor() {
-    const sections = gsap.utils.toArray("#about");
-    const container = document.querySelector('#work');
-    const tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#work",
-            start: "top 1%",
-            ease: "expo.inOut",
-            delay: 1,
-            scrub: true,
-            end: () => `+=${container.offsetWidth }`
-        }
-    });
-    tl.to(sections, {
-        duration: 1,
-        xPercent: -100 * (sections.length - 1),
-        ease: "none"
-    }).to(container, {
-        duration: 1,
-        backgroundColor: "#968874",
-        ease: "none"
-    }, 0)
-}
-
 function titleFade() {
        let mm = gsap.matchMedia();
     mm.add("(min-width: 768px)", () => {
-        gsap.to("#work-title", {
-            opacity: 0.065,
+        gsap.to("#werk h1", {
             opacity: 0.1,
             scrollTrigger: {
                 scrub: true,
@@ -198,6 +125,27 @@ function titleFade() {
                 start: "top top",
                 scroller: "body",
             }
+        })
+    })
+}
+function titleReveal() {
+    window.addEventListener("DOMContentLoaded", (event) => {
+        let typeSplit = new SplitType("[text-split]", {
+            types: "words, chars",
+            tagName: "span"
+        });
+        $("[animate]").each(function(index) {
+            let tl = gsap.timeline();
+            tl.from(".word", {
+                delay: 2.5,
+                opacity: 0,
+                yPercent: 100,
+                duration: 1.5,
+                ease: "expo.inOut",
+                stagger: {
+                    amount: 0.3
+                }
+            })
         })
     })
 }
@@ -210,5 +158,4 @@ valueSetters();
 loaderAnimation();
 xAxisScroll();
 heroText();
-textReveal();
-titleFade();
+titleReveal();

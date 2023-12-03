@@ -180,7 +180,7 @@
       </div>
       <div id="page-2" class="col overflow-hidden space-even w-3">
         <section class="flex space-bw">
-          <h4 id="section-header" class="nowrap">( about me )</h4>
+          <h4 id="section-header" class="nowrap">( about )</h4>
           <div class="col overflow-hidden">
             <h3 text-split animate>
               I am a designer passionate about creating 
@@ -257,18 +257,11 @@
           </a>
         </div>
       </div>
-      <!-- <div id="footer" class="row w-3 space-bw">
-        <h4>open for freelance work</h4>
-        <h4>© 2023</h4>
-      </div> -->
     </main>
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="./scripts/overlay-menu.js"></script>
     <script src="./scripts/gsap-index.js"></script>
-    <script src="./scripts/gsap-laoder.js"></script>
-    <!-- <script src="./scripts/marquee.js"></script> -->
     <script src="./scripts/cursor.js"></script>
-    <!-- <script src="./scripts/loco.js"></script> -->
 <script>
   const rotatingText = document.querySelectorAll("#union svg");
 
@@ -354,29 +347,5 @@ links.forEach((link) => {
   })
 })
 </script>
-<!-- <script>
-  const date = document.querySelector('#werk h4')
-  
-  links.forEach((link) => {
-    link.addEventListener('mouseenter', () => {
-      title.innerText = link.getAttribute('data-title')
-      date.innerText = link.getAttribute('data-date')
-  
-      body.classList.add('hovered')
-      link.classList.add('hovered')
-  
-      body.classList.add(link.getAttribute('data-color'))
-    })
-  
-    link.addEventListener('mouseleave', () => {
-      date.innerText = '( SELECTED BETWEEN 2021-2023 )'
-  
-      body.classList.remove('hovered')
-      link.classList.remove('hovered')
-  
-      body.classList.remove(link.getAttribute('data-color'))
-    })
-  })
-  </script> -->
 </body>
 </html>

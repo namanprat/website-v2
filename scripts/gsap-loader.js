@@ -37,7 +37,7 @@ function loaderAnimation() {
         // stagger: 0.2,
         ease: "ease.inOut",
         onComplete: function() {
-            animateHomepage()
+            animatePage()
         }
     })
 }
