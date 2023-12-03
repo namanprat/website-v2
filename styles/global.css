@@ -34,7 +34,7 @@
     --acccent: #f6f6f6;
     --white: #f6f6f6;
     --black: #0E0E0E;
-    --ls: -0.5px;
+    --ls: -0.25px;
     --ratio: 1.414;
     --uni: calc(var(--ratio) * 1.414rem);
     --ratio-2: calc(var(--ratio) * var(--ratio));
@@ -274,11 +274,12 @@
     display: inline-block;
   }
   p {
+    text-align: justify;
     font-family: var(--text);
     font-weight: 500;
     font-style: normal;
     font-size: var(--p);
-    line-height: 135%;
+    line-height: 150%;
     letter-spacing: var(--ls);
   }
   h1 {
