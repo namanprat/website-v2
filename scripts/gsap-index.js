@@ -38,12 +38,14 @@ function loaderAnimation() {
     }).to("#loader .parent .child", {
         yPercent: -100,
         duration: 1,
-        // delay: 1,
+        delay: 1,
         stagger: 0.2,
         ease: "expo.inOut"
     }).to("#loader", {
         autoAlpha: 0,
-        duration: 0.9,
+        // height: 0,
+        duration: 0.75,
+        stagger: 0.2,
         ease: "ease.inOut",
         onComplete: function() {
             animateHomepage()
@@ -56,8 +58,8 @@ function animateHomepage() {
     tl.to("main .parent .child", {
         y: 0,
         delay: -1.2,
-        duration: 3.2,
-        stagger: 0.145,
+        duration: 3,
+        stagger: 0.135,
         ease: "expo.inOut"
     })
 }
@@ -114,38 +116,49 @@ function xAxisScroll() {
     })
 }
 
-function titleFade() {
-       let mm = gsap.matchMedia();
-    mm.add("(min-width: 768px)", () => {
-        gsap.to("#werk h1", {
-            opacity: 0.1,
-            scrollTrigger: {
-                scrub: true,
-                trigger: '#work-title',
-                start: "top top",
-                scroller: "body",
-            }
-        })
-    })
-}
-function titleReveal() {
+function textReveal() {
     window.addEventListener("DOMContentLoaded", (event) => {
         let typeSplit = new SplitType("[text-split]", {
             types: "words, chars",
             tagName: "span"
         });
         $("[animate]").each(function(index) {
-            let tl = gsap.timeline();
-            tl.from(".word", {
-                delay: 2.5,
+            let tl = gsap.timeline({
+                paused: true
+            });
+            tl.from($(this).find(".char"), {
                 opacity: 0,
                 yPercent: 100,
-                duration: 1.5,
+                duration: 1.7,
                 ease: "expo.inOut",
                 stagger: {
                     amount: 0.3
                 }
-            })
+            });
+            ScrollTrigger.create({
+                trigger: $(this),
+                start: "top 70%",
+                onEnter: () => tl.play()
+            });
+            ScrollTrigger.create({
+                trigger: $(this),
+                onLeaveBack: () => tl.pause(0)
+            });
+        })
+    })
+}
+
+function titleFade() {
+    let mm = gsap.matchMedia();
+    mm.add("(min-width: 768px)", () => {
+        gsap.to("#work-title", {
+            opacity: 0.065,
+            scrollTrigger: {
+                scrub: true,
+                trigger: '#work-title',
+                start: "top top",
+                scroller: "body",
+            }
         })
     })
 }
@@ -157,5 +170,4 @@ revealToplug();
 valueSetters();
 loaderAnimation();
 xAxisScroll();
-heroText();
-titleReveal();
+textReveal();
