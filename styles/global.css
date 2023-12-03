@@ -42,7 +42,7 @@
   @media (prefers-color-scheme: dark) {
     :root {    
       --primary: #e9d5c2;
-      --bg: #121212;
+      --bg: #151413;
       --cusror: #f8ebdf;
       --placeholder: #f8ebdf5a;
       --accent: #df4f36;
