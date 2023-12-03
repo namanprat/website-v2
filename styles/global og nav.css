@@ -380,10 +380,6 @@ nav #time {
   width: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
   overflow: hidden;
 }
-.nav-menu {
-  /* background-color: red; */
-  /* width: clamp(17rem, 6.5vw + 15.6rem, 20rem); */
-}
 #nav-cluster a {
   mix-blend-mode: difference;
 }

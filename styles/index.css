@@ -26,6 +26,7 @@ main {
 .year {
   font-family: var(--text);
   font-size: var(--h1);
+  letter-spacing: var(--ls);
 }
 .markesh {
   font-family: var(--text);

@@ -11,13 +11,13 @@
     font-display: swap;
   }
   @font-face {
-    font-family: "NeueHaasGrotesk";
-    src: url("/fonts/NHG-55.woff2") format("woff2");
+    font-family: "Sohne-Leicht";
+    src: url("/fonts/Sohne-Leicht.woff") format("woff");
     font-display: swap;
   }
   :root {
     --title: "ivypresto";
-    --text: "NeueHaasGrotesk";
+    --text: "Sohne-Leicht";
     --p: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
     --h4: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
     --resume: clamp(1.21rem, 0.69vw + 1.29rem, 1.43rem);
@@ -34,6 +34,7 @@
     --acccent: #f6f6f6;
     --white: #f6f6f6;
     --black: #0E0E0E;
+    --ls: -0.5px;
     --ratio: 1.414;
     --uni: calc(var(--ratio) * 1.414rem);
     --ratio-2: calc(var(--ratio) * var(--ratio));
@@ -41,7 +42,7 @@
   @media (prefers-color-scheme: dark) {
     :root {    
       --primary: #e9d5c2;
-      --bg: #251c1c;
+      --bg: #121212;
       --cusror: #f8ebdf;
       --placeholder: #f8ebdf5a;
       --accent: #df4f36;
@@ -278,7 +279,7 @@
     font-style: normal;
     font-size: var(--p);
     line-height: 135%;
-    letter-spacing: -0.5px;
+    letter-spacing: var(--ls);
   }
   h1 {
     line-height: var(--h1);
@@ -287,7 +288,7 @@
     font-weight: 250;
     font-style: normal;
     color: var(--primary);
-    letter-spacing: -0.5px;
+    letter-spacing: var(--ls);
   }
   h2 {
     font-size: var(--h2);
@@ -310,7 +311,7 @@
     font-weight: 500;
     font-family: var(--text);
     text-transform: uppercase;
-    letter-spacing: -0.5px;
+    letter-spacing: var(--ls);
   }
   spon {
     font-family: var(--title);

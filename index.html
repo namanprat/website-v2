@@ -187,21 +187,16 @@
               functional and visually pleasing experiences
               to drive tangible outcomes for mission-driven 
                 organizations.</h3> 
-              <!-- I am a <spon>designer</spon> passionate about creating 
-              <spon>functional</spon> and <spon>visually pleasing experiences</spon> 
-              to drive <spon>tangible outcomes</spon> for <spon>mission-driven 
-                organizations</spon>.</h3>   -->
-
             <a href="./contact.html" id="cta" class="interactable self-end">LET'S GET IN TOUCH</a>
           </div>
         </section>
       </div>
       <div id="work" class="col space-bw center">
-        <div id="work-title" class="flex justify-center center" data-scroll-sticky>
-          <div id="werk" class="col justify-center center">
-            <!-- <h4>( SELECTED BETWEEN 2021-2023 )</h4> -->
-            <h1>Featured Work</h1>
-          </div>
+        <div id="work-title" class="flex justify-center center">
+            <div class="col justify-center center">
+              <h4>( SELECTED BETWEEN 2021-2023 )</h4>
+              <h1>Featured Work</h1>
+            </div>
         </div>
         <div id="project-row" class="flex center space-even w-3">
           <a href="./money-me.html" class="interactable project self-start" data-type="project" data-title="money.me" data-year="2022">
@@ -247,7 +242,7 @@
                 <capsule>year: 2023</capsule>
               </div>
               <div id="project-img" class="overflow-hidden">
-              <img class="aspect-16-10" data-scroll data-scroll-speed="-0.1" src="./images/aspen/Project cover.webp">
+              <img class="aspect-16-10" src="./images/aspen/Project cover.webp">
 
               </div>
             </div>
@@ -260,7 +255,7 @@
                 <capsule>year: 2023</capsule>
               </div>
               <div id="project-img" class="overflow-hidden">
-              <img class="aspect-3-5" data-scroll data-scroll-speed="-0.1" src="./images/collective/cover.webp">
+              <img class="aspect-3-5" src="./images/collective/cover.webp">
               </div>
             </div>
             <h2 id="project-cta">The Collective</h2>
@@ -340,27 +335,27 @@ var rotate = gsap.timeline({
   })
 </script>
 <script>
-const title = document.querySelector('#werk h1')
+const title = document.querySelector('#work-title h1')
 const links = document.querySelectorAll('#project-row a')
+const date = document.querySelector('#work-title h4')
 const body = document.querySelector('body')
 
 links.forEach((link) => {
   link.addEventListener('mouseenter', () => {
     title.innerText = link.getAttribute('data-title')
+    date.innerText = link.getAttribute('data-year')
 
     body.classList.add('hovered')
     link.classList.add('hovered')
-
-    body.classList.add(link.getAttribute('data-color'))
   })
 
   link.addEventListener('mouseleave', () => {
     title.innerText = 'Featured Work'
+    date.innerText = '(SELECTED BETWEEN 2021-2023)'
 
     body.classList.remove('hovered')
     link.classList.remove('hovered')
 
-    body.classList.remove(link.getAttribute('data-color'))
   })
 })
 </script>
