@@ -369,9 +369,6 @@
     font-family: var(--body);
     font-size: var(--p);
   }
-  #time {
-    display: block;
-  }
   #nav-cluster {
     width: 20rem;
     overflow: hidden;
@@ -393,49 +390,6 @@
   #copyright {
     margin: 1rem 0;
   }
-  /* #menu {
-    transition: 0.25s ease-in-out;
-    width: 30px;
-    display: block;
-    border-radius: 2em;
-  }
-  #hamburger {
-    position: relative;
-    width: 20px;
-    height: 100%;
-    z-index: 2;
-  }
-  #hamburger span {
-    border-radius: 10px;
-    position: absolute;
-    left: 0%;
-    top: 50%;
-    display: inline-block;
-    width: 30px;
-    height: 2px;
-    background: var(--black);
-    transition: transform 0.3s;
-  }
-  #hamburger span::before {
-    border-radius: 10px;
-    position: absolute;
-    right: 0;
-    display: inline-block;
-    content: " ";
-    width: 20px;
-    height: 2px;
-    background: var(--black);
-    transform: translateY(-6px);
-    transition: transform 0.3s;
-  }
-  #hamburger.active span {
-    transform: rotate(45deg);
-  }
-  #hamburger.active span::before {
-    top: unset;
-    width: 30px;
-    transform: rotate(-90deg);
-  } */
   #capsule {
     display: block;
     border-radius: 2em;
