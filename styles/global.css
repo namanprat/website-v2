@@ -31,26 +31,21 @@
     --bg: #f8ebdf;
     --cusror: #222;
     --placeholder: #3025215a;
-    --nav: #EBE5DF;
-
-    /* --primary: #302521;
-    --bg: #f6f2ed;
-    --cusror: #302521;
-    --placeholder: #3025215a;
-    --nav: #f6f2ed; */
-
-    /* --primary: #f8debb;
-    --bg: #1a1515;
-    --cusror: #f8debb;
-    --nav: #f8debb;
-    --placeholder: #f8debb5a; */
-
-    --accent: #df4f36;
+    --acccent: #f6f6f6;
     --white: #f6f6f6;
     --black: #0E0E0E;
     --ratio: 1.414;
     --uni: calc(var(--ratio) * 1.414rem);
     --ratio-2: calc(var(--ratio) * var(--ratio));
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {    
+      --primary: #e9d5c2;
+      --bg: #251c1c;
+      --cusror: #f8ebdf;
+      --placeholder: #f8ebdf5a;
+      --accent: #df4f36;
+    }
   }
   .disable-scroll {
     overflow-y: hidden;
@@ -367,7 +362,7 @@
     transform: translate(-50%, -50%);
     transition: 0.2s ease-in-out;
     white-space: nowrap;
-    color: var(--black);
+    color: var(--primary);
     text-transform: uppercase;
     font-family: var(--body);
     font-size: var(--p);
@@ -523,7 +518,7 @@
     padding: 3rem;
     overflow: hidden !important;
     width: 50%;
-    background-color: var(--white);
+    background-color: var(--accent);
     height: 100%;
   }
   .social a {
@@ -632,7 +627,7 @@
   }
   #footer h4 {
     mix-blend-mode: difference;
-    color: var(--nav);
+    /* color: var(--nav); */
   }
   * {
     scrollbar-width: auto;

@@ -187,9 +187,10 @@ function bgColor() {
 }
 
 function titleFade() {
-    let mm = gsap.matchMedia();
+       let mm = gsap.matchMedia();
     mm.add("(min-width: 768px)", () => {
         gsap.to("#work-title", {
+            opacity: 0.065,
             opacity: 0.1,
             scrollTrigger: {
                 scrub: true,
