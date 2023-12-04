@@ -49,9 +49,12 @@ main {
 .about-reveal h2 {
   /* font-size: 4rem; */
 }
+spun {
+  font-style: italic;
+}
 #page-2 {
   max-width: 100rem;
-  margin: 0 auto;
+  margin: 5vh auto;
   height: min-content;
   width: 100%;
 }
@@ -70,6 +73,9 @@ main {
   top: 0;
   height: 100vh;
   height: 100svh;
+}
+#work-title * {
+  color: var(--diff);
 }
 #project-row a {
     display: block;

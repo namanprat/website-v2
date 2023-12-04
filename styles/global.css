@@ -28,6 +28,7 @@
     --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
 
     --primary: #222;
+    --diff: #f8ebdf;
     --bg: #f8ebdf;
     --cusror: #222;
     --placeholder: #3025215a;
@@ -44,7 +45,7 @@
       --primary: #e9d5c2;
       --bg: #151212;
       --cusror: #f8ebdf;
-      --placeholder: #312a2a;
+      --placeholder: #443939;
       --accent: #df4f36;
     }
   }

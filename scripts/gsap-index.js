@@ -132,7 +132,7 @@ function xAxisScroll() {
                  duration: 1.7,
                  ease: "expo.inOut",
                  stagger: {
-                     amount: 0.1
+                     amount: 0
                  }
              });
              ScrollTrigger.create({
