@@ -43,9 +43,7 @@ function loaderAnimation() {
         ease: "expo.inOut"
     }).to("#loader", {
         autoAlpha: 0,
-         height: 0,
-        duration: 0.75,
-        stagger: 0.2,
+        duration: 0.4,
         ease: "ease.inOut",
         onComplete: function() {
             animateHomepage()
