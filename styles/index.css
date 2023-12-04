@@ -39,41 +39,24 @@ main {
   #union svg path{
     fill: var(--primary);
   }
-#section-header {
-  margin-top: 15px;
-  width: 50%;
-}
-section {
-  gap: 25px;
-  padding: calc(var(--ratio-2) * var(--uni)) 0;
+#about {
+  /* padding: calc(var(--ratio-2) * var(--uni)) 0; */
+  padding-top: 10vh;
   margin: 0 auto;
-  max-width: 80rem;
-  flex-direction: row;
   width: 100%;
+  border-top: 2px solid var(--placeholder);
 }
-section h3 {
-  width: 100%;
-  padding-left: 2rem;
+.about-reveal h2 {
+  /* font-size: 4rem; */
 }
 #page-2 {
+  max-width: 100rem;
   margin: 0 auto;
   height: min-content;
   width: 100%;
 }
-#page-2 .word {
-  display: inline-block;
-  overflow: hidden;
-  vertical-align: top;
-}
-/* span spon {
-  transform: translateY(100%);
-  will-change: transform;
-} */
 #page-2 #cta {
   margin-top: 10rem;
-}
-#about {
-  gap: 20px;
 }
 #work {
   width: 100%;
@@ -81,7 +64,6 @@ section h3 {
 #work-title {
   opacity: 1;
   mix-blend-mode: difference;
-  /* color: var(--bg); */
   z-index: 3;
   pointer-events: none;
   position: sticky;
@@ -92,14 +74,13 @@ section h3 {
 #project-row a {
     display: block;
     overflow: hidden;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
     opacity: 1;
     transition: 0.3s ease-in-out;
 }
 #project-row:has(.project:hover:hover) > .project:not(:hover){
   opacity: 0;
 }
-
 #project-img img {
     object-fit: cover !important;
     overflow: hidden !important;
@@ -130,7 +111,6 @@ section h3 {
   aspect-ratio: 3/2;
 }
 #project-row {
-  /* z-index: 2; */
   flex-direction: column;
   width: 85%;
   margin-bottom: 13vh;

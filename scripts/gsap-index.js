@@ -43,7 +43,7 @@ function loaderAnimation() {
         ease: "expo.inOut"
     }).to("#loader", {
         autoAlpha: 0,
-        // height: 0,
+         height: 0,
         duration: 0.75,
         stagger: 0.2,
         ease: "ease.inOut",
@@ -116,35 +116,47 @@ function xAxisScroll() {
     })
 }
 
-function textReveal() {
-    window.addEventListener("DOMContentLoaded", (event) => {
-        let typeSplit = new SplitType("[text-split]", {
-            types: "words, chars",
-            tagName: "span"
-        });
-        $("[animate]").each(function(index) {
-            let tl = gsap.timeline({
-                paused: true
-            });
-            tl.from($(this).find(".char"), {
-                opacity: 0,
-                yPercent: 100,
-                duration: 1.7,
-                ease: "expo.inOut",
-                stagger: {
-                    amount: 0.3
-                }
-            });
-            ScrollTrigger.create({
-                trigger: $(this),
-                start: "top 70%",
-                onEnter: () => tl.play()
-            });
-            ScrollTrigger.create({
-                trigger: $(this),
-                onLeaveBack: () => tl.pause(0)
-            });
-        })
+ function textReveal() {
+     window.addEventListener("DOMContentLoaded", (event) => {
+         let typeSplit = new SplitType("[text-split]", {
+             types: "words, chars",
+             tagName: "span"
+         });
+         $("[animate]").each(function(index) {
+             let tl = gsap.timeline({
+                 paused: true
+             });
+             tl.from($(this).find(".word"), {
+                 opacity: 0,
+                 yPercent: 100,
+                 duration: 1.7,
+                 ease: "expo.inOut",
+                 stagger: {
+                     amount: 0.1
+                 }
+             });
+             ScrollTrigger.create({
+                 trigger: $(this),
+                 start: "top 70%",
+                 onEnter: () => tl.play()
+             });
+             ScrollTrigger.create({
+                 trigger: $(this),
+                 onLeaveBack: () => tl.pause(0)
+             });
+         })
+     })
+ }
+
+function textRevel() {
+    var tl = gsap.timeline();
+    tl.from(".about-reveal h2", {
+        yPercent: 100,
+        ease: "expo.inOut",
+        scrollTrigger: {
+            trigger: "#page-2",
+            start: "top 30%",
+        }
     })
 }
 

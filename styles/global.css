@@ -44,7 +44,7 @@
       --primary: #e9d5c2;
       --bg: #151212;
       --cusror: #f8ebdf;
-      --placeholder: #f8ebdf5a;
+      --placeholder: #312a2a;
       --accent: #df4f36;
     }
   }
@@ -279,7 +279,7 @@
     font-weight: 500;
     font-style: normal;
     font-size: var(--p);
-    line-height: 150%;
+    line-height: 140%;
     letter-spacing: var(--ls);
   }
   h1 {
@@ -340,7 +340,7 @@
   }
   nav {
     position: fixed;
-    width: 93%;
+    width: 94%;
     top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
