@@ -95,6 +95,10 @@ spun {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: 0.5s;
+}
+#project-img img:hover {
+  transform: scale(1.1);
 }
 .aspect-1-1 {
   max-width: 530px;

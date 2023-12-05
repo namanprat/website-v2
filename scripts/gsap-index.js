@@ -114,7 +114,7 @@ function xAxisScroll() {
     })
 }
 
- function textRevel() {
+ function textReveal() {
      window.addEventListener("DOMContentLoaded", (event) => {
          let typeSplit = new SplitType("[text-split]", {
              types: "words, chars",
