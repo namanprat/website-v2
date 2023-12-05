@@ -14,4 +14,3 @@ jobs:
         server: ftp.namanprat.com
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
-        server.dir: namanprat.com
