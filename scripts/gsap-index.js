@@ -114,7 +114,7 @@ function xAxisScroll() {
     })
 }
 
- function textReveal() {
+ function textRevel() {
      window.addEventListener("DOMContentLoaded", (event) => {
          let typeSplit = new SplitType("[text-split]", {
              types: "words, chars",
@@ -146,12 +146,15 @@ function xAxisScroll() {
      })
  }
 
-function textRevel() {
+function textReval() {
     var tl = gsap.timeline();
-    tl.from(".about-reveal h2", {
+    tl.from("#about h2", {
+        opacity: 0,
         yPercent: 100,
-        ease: "expo.inOut",
+        duration: 1.7,
         scrollTrigger: {
+            scroller: "body",
+            ease: "power4.inOut",
             trigger: "#page-2",
             start: "top 30%",
         }

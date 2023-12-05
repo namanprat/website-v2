@@ -444,11 +444,12 @@
     text-decoration: none;
   }
   .copy {
-    align-self: center;
+    /* align-self: center; */
     position: relative;
-    width: 80%;
+    /* width: 80%; */
     font-family: var(--title);
-    text-align: left;
+    /* text-align: left; */
+    font-size: var(--h2);
   }
   .char span {
     font-style: normal;
