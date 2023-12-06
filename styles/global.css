@@ -73,7 +73,7 @@
     --uni: calc(var(--ratio) * 1.414rem);
     --ratio-2: calc(var(--ratio) * var(--ratio));
   }
-  /* @media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {
     :root {    
       --primary: #e9d5c2;
       --bg: #151212;
@@ -81,7 +81,7 @@
       --placeholder: #44393952;
       --accent: #df4f36;
     }
-  } */
+  }
   .disable-scroll {
     overflow-y: hidden;
     overflow-x: hidden;
