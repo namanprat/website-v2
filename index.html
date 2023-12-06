@@ -16,6 +16,10 @@
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/locomotive.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
@@ -179,9 +183,9 @@
       <div id="page-2" class="col overflow-hidden space-even w-3">
         <div id="about" class="width-100">
           <div class="copy overflow-hidden">
-            <h3 text-split animate>I am a designer passionate about creating functional</h3>
-            <h3 text-split animate>and visually pleasing experiences to drive tangible</h3>
-              <h3 text-split animate>outcomes for mission-driven organizations.</h3>
+            <h2 text-split animate>I am a designer passionate about creating functional</h2>
+            <h2 text-split animate>and visually pleasing experiences to drive tangible</h2>
+              <h2 text-split animate>outcomes for mission-driven organizations.</h2>
           </div>
 
                       <!-- I am a designer passionate about creating functional
@@ -261,6 +265,12 @@
     <script src="./scripts/overlay-menu.js"></script>
     <script src="./scripts/gsap-index.js"></script>
     <script src="./scripts/cursor.js"></script>
+
+    <script>
+      (function () {
+          const locomotiveScroll = new LocomotiveScroll();
+      })();
+  </script>
 <script>
   const rotatingText = document.querySelectorAll("#union svg");
 

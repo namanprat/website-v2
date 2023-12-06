@@ -127,7 +127,7 @@ function xAxisScroll() {
              tl.from($(this).find(".word"), {
                  opacity: 0,
                  yPercent: 100,
-                 duration: 1.7,
+                 duration: 2,
                  ease: "expo.inOut",
                  stagger: {
                      amount: 0
