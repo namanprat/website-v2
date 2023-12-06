@@ -48,6 +48,7 @@ main {
 }
 .about-line {
   font-size: var(--h2-5);
+  text-align: justify;
 }
 spun {
   font-style: italic;

@@ -14,7 +14,8 @@ hero-sec{
     margin-bottom:3rem
 }
 hero-sec h3{
-    width:100%
+    width:100%;
+    text-align: justify;
 }
 #project-info{
     justify-content:space-evenly;
