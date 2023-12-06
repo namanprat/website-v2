@@ -46,8 +46,8 @@ main {
   width: 100%;
   border-top: 2px solid var(--placeholder);
 }
-.about-reveal h2 {
-  /* font-size: 4rem; */
+.about-line {
+  font-size: var(--h2-5);
 }
 spun {
   font-style: italic;
@@ -98,7 +98,7 @@ spun {
     transition: 0.5s;
 }
 #project-img img:hover {
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 .aspect-1-1 {
   max-width: 530px;
