@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/locomotive.css">
-
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
@@ -30,337 +30,292 @@
     <div id="loader">
       <h2 text-split class="reveal">Naman Pratulya</h2>
     </div>
-      <nav class="row space-bw center w-3">
-        <h4 id="time" class="center"></h4>
-        <a id="nav-home" class="interactable menu-open" href="#">Naman Pratulya</a>
-          <div id="nav-menu" class="row space-bw center nav-menu">
-            <a id="nav" class="interactable menu-open" href="#project-row">WORK</a>
-            <a id="nav" class="interactable" href="./contact.html">CONTACT</a>
-            <button id="menu"><h4 class="interactable menu-open">MENU</h4></button>
+    <nav class="row space-bw center w-3">
+      <h4 id="time" class="center"></h4>
+      <a id="nav-home" class="interactable menu-open" href="#">Naman Pratulya</a>
+      <div id="nav-menu" class="row space-bw center nav-menu">
+        <a id="nav" class="interactable menu-open" href="#project-row">WORK</a>
+        <a id="nav" class="interactable" href="./contact.html">CONTACT</a>
+        <button id="menu">
+          <h4 class="interactable menu-open">MENU</h4>
+        </button>
+      </div>
+    </nav>
+    <div id="overlay-bg" class="col menu-open">
+      <div id="overlay" class="col overlay w-3 self-end">
+        <div id="overlay-text" class="col self-center start overflow-hidden">
+          <div id="inactive" class="menu-item interactable menu-open" data-type="cta">
+            <a href="">
+              <span> I </span> Home </a>
           </div>
-      </nav>
-      <div id="overlay-bg" class="col menu-open">
-        <div id="overlay" class="col overlay w-3 self-end">
-          <div id="overlay-text" class="col self-center start overflow-hidden">
-            <div id="inactive" class="menu-item interactable menu-open" data-type="cta">
-              <a href="">
-                <span> I </span> Home </a>
+          <div class="menu-item interactable menu-open" data-type="cta">
+            <a href="#project-row"> Work <span> II </span>
+            </a>
+          </div>
+          <div class="menu-item interactable" data-type="cta">
+            <a href="./public/CV.pdf">
+              <span> III </span> Resume </a>
+          </div>
+          <div class="menu-item interactable" data-type="cta">
+            <a href="./contact.html"> Contact <span> IV</span>
+            </a>
+          </div>
+        </div>
+        <div id="overlay-bottom" class="flex space-bw end w-3">
+          <h4>(2023), ALL RIGHTS RESERVED</h4>
+          <div id="socials" class="flex space-bw start">
+            <div class="social interactable" data-type="cta">
+              <a href="https://www.linkedin.com/in/namanprat/" target="_blank">linkedIn</a>
             </div>
-            <div class="menu-item interactable menu-open" data-type="cta">
-              <a href="#project-row">
-                Work <span> II </span></a>
+            <div class="social interactable" data-type="cta">
+              <a href="https://instagram.com/namanprat_" target="_blank">instagram</a>
             </div>
-            <div class="menu-item interactable" data-type="cta">
-              <a href="./public/CV.pdf">
-                <span> III </span> Resume </a>
-            </div>
-            <div class="menu-item interactable" data-type="cta">
-              <a href="./contact.html">
-                 Contact <span> IV</span></a>
+            <div class="social interactable" data-type="cta">
+              <a href="mailto:a.namanprat@gmail.com">email</a>
             </div>
           </div>
-          <div id="overlay-bottom" class="flex space-bw end w-3">
-            <h4>(2023), ALL RIGHTS RESERVED</h4>
-            <div id="socials" class="flex space-bw start">
-              <div class="social interactable" data-type="cta">
-                <a href="https://www.linkedin.com/in/namanprat/" target="_blank">linkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-container flex justify-center">
+      <div id="hero" class="col space-bw self-center">
+        <div id="name-year" class="row space-bw width-100 self-start w-3">
+          <div class="col">
+            <h1 id="left" class="head-1 reveal">Quality</h1>
+            <h1 id="left" class="reveal">
+              <em>& stunning</em>
+            </h1>
+          </div>
+          <div id="right" class="year reveal self-end">DIGITAL</div>
+        </div>
+        <div id="scroll-fade" class="marquee">
+          <div class="marquee__inner">
+            <div class="marquee__part">
+              <h1>experiences</h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA" />
+                </svg>
               </div>
-              <div class="social interactable" data-type="cta">
-                <a href="https://instagram.com/namanprat_" target="_blank">instagram</a>
+              <h1>experiences</h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA" />
+                </svg>
               </div>
-              <div class="social interactable" data-type="cta">
-                <a href="mailto:a.namanprat@gmail.com">email</a>
+              <h1>experiences</h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA" />
+                </svg>
+              </div>
+              <h1>experiences</h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA" />
+                </svg>
+              </div>
+              <h1>experiences</h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA" />
+                </svg>
+              </div>
+              <h1>experiences</h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA" />
+                </svg>
+              </div>
+              <h1>experiences</h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA" />
+                </svg>
+              </div>
+              <h1>experiences</h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA" />
+                </svg>
+              </div>
+              <h1>experiences</h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA" />
+                </svg>
+              </div>
+              <h1>experiences</h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA" />
+                </svg>
+              </div>
+              <h1>experiences</h1>
+              <div id="union">
+                <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA" />
+                </svg>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="hero-container flex justify-center">
-        <div id="hero" class="col space-bw self-center">
-          <div id="name-year" class="row space-bw width-100 self-start w-3">
-            <div class="col">
-              <h1 id="left" class="head-1 reveal">Quality</h1>
-              <h1 id="left" class="reveal">
-                <em>& stunning</em>
-              </h1>
-            </div>
-            <div id="right" class="year reveal self-end">DIGITAL</div>
-          </div>
-          <div id="scroll-fade" class="marquee">
-            <div class="marquee__inner">
-              <div class="marquee__part">
-                <h1>experiences</h1>
-                <div id="union">
-                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                    </svg>
-                </div>
-                <h1>experiences</h1>
-                <div id="union">
-                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                    </svg>
-                </div>
-                <h1>experiences</h1>
-                <div id="union">
-                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                    </svg>
-                </div>
-                <h1>experiences</h1>
-                <div id="union">
-                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                    </svg>
-                </div>
-                <h1>experiences</h1>
-                <div id="union">
-                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                    </svg>
-                </div>
-                <h1>experiences</h1>
-                <div id="union">
-                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                    </svg>
-                </div>
-                <h1>experiences</h1>
-                <div id="union">
-                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                    </svg>
-                </div>
-                <h1>experiences</h1>
-                <div id="union">
-                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                    </svg>
-                </div>
-                <h1>experiences</h1>
-                <div id="union">
-                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                    </svg>
-                </div>
-                <h1>experiences</h1>
-                <div id="union">
-                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                    </svg>
-                </div>
-                <h1>experiences</h1>
-                <div id="union">
-                  <svg width="82" height="82" viewBox="0 0 82 82" fill="#F4DBBA" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.52425 67.5116L32.5379 44.5057H0V37.5057H32.5489L9.52425 14.4887L14.4732 9.53813L37.4957 32.553V0H44.4957V32.5518L67.5171 9.53813L72.466 14.4887L49.4414 37.5057H82V44.5057H49.4524L72.466 67.5116L67.5171 72.4622L44.4957 49.4485V82H37.4957V49.4473L14.4732 72.4622L9.52425 67.5116Z" fill="#F4DBBA"/>
-                    </svg>
-                </div>
-              </div>
-            </div>
-          </div>
+    </div>
+    <div id="page-2" class="col overflow-hidden space-even w-3">
+      <div class="copy self-center overflow-hidden">
+        <div class="about-line" text-split animate> I am a designer passionate about creating functional and visually pleasing experiences to drive tangible outcomes for mission-driven organizations.</div>
+        <!-- <div class="about-line nowrap" text-split animate>I am a designer passionate about creating functional</div><div class="about-line nowrap" text-split animate>and visually pleasing experiences to drive tangible</div><div class="about-line nowrap" text-split animate>outcomes for mission-driven organizations.</div> -->
+      </div>
+      <a href="./contact.html" id="cta" class="interactable self-center">LET'S GET IN TOUCH</a>
+    </div>
+    <div id="work" class="col space-bw center">
+      <div id="work-title" class="flex justify-center center">
+        <div class="col justify-center center">
+          <h4>( SELECTED BETWEEN 2021-2023 )</h4>
+          <h1>Featured Work</h1>
         </div>
       </div>
-      <div id="page-2" class="col overflow-hidden space-even w-3">
-          <div class="copy self-center overflow-hidden">
-             <div class="about-line" text-split animate> I am a designer passionate about creating functional
-            and visually pleasing experiences to drive tangible
-            outcomes for mission-driven organizations.</div>
-            <!-- <div class="about-line nowrap" text-split animate>I am a designer passionate about creating functional</div>
-            <div class="about-line nowrap" text-split animate>and visually pleasing experiences to drive tangible</div>
-              <div class="about-line nowrap" text-split animate>outcomes for mission-driven organizations.</div> -->
+      <div id="project-row" class="flex center space-even w-3">
+        <a href="./money-me.html" class="interactable project self-start" data-type="project" data-title="money.me" data-year="( YEAR: 2022 )">
+          <div class="image-capusle">
+            <div id="capsule-container" class="col start overflow-hidden">
+              <capsule>ROLE: UI | UX</capsule>
+            </div>
+            <div id="project-img" class="overflow-hidden">
+              <img class="aspect-2-3" src="./images/money-me/Project-Cover.webp" loading="lazy">
+            </div>
           </div>
-
-        <a href="./contact.html" id="cta" class="interactable self-center">LET'S GET IN TOUCH</a>
-      </div>
-      <div id="work" class="col space-bw center">
-        <div id="work-title" class="flex justify-center center">
-            <div class="col justify-center center">
-              <h4>( SELECTED BETWEEN 2021-2023 )</h4>
-              <h1>Featured Work</h1>
+          <h2 id="project-cta">money.me</h2>
+        </a>
+        <a href="./sage.html" class="interactable project self-end" data-type="project" data-title="Sage" data-year="( YEAR: 2022 )">
+          <div class="image-capusle">
+            <div id="capsule-container" class="col start overflow-hidden">
+              <capsule>ROLE: UI | UX</capsule>
             </div>
-        </div>
-        <div id="project-row" class="flex center space-even w-3">
-          <a href="./money-me.html" class="interactable project self-start" data-type="project" data-title="money.me" data-year="( YEAR: 2022 )">
-            <div class="image-capusle">
-              <div id="capsule-container" class="col start overflow-hidden">
-                <capsule>ROLE: UI | UX</capsule>
-              </div>
-              <div id="project-img" class="overflow-hidden">
-              <img class="aspect-2-3" src="./images/money-me/Project-Cover.webp" loading="lazy" >
-              </div>
+            <div id="project-img" class="overflow-hidden">
+              <img class="aspect-3-4" src="./images/sage/Project cover.webp" loading="lazy">
             </div>
-            <h2 id="project-cta">money.me</h2>
-          </a>
-          <a href="./sage.html" class="interactable project self-end" data-type="project" data-title="Sage" data-year="( YEAR: 2022 )">
-            <div class="image-capusle">
-              <div id="capsule-container" class="col start overflow-hidden">
-                <capsule>ROLE: UI | UX</capsule>
-              </div>
-              <div id="project-img" class="overflow-hidden">
-              <img class="aspect-3-4" src="./images/sage/Project cover.webp" loading="lazy" >
-              </div>
+          </div>
+          <h2 id="project-cta">Sage</h2>
+        </a>
+        <a class="interactable project self-center" data-type="project" data-title="Covihelp" data-year="( YEAR: 2021 )">
+          <div class="image-capusle">
+            <div id="capsule-container" class="col start overflow-hidden">
+              <capsule>ROLE: UI | UX</capsule>
             </div>
-            <h2 id="project-cta">Sage</h2>
-          </a>
-          <a class="interactable project self-center" data-type="project" data-title="Covihelp" data-year="( YEAR: 2021 )">
-            <div class="image-capusle">
-              <div id="capsule-container" class="col start overflow-hidden">
-                <capsule>ROLE: UI | UX</capsule>
-              </div>
-              <div id="project-img" class="overflow-hidden">
-              <img class="aspect-16-10" src="./images/covihelp/Project cover.webp" loading="lazy" >
+            <div id="project-img" class="overflow-hidden">
+              <img class="aspect-16-10" src="./images/covihelp/Project cover.webp" loading="lazy">
             </div>
+          </div>
+          <h2 id="project-cta">Covihelp</h2>
+        </a>
+        <a href="./aspen.html" class="interactable project self-end" data-type="project" data-title="Aspen" data-year="( YEAR: 2023 )">
+          <div class="image-capusle">
+            <div id="capsule-container" class="col start overflow-hidden">
+              <capsule>Service design</capsule>
             </div>
-            <h2 id="project-cta">Covihelp</h2>
-          </a>
-          <a href="./aspen.html" class="interactable project self-end" data-type="project" data-title="Aspen" data-year="( YEAR: 2023 )">
-            <div class="image-capusle">
-              <div id="capsule-container" class="col start overflow-hidden">
-                <capsule>Service design</capsule>
-              </div>
-              <div id="project-img" class="overflow-hidden">
-              <img class="aspect-16-10" src="./images/aspen/Project cover.webp" loading="lazy" >
-
-              </div>
+            <div id="project-img" class="overflow-hidden">
+              <img class="aspect-16-10" src="./images/aspen/Project cover.webp" loading="lazy">
             </div>
-            <h2 id="project-cta">Aspen</h2>
-          </a>
-          <a class="interactable project self-start" data-type="project" data-title="The Collective" data-year="( YEAR: 2023 )">
-            <div class="image-capusle">
-              <div id="capsule-container" class="col start overflow-hidden">
-                <capsule>ROLE: UI | UX</capsule>
-              </div>
-              <div id="project-img" class="overflow-hidden">
+          </div>
+          <h2 id="project-cta">Aspen</h2>
+        </a>
+        <a class="interactable project self-start" data-type="project" data-title="The Collective" data-year="( YEAR: 2023 )">
+          <div class="image-capusle">
+            <div id="capsule-container" class="col start overflow-hidden">
+              <capsule>ROLE: UI | UX</capsule>
+            </div>
+            <div id="project-img" class="overflow-hidden">
               <img class="aspect-3-5" src="./images/collective/cover.webp" loading="lazy">
-              </div>
             </div>
-            <h2 id="project-cta">The Collective</h2>
-          </a>
-        </div>
+          </div>
+          <h2 id="project-cta">The Collective</h2>
+        </a>
       </div>
+    </div>
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="./scripts/overlay-menu.js"></script>
     <script src="./scripts/gsap-index.js"></script>
     <script src="./scripts/cursor.js"></script>
-
     <script>
-      (function () {
-          const locomotiveScroll = new LocomotiveScroll();
+      (function() {
+        const locomotiveScroll = new LocomotiveScroll();
       })();
-  </script>
-<script>
-  const rotatingText = document.querySelectorAll("#union svg");
-
-const t = gsap.to(rotatingText, {
-  rotation: -360,
-  duration: 5,
-  ease: "none",
-  repeat: -1
-});
-t.iteration(1000);
-
-const speedFactor = 1;
-let tl;
-
-var rotate = gsap.timeline({
-  scrollTrigger: {
-    trigger: "main",
-    start: "top",
-    // markers: true,
-    end: "+=10000",
-    onUpdate: (self) => {
-      tl && tl.kill();
-      tl = gsap
-        .timeline()
-        .to(t, { timeScale: speedFactor * self.direction, duration: 0.1 })
-        .to(t, { timeScale: self.direction, duration: 1 }, "+=0.5");
-    }
-  }
-});
-</script>
-
-<script>
-  let currentScroll = 0;
-  let isScrollingDown = true;
-
-  let tween = gsap
-  .to(".marquee__part", {
-    xPercent: -100,
-    repeat: -1,
-    duration: 30,
-    ease: "linear",
-  })
-  .totalProgress(0.7);
-
-  gsap.set("marquee__inner", { xPercent: -50});
-
-  window.addEventListener("scroll", function() {
-    if (window.pageYOffset > currentScroll) {
-      isScrollingDown = true;
-    } else {
-      isScrollingDown = false;
-    }
-
-    gsap.to(tween, {
-      timeScale: isScrollingDown ? 1 : -1,
-    });
-
-    currentScroll = window.pageYOffset;
-  })
-</script>
-<script>
-const title = document.querySelector('#work-title h1')
-const links = document.querySelectorAll('#project-row a')
-const date = document.querySelector('#work-title h4')
-const body = document.querySelector('body')
-
-links.forEach((link) => {
-  link.addEventListener('mouseenter', () => {
-    title.innerText = link.getAttribute('data-title')
-    date.innerText = link.getAttribute('data-year')
-
-    body.classList.add('hovered')
-    link.classList.add('hovered')
-  })
-
-  link.addEventListener('mouseleave', () => {
-    title.innerText = 'Featured Work'
-    date.innerText = '(SELECTED BETWEEN 2021-2023)'
-
-    body.classList.remove('hovered')
-    link.classList.remove('hovered')
-
-  })
-})
-</script>
-<!-- <script>
-  const copies = document.querySelectorAll(".copy");
-
-  function setupSplits () {
-    $(document).ready(function() {
-      $(".split-line").wrap('<div class="split-parent"></div>');
-    });
-    copies.forEach((copy) => {
-      copy.split = new SplitText(copy,
-      {
-        type: "lines, words, chars",
-        linesClass: "split-line",
+    </script>
+    <script>
+      const rotatingText = document.querySelectorAll("#union svg");
+      const t = gsap.to(rotatingText, {
+        rotation: -360,
+        duration: 5,
+        ease: "none",
+        repeat: -1
       });
-
-      copy.anim = gsap.from(copy.split.lines, {
+      t.iteration(1000);
+      const speedFactor = 1;
+      let tl;
+      var rotate = gsap.timeline({
         scrollTrigger: {
-          trigger: copy,
-          toggleAcion: "restart pause resume",
-          start: "top 90%",
-        },
-        duration: 2,
-        ease: "power4. inOut",
-        yPercent: 100,
-        stagger: 0.1,
+          trigger: "main",
+          start: "top",
+          // markers: true,
+          end: "+=10000",
+          onUpdate: (self) => {
+            tl && tl.kill();
+            tl = gsap.timeline().to(t, {
+              timeScale: speedFactor * self.direction,
+              duration: 0.1
+            }).to(t, {
+              timeScale: self.direction,
+              duration: 1
+            }, "+=0.5");
+          }
+        }
       });
-    });
-  }
-  setupSplits();
-</script> -->
-</body>
+    </script>
+    <script>
+      let currentScroll = 0;
+      let isScrollingDown = true;
+      let tween = gsap.to(".marquee__part", {
+        xPercent: -100,
+        repeat: -1,
+        duration: 30,
+        ease: "linear",
+      }).totalProgress(0.7);
+      gsap.set("marquee__inner", {
+        xPercent: -50
+      });
+      window.addEventListener("scroll", function() {
+        if (window.pageYOffset > currentScroll) {
+          isScrollingDown = true;
+        } else {
+          isScrollingDown = false;
+        }
+        gsap.to(tween, {
+          timeScale: isScrollingDown ? 1 : -1,
+        });
+        currentScroll = window.pageYOffset;
+      })
+    </script>
+    <script>
+      const title = document.querySelector('#work-title h1')
+      const links = document.querySelectorAll('#project-row a')
+      const date = document.querySelector('#work-title h4')
+      const body = document.querySelector('body')
+      links.forEach((link) => {
+        link.addEventListener('mouseenter', () => {
+          title.innerText = link.getAttribute('data-title')
+          date.innerText = link.getAttribute('data-year')
+          body.classList.add('hovered')
+          link.classList.add('hovered')
+        })
+        link.addEventListener('mouseleave', () => {
+          title.innerText = 'Featured Work'
+          date.innerText = '(SELECTED BETWEEN 2021-2023)'
+          body.classList.remove('hovered')
+          link.classList.remove('hovered')
+        })
+      })
+    </script>
+  </body>
 </html>
