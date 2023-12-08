@@ -15,7 +15,7 @@ function valueSetters() {
     gsap.set(".heroMarquee h1", {
         y: "100%"
     });
-    gsap.set("main .parent .child", {
+    gsap.set(".parent .child", {
         y: "100%"
     });
     gsap.set("#left", {
@@ -53,7 +53,7 @@ function loaderAnimation() {
 
 function animateHomepage() {
     var tl = gsap.timeline();
-    tl.to("main .parent .child", {
+    tl.to(".parent .child", {
         y: 0,
         delay: -1.2,
         duration: 3,

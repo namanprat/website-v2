@@ -124,7 +124,6 @@ spun {
 #project-row {
   flex-direction: column;
   width: 85%;
-  margin-bottom: 13vh;
 }
 #project-cta {
   display: none;
@@ -140,10 +139,9 @@ spun {
   opacity: 0;
   position: absolute;
   bottom: 20px;
-  gap: 15px;
   z-index: 2;
   padding: 0 0 20px 20px;
-  transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 capsule {
   font-size: clamp(0.85rem, 0.29vw + 0.78rem, 1.01rem);
@@ -156,7 +154,7 @@ capsule {
   text-transform: uppercase;
   background-color: var(--white);
   color: var(--black);
-  transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .project:hover #capsule-container {
   opacity: 1;
