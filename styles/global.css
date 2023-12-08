@@ -610,7 +610,7 @@
   }
   @media (max-width: 1440px) {
     :root {
-      --h1: clamp(8.81rem, 3vw + 8.06rem, 9.15rem);
+      --h1: clamp(8rem, 3vw + 8rem, 9rem);
       --h2-5: clamp(2.83rem, 0.96vw + 2.59rem, 3.36rem)
     }
     .copy {
@@ -622,7 +622,7 @@
       width: 100%;
     }
     :root {
-      --h1: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
+      --h1: clamp(6.rem, 2.3vw + 6.2rem, 8rem);
       --h2-5: clamp(2.41rem, 0.82vw + 2.21rem, 2.86rem);
     }
     /* #nav-cluster {
