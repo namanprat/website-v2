@@ -37,8 +37,8 @@ function loaderAnimation() {
         ease: "expo.inOut"
     }).to("#loader .parent .child", {
         yPercent: -100,
-        duration: 1,
-        delay: 1,
+        duration: 1.7,
+        delay: -1,
         stagger: 0.2,
         ease: "expo.inOut"
     }).to("#loader", {

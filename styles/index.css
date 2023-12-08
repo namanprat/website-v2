@@ -59,6 +59,12 @@ spun {
   height: min-content;
   width: 100%;
 }
+/* .copy {
+  display: flex;
+  flex-direction: column;
+  gap: -200px;
+  background-color: red;
+} */
 #page-2 #cta {
   margin-top: 10rem;
 }
