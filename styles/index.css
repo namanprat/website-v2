@@ -39,25 +39,27 @@ main {
   #union svg path{
     fill: var(--primary);
   }
-#about {
+#page-2 {
   /* padding: calc(var(--ratio-2) * var(--uni)) 0; */
-  padding-top: 10vh;
-  margin: 0 auto;
+  padding-top: 5vh;
+  /* margin: 0 auto; */
   width: 100%;
   border-top: 2px solid var(--placeholder);
 }
 .about-line {
   font-size: var(--h2-5);
-  text-align: justify;
+  text-align: center;
 }
 spun {
   font-style: italic;
 }
 #page-2 {
   max-width: 100rem;
-  margin: 5vh auto;
+  margin-top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
   height: min-content;
-  width: 100%;
+  /* width: 100%; */
 }
 /* .copy {
   display: flex;
@@ -66,7 +68,7 @@ spun {
   background-color: red;
 } */
 #page-2 #cta {
-  margin-top: 10rem;
+  margin-top: 7.5rem;
 }
 #work {
   width: 100%;

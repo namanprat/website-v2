@@ -23,7 +23,7 @@
     --resume: clamp(1.21rem, 0.69vw + 1.29rem, 1.43rem);
     --h3: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
     --h2: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
-    --h2-5: clamp(3rem, 1.3vw + 3.6rem, 4.7rem);
+    --h2-5: clamp(3rem, 1vw + 3rem, 4.3rem);
     --h1-footer: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
     --h1: clamp(9.22rem, 3.14vw + 8.44rem, 10.3rem);
     --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
@@ -708,8 +708,8 @@
       padding-right: calc(var(--uni) * 1);
     }
     .w-3 {
-      padding-left: calc(var(--uni) * var(--ratio));
-      padding-right: calc(var(--uni) * var(--ratio));
+      padding-left: calc(var(--uni) * 0.75);
+      padding-right: calc(var(--uni) * 0.75);
     }
   }
   @media (max-width: 527px) {
@@ -728,8 +728,8 @@
       --h1-project: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
     }
     .w-3 {
-      padding-left: calc(var(--uni) * 0.65);
-      padding-right: calc(var(--uni) * 0.65);
+      padding-left: calc(var(--uni) * 0.55);
+      padding-right: calc(var(--uni) * 0.55);
     }
   }
   @media (max-width: 450px) {
