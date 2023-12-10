@@ -12,7 +12,7 @@
   }
   @font-face {
     font-family: "Sohne-Leicht";
-    src: url("/fonts/Sohne-Leicht.woff") format("woff");
+    src: url("/fonts/NHG-55.woff2") format("woff2");
     font-display: swap;
   }
   :root {
@@ -64,16 +64,16 @@
     --diff: #f8ebdf;
     --bg: #f8ebdf;
     --cusror: #222;
-    --placeholder: #3025215a;
-    --accent: #df4f36;
-    --white: #f6f6f6;
-    --black: #0E0E0E;
+    --placeholder: #30252118;
+    --accent: #fff;
+    --white: #fff;
+    --black: #111;
     --ls: -0.25px;
     --ratio: 1.414;
     --uni: calc(var(--ratio) * 1.414rem);
     --ratio-2: calc(var(--ratio) * var(--ratio));
   }
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
     :root {    
       --primary: #e9d5c2;
       --bg: #151212;
@@ -81,7 +81,7 @@
       --placeholder: #44393952;
       --accent: #df4f36;
     }
-  }
+  } */
   .disable-scroll {
     overflow-y: hidden;
     overflow-x: hidden;
@@ -342,7 +342,8 @@
     top: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 2px solid var(--primary);
+    border: 2px solid var(--diff);
+    mix-blend-mode: difference;
     border-radius: 100px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -353,7 +354,8 @@
   #nav {
     overflow: hidden;
     text-decoration: none;
-    color: var(--primary);
+    color: var(--diff);
+    mix-blend-mode: difference;
   }
   #nav-home {
     position: absolute;
@@ -362,10 +364,15 @@
     transform: translate(-50%, -50%);
     transition: 0.2s ease-in-out;
     white-space: nowrap;
-    color: var(--primary);
+    color: var(--diff);
+    mix-blend-mode: difference;
     text-transform: uppercase;
     font-family: var(--body);
     font-size: var(--p);
+  }
+  #time {
+    color: var(--diff);
+    mix-blend-mode: difference;
   }
   #nav-cluster {
     width: 20rem;
