@@ -27,6 +27,16 @@ function animatePage() {
     })
 }
 
+function aboutAnimation() {
+    gsap.from("#about", {
+        y: "100%",
+        delay: 1.35,
+        duration: 2.7,
+        stagger: 0.135,
+        ease: "expo.inOut",
+      });
+}
+
 function textReveal() {
     window.addEventListener("DOMContentLoaded", (event) => {
         let typeSplit = new SplitType("[text-split]", {
@@ -34,17 +44,29 @@ function textReveal() {
             tagName: "span"
         });
         $("[animate]").each(function(index) {
-            let tl = gsap.timeline();
-            tl.from(".char", {
-                delay: 1.5,
+            let tl = gsap.timeline({
+                paused: true
+            });
+            tl.from($(this).find(".char"), {
                 opacity: 0,
+                delay: 2,
                 yPercent: 100,
-                duration: 1.5,
+                duration: 1.3,
                 ease: "expo.inOut",
                 stagger: {
                     amount: 0.3
                 }
-            })
+            });
+            ScrollTrigger.create({
+                trigger: $(this),
+                start: "top 90%",
+                // markers: true,
+                onEnter: () => tl.play()
+            });
+            ScrollTrigger.create({
+                trigger: $(this),
+                onLeaveBack: () => tl.pause(0)
+            });
         })
     })
 }
@@ -54,4 +76,5 @@ gsap.config({
 });
 valueSetters();
 animatePage();
+aboutAnimation();
 textReveal();

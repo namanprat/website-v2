@@ -31,7 +31,7 @@ const rotatingText = document.querySelectorAll("#union svg");
       let tween = gsap.to(".marquee__part", {
         xPercent: -100,
         repeat: -1,
-        duration: 30,
+        duration: 35,
         ease: "linear",
       }).totalProgress(0.7);
       gsap.set("marquee__inner", {
@@ -47,4 +47,4 @@ const rotatingText = document.querySelectorAll("#union svg");
           timeScale: isScrollingDown ? 1 : -1,
         });
         currentScroll = window.pageYOffset;
-      })
+      });

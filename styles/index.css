@@ -33,6 +33,22 @@ main {
   font-size: var(--h1);
   line-height: 0.8;
 }
+.marquee__inner {
+  display: flex;
+  width: fit-content;
+  flex: auto;
+  flex-direction: row;
+}
+.marquee__part {
+  display:flex;
+  align-items: center;
+  flex-shrink: 0;
+  grid-column-gap: clamp(2.62rem, 0.89vw + 2.39rem, 3.11rem);
+}
+.marquee__inner h1 {
+  font-family: var(--text);
+  text-transform: uppercase;
+}
 #union {
   align-self: center;
 }
@@ -45,10 +61,8 @@ main {
   max-width: 100rem;
   margin: auto;
 }
-#about {
-  font-size: var(--h1-5);
-}
 #about{
+  font-size: var(--h1-5);
   letter-spacing: var(--ls);
   line-height: 100%;
 }
