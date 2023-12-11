@@ -36,8 +36,8 @@ main {
 #union {
   align-self: center;
 }
-  #union svg path{
-    fill: var(--primary);
+#union svg path{
+  fill: var(--primary);
   }
 #page-2 {
   margin-top: 10vh !important;
@@ -46,7 +46,7 @@ main {
   margin: auto;
 }
 #about {
-  font-size: var(--h1);
+  font-size: var(--h1-5);
 }
 #about{
   letter-spacing: var(--ls);
@@ -62,7 +62,8 @@ main {
 #cta-cluster {
   width: 100%;
   margin-top: 7.5rem;
- max-width: 40rem;
+  max-width: 40rem;
+  gap: 5rem;
 }
 #cta-cluster h4 {
   line-height: 140%;

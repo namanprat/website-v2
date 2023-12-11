@@ -26,6 +26,9 @@
     --h2-5: clamp(3rem, 1vw + 3rem, 4.3rem);
     --h1-footer: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
     --h1: clamp(9.22rem, 3.14vw + 8.44rem, 10.3rem);
+
+    --h1-5: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
+
     --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
 
     --primary: #222;
@@ -291,6 +294,7 @@
     text-decoration: underline;
   }
   * {
+    -webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -598,6 +602,7 @@
   @media (max-width: 1440px) {
     :root {
       --h1: clamp(8rem, 3vw + 8rem, 9rem);
+      --h1-5: clamp(4.2rem, 1.4vw + 4.1rem, 5.3rem);
       --h2-5: clamp(2.83rem, 0.96vw + 2.59rem, 3.36rem)
     }
     .copy {
@@ -609,7 +614,8 @@
       width: 100%;
     }
     :root {
-      --h1: clamp(6.rem, 2.3vw + 6.2rem, 8rem);
+      --h1: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
+      --h1-5: clamp(4.2rem, 1.4vw + 4.1rem, 5.3rem);
       --h2-5: clamp(2.41rem, 0.82vw + 2.21rem, 2.86rem);
     }
     /* #nav-cluster {
@@ -618,7 +624,6 @@
   }
   @media (max-width: 915px) {
     :root {
-      --h1: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
       --h3: clamp(1.85rem, 0.63vw + 1.69rem, 2.19rem);
       --h1-project: clamp(9.64rem, 3.28vw + 8.82rem, 11.45rem);
     }
@@ -658,6 +663,7 @@
     }
     :root {
       --h1: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
+      --h1-5: clamp(4.2rem, 1.4vw + 4.1rem, 5.3rem);
       --h1-project: clamp(8.81rem, 3vw + 8.06rem, 9.15rem);
       --h1-footer: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
       --h2-5: clamp(2rem, 0.68vw + 1.83rem, 2.37rem);
@@ -670,12 +676,14 @@
       padding-right: 0;
     }
     :root {
+      --h1-5: clamp(3.25rem, 2.25vw + 3.52rem, 4.25rem);
       --h1: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
       --h1-project: clamp(7.99rem, 2.72vw + 7.31rem, 9.49rem);
     }
   }
   @media (max-width: 600px) {
     :root {
+      --h1-5: clamp(3rem, 2vw + 3rem, 4rem);
       --h1: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
       --h1-project: clamp(6.2rem, 6.2vw + 5.7rem, 7.4rem);
     }
@@ -692,6 +700,7 @@
   }
   @media (max-width: 527px) {
     :root {
+      --h1-5: clamp(3rem, 2vw + 3rem, 4rem);
       --h1: clamp(4.61rem, 1.57vw + 4.35rem, 5.48rem);
     }
   }
@@ -703,6 +712,7 @@
   @media (max-width: 500px) {
     :root {
       --h1: clamp(3.8rem, 1.3vw + 4rem, 5.24rem);
+      --h1-5: clamp(2.8rem, 1vw + 2.7rem, 5rem);
       --h1-project: clamp(5.65rem, 1.93vw + 5.17rem, 6.71rem);
     }
     .w-3 {
@@ -715,16 +725,13 @@
       margin-top: 7rem;
     }
     :root {
+      --h1-5: clamp(2.62rem, 0.89vw + 2.59rem, 3.5rem);
       --h1-project: clamp(4.82rem, 1.64vw + 4.41rem, 5.73rem);
-      /* --h2: clamp(2rem, 0.68vw + 1.83rem, 2.37rem); */
     }
   }
   @media (max-width: 375px) {
     :root {
       --h1-project: clamp(4.41rem, 1.5vw + 4.3rem, 5.24rem);
       --h1: clamp(3rem, 2vw + 3rem, 4rem);
-    }
-    #about {
-      height: 75vh;
     }
   }
