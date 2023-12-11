@@ -94,6 +94,9 @@
   .gap-35 {
     gap: 35px;
   }
+  .gap-1rem {
+    gap: 1rem;
+  }
   .overflow-hidden {
     overflow: hidden;
   }

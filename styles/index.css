@@ -54,7 +54,7 @@ main {
 }
 .l2{
   font-family: var(--title);
-  margin-top: -20px;
+  margin-top: -10px;
 }
 .l2 em{
   line-height: 0.8 !important;

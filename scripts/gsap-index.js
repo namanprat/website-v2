@@ -107,10 +107,9 @@ function aboutAnimation() {
         y: "100%",
         duration: 2.5,
         stagger: 0.135,
-        //delay: 0.5,
         scrollTrigger: {
           trigger: "#page-2",
-          start: "top center",
+          start: "top 73%",
         },
         ease: "expo.inOut",
       });
