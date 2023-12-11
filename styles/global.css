@@ -34,6 +34,7 @@
     --cusror: #222;
     --placeholder: #30252118;
     --accent: #fff;
+      /* --accent: #df4f36; */
     --white: #fff;
     --black: #111;
     --ls: -0.25px;
@@ -43,12 +44,12 @@
   }
   @media (prefers-color-scheme: dark) {
     :root {    
-      --primary: #e9d5c2;
+      --primary: #f5ddc7;
+      --diff: #f5ddc7;
       --bg: #151212;
-      --cusror: #f8ebdf;
+      --cusror: #f5ddc7;
       --placeholder: #44393952;
       --accent: #fff;
-      /* --accent: #df4f36; */
     }
   }
   .disable-scroll {
@@ -86,6 +87,9 @@
   }
   .gap-25 {
     gap: 25px;
+  }
+  .gap-35 {
+    gap: 35px;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -449,7 +453,7 @@
     padding: 3rem;
     overflow: hidden !important;
     width: 50%;
-    background-color: var(--accent);
+    background-color: var(--white);
     height: 100%;
   }
   .social a {

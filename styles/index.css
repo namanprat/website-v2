@@ -41,20 +41,29 @@ main {
   }
 #page-2 {
   margin-top: 10vh !important;
-  padding-top: 15vh;
+  /* padding-top: 15vh; */
   width: 100%;
-  border-top: 2px solid var(--placeholder);
-  max-width: min-content;
+  /* border-top: 2px solid var(--placeholder); */
+  max-width: 100rem;
   margin: auto;
 }
-#about h1 {
-  /* transform: translateY(100%); */
+#about {
+  font-size: var(--h1);
 }
-.l1 h1, 
-.l3 h1{
-  font-family: var(--text);
+.l1 #about, 
+.l3 #about{
+  line-height: 100%;
+  /* font-family: var(--text); */
 }
-#page-2 #cta {
+.l2{
+  font-family: var(--title);
+  margin-top: -20px;
+}
+.l2 h1{
+  /* background-color: red; */
+  line-height: 0.8;
+}
+#cta-cluster {
   margin-top: 9rem;
 }
 #work {
@@ -197,6 +206,9 @@ capsule {
   .image-capusle img:hover {
     filter: grayscale(0) sepia(0) brightness(1);
     transform: scale(1);
+}
+#project-img img:hover {
+  transform: scale(1);
 }
   #project-row .self-end,
   #project-row .self-start {
