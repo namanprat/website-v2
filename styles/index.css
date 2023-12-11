@@ -47,8 +47,8 @@ main {
   max-width: min-content;
   margin: auto;
 }
-#about {
-  line-height: 100%;
+#about h1 {
+  /* transform: translateY(100%); */
 }
 .l1 h1, 
 .l3 h1{

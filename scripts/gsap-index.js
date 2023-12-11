@@ -10,18 +10,6 @@ function revealToplug() {
         elem.appendChild(parent)
     })
 }
-function revealTopSprun() {
-    document.querySelectorAll("#about").forEach(function(elem) {
-        var parent = document.createElement("sprun");
-        var child = document.createElement("sprun");
-        parent.classList.add("papa");
-        child.classList.add("baccha");
-        child.innerHTML = elem.innerHTML;
-        parent.appendChild(child);
-        elem.innerHTML = "";
-        elem.appendChild(parent)
-    })
-}
 function valueSetters() {
     gsap.set(".heroMarquee h1", {
         y: "100%"
@@ -36,7 +24,7 @@ function valueSetters() {
     gsap.set("#right", {
         x: 0,
         opacity: '1'
-    })
+    });
 }
 
 function loaderAnimation() {
@@ -114,21 +102,18 @@ function xAxisScroll() {
     })
 }
 
-function textReveal() {
-    var tl = gsap.timeline();
-    tl.from(".papa .baccha", {
-        opacity: 0,
-        y: 100,
-        stagger: 0.04,
-        duration: 1.3,
+function aboutAnimation() {
+    gsap.from("#about", {
+        y: "100%",
+        duration: 2.5,
+        stagger: 0.135,
+        //delay: 0.5,
         scrollTrigger: {
-            trigger: "#page-2",
-            scroller: "body",
-            ease: "power4.inOut",
-            markers: true,
-            start: "top 45%",
-        }
-    })
+          trigger: "#page-2",
+          start: "top center",
+        },
+        ease: "expo.inOut",
+      });
 }
 
 function titleFade() {
@@ -150,8 +135,8 @@ gsap.config({
     nullTargetWarn: false
 });
 revealToplug();
-revealTopSprun();
+// revealTopSprun();
 valueSetters();
 loaderAnimation();
 xAxisScroll();
-textReveal();
+aboutAnimation();
