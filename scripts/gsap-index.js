@@ -109,7 +109,7 @@ function aboutAnimation() {
         stagger: 0.135,
         scrollTrigger: {
           trigger: "#page-2",
-          start: "top 73%",
+          start: "top 70%",
         },
         ease: "expo.inOut",
       });
@@ -136,7 +136,7 @@ function textReveal() {
             });
             ScrollTrigger.create({
                 trigger: $(this),
-                start: "top bottom",
+                start: "top 90%",
                 // markers: true,
                 onEnter: () => tl.play()
             });
