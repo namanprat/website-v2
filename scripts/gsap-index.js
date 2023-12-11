@@ -10,7 +10,18 @@ function revealToplug() {
         elem.appendChild(parent)
     })
 }
-
+function revealTopSprun() {
+    document.querySelectorAll("#about").forEach(function(elem) {
+        var parent = document.createElement("sprun");
+        var child = document.createElement("sprun");
+        parent.classList.add("papa");
+        child.classList.add("baccha");
+        child.innerHTML = elem.innerHTML;
+        parent.appendChild(child);
+        elem.innerHTML = "";
+        elem.appendChild(parent)
+    })
+}
 function valueSetters() {
     gsap.set(".heroMarquee h1", {
         y: "100%"
@@ -100,63 +111,22 @@ function xAxisScroll() {
             end: "top -90%",
             scrub: 1
         }
-    }).to("#extra-text", {
-        opacity: '0',
-        delay: -3,
-        scrollTrigger: {
-            trigger: ".hero-container",
-            scroller: "body",
-            ease: "power4.inOut",
-            start: "top -5%",
-            end: "top -90%",
-            scrub: 1
-        }
     })
 }
 
- function textReveal() {
-     window.addEventListener("DOMContentLoaded", (event) => {
-         let typeSplit = new SplitType("[text-split]", {
-             types: "words, chars",
-             tagName: "span"
-         });
-         $("[animate]").each(function(index) {
-             let tl = gsap.timeline({
-                 paused: true
-             });
-             tl.from($(this).find(".word"), {
-                 opacity: 0,
-                 yPercent: 100,
-                 duration: 2,
-                 ease: "expo.inOut",
-                 stagger: {
-                     amount: 0
-                 }
-             });
-             ScrollTrigger.create({
-                 trigger: $(this),
-                 start: "top 70%",
-                 onEnter: () => tl.play()
-             });
-             ScrollTrigger.create({
-                 trigger: $(this),
-                 onLeaveBack: () => tl.pause(0)
-             });
-         })
-     })
- }
-
-function textReval() {
+function textReveal() {
     var tl = gsap.timeline();
-    tl.from("#about h2", {
+    tl.from(".papa .baccha", {
         opacity: 0,
-        yPercent: 100,
-        duration: 1.7,
+        y: 100,
+        stagger: 0.04,
+        duration: 1.3,
         scrollTrigger: {
+            trigger: "#page-2",
             scroller: "body",
             ease: "power4.inOut",
-            trigger: "#page-2",
-            start: "top 30%",
+            markers: true,
+            start: "top 45%",
         }
     })
 }
@@ -180,6 +150,7 @@ gsap.config({
     nullTargetWarn: false
 });
 revealToplug();
+revealTopSprun();
 valueSetters();
 loaderAnimation();
 xAxisScroll();
