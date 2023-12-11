@@ -505,10 +505,13 @@
     color: var(--black) !important;
   }
   #socials {
-    flex-direction: column;
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
   }
   #overlay-bottom {
-    flex-direction: row;
+    align-items: center;
+    flex-direction: column;
   }
   #bottom {
     bottom: 0;
@@ -627,15 +630,6 @@
     }
     #work {
       margin-top: 12vh;
-    }
-    #socials {
-      width: 100%;
-      flex-direction: row;
-      margin-bottom: 1.2rem;
-    }
-    #overlay-bottom {
-      align-items: center;
-      flex-direction: column-reverse;
     }
     #nav-project {
       display: none;

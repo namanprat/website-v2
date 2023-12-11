@@ -40,7 +40,7 @@ main {
     fill: var(--primary);
   }
 #page-2 {
-  margin-top: 15vh !important;
+  margin-top: 10vh !important;
   width: 100%;
   max-width: 100rem;
   margin: auto;
