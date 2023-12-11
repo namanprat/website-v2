@@ -116,6 +116,39 @@ function aboutAnimation() {
       });
 }
 
+function textReveal() {
+    window.addEventListener("DOMContentLoaded", (event) => {
+        let typeSplit = new SplitType("[text-split]", {
+            types: "words, chars",
+            tagName: "span"
+        });
+        $("[animate]").each(function(index) {
+            let tl = gsap.timeline({
+                paused: true
+            });
+            tl.from($(this).find(".char"), {
+                opacity: 0,
+                yPercent: 100,
+                duration: 1.3,
+                ease: "expo.inOut",
+                stagger: {
+                    amount: 0.3
+                }
+            });
+            ScrollTrigger.create({
+                trigger: $(this),
+                start: "top bottom",
+                // markers: true,
+                onEnter: () => tl.play()
+            });
+            ScrollTrigger.create({
+                trigger: $(this),
+                onLeaveBack: () => tl.pause(0)
+            });
+        })
+    })
+}
+
 function titleFade() {
     let mm = gsap.matchMedia();
     mm.add("(min-width: 768px)", () => {
@@ -140,3 +173,4 @@ valueSetters();
 loaderAnimation();
 xAxisScroll();
 aboutAnimation();
+textReveal();

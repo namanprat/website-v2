@@ -40,7 +40,7 @@ main {
     fill: var(--primary);
   }
 #page-2 {
-  margin-top: 10vh !important;
+  margin-top: 15vh !important;
   width: 100%;
   max-width: 100rem;
   margin: auto;
@@ -48,24 +48,24 @@ main {
 #about {
   font-size: var(--h1);
 }
-.l1 #about, 
-.l3 #about{
+#about{
+  letter-spacing: var(--ls);
   line-height: 100%;
 }
 .l2{
   font-family: var(--title);
   margin-top: -20px;
 }
-.l2 h1{
-  /* background-color: red; */
-  line-height: 0.8;
+.l2 em{
+  line-height: 0.8 !important;
 }
 #cta-cluster {
-  /* background-color: red; */
-  margin-top: 8rem;
-  width: 50rem;
+  width: 100%;
+  margin-top: 7.5rem;
+ max-width: 40rem;
 }
 #cta-cluster h4 {
+  line-height: 140%;
   white-space: normal;
   text-align: justify;
   width: 100%;
