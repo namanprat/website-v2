@@ -47,7 +47,7 @@ textarea {
 }
 h4{
   text-align: justify;
-  white-space: wrap;
+  white-space: wrap !important;
 }
 #about{
   font-size: var(--h1-5);
