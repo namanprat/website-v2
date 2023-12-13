@@ -26,35 +26,44 @@
     --h2-5: clamp(3rem, 1vw + 3rem, 4.3rem);
     --h1-footer: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
     --h1: clamp(9.22rem, 3.14vw + 8.44rem, 10.3rem);
-
     --h1-5: clamp(6.82rem, 2.32vw + 6.24rem, 8.1rem);
-
     --h1-project: clamp(11.3rem, 3.85vw + 10.34rem, 13.42rem);
 
-    --primary: #222;
+    --primary: #f5ddc7;
+    --diff: #f5ddc7;
+    --bg: #151212;
+    --cusror: #f5ddc7;
+    --placeholder: #201C1B;
+    --accent: #f5ddc7;
+    --white: #fff4ea;
+    --black: #151212;
+
+    /* --primary: #222;
     --diff: #f8ebdf;
     --bg: #f8ebdf;
     --cusror: #222;
-    --placeholder: #201C1B;
+    --placeholder: #30252118;
     --accent: #fff;
-      /* --accent: #df4f36; */
+      --accent: #df4f36;
     --white: #fff;
-    --black: #111;
+    --black: #111; */
     --ls: -0.25px;
     --ratio: 1.414;
     --uni: calc(var(--ratio) * 1.414rem);
     --ratio-2: calc(var(--ratio) * var(--ratio));
   }
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
     :root {    
       --primary: #f5ddc7;
       --diff: #f5ddc7;
       --bg: #151212;
       --cusror: #f5ddc7;
-      --placeholder: #44393952;
-      --accent: #fff;
+      --placeholder: #201C1B;
+      --accent: #f5ddc7;
+      --white: #fff4ea;
+      --black: #151212;
     }
-  }
+  } */
   .disable-scroll {
     overflow-y: hidden;
     overflow-x: hidden;
