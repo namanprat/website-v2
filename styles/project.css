@@ -143,21 +143,24 @@ section .box-container{
 }
 .box-container a{
     text-decoration:none;
-    line-height:160%;
     padding-bottom:1rem
 }
 .box-container p{
-    line-height:160%;
+    padding-left:0 !important;
     padding-bottom:1rem;
-    width:100%
+    width:100%;
 }
 .q-box{
+    line-height:170%;
     white-space:normal;
     display:inline-block;
     pointer-events:none;
     padding:2rem;
     background-color:var(--placeholder);
     margin:1rem 0
+}
+section .q-box-text p{
+    padding-left:0 !important;
 }
 .box{
     white-space:normal;
