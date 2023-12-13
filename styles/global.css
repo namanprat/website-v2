@@ -198,7 +198,8 @@
       opacity: 1;
     }
     #cursor {
-      border: 1.5px solid var(--primary);
+      border: 1.5px solid var(--diff);
+      mix-blend-mode: difference;
       border-radius: 1.2rem;
       height: 2.2rem;
       margin: auto;
