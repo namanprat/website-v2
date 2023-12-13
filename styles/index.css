@@ -204,6 +204,9 @@ capsule {
   main {
     overflow-x: hidden !important;
   }
+  #cta-cluster {
+    gap: 0;
+  }
   #work-title {
     position: inherit;
     top: auto;
