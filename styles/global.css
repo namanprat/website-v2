@@ -174,9 +174,9 @@
   .pointer-none {
     pointer-events: none;
   }
-  .nowrap {
-    white-space: nowrap;
-  }
+  /* .nowrap {
+    white-space: nowrap !important;
+  } */
   ::-moz-selection {
     background: var(--primary);
     color: var(--bg);
@@ -292,7 +292,7 @@
     color: var(--primary);
   }
   h4 {
-    white-space: nowrap;
+    /* white-space: nowrap; */
     /* line-height: 150%; */
     color: var(--primary);
     font-size: var(--h4);

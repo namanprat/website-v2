@@ -45,7 +45,10 @@ textarea {
 #button-cluster {
     width: clamp(30rem, 15vw + 45rem, 33rem);
 }
-.discuss h4{
+.discuss {
+  /* text-transform: uppercase;
+  background-color: red;
+  font-size: var(--h4); */
   text-align: justify;
   white-space: wrap !important;
 }
