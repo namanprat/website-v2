@@ -292,7 +292,7 @@
     color: var(--primary);
   }
   h4 {
-    /* white-space: nowrap; */
+    white-space: nowrap;
     /* line-height: 150%; */
     color: var(--primary);
     font-size: var(--h4);
