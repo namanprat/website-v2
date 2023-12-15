@@ -110,7 +110,7 @@ textarea:focus {
   #entries {
     flex-direction: column;
   }
-  #left {
+  /* #left {
     max-width: 100%;
-  }
+  } */
 }
