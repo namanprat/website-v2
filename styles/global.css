@@ -334,8 +334,10 @@
     transform: translate(-50%, -50%);
     border: 2px solid var(--diff);
     mix-blend-mode: difference;
+    /* will-change: filter; */
     border-radius: 100px;
     backdrop-filter: blur(10px);
+    -moz-backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     /* -webkit-backface-visibility: hidden; */
     /* -moz-backface-visibility: hidden; */
