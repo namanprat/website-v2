@@ -45,7 +45,7 @@ textarea {
 #button-cluster {
     width: clamp(30rem, 15vw + 45rem, 33rem);
 }
-h4{
+.discuss h4{
   text-align: justify;
   white-space: wrap !important;
 }
