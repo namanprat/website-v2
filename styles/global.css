@@ -266,7 +266,7 @@
     font-weight: 500;
     font-style: normal;
     font-size: var(--p);
-    line-height: 140%;
+    line-height: 145%;
     letter-spacing: var(--ls);
   }
   h1 {
@@ -293,7 +293,7 @@
   }
   h4 {
     white-space: nowrap;
-    /* line-height: 150%; */
+    line-height: 145%;
     color: var(--primary);
     font-size: var(--h4);
     font-weight: 500;
