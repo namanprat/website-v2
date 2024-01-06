@@ -308,6 +308,13 @@
     font-family: var(--text);
     transition: 0.2s ease-in-out;
   }
+  nav,
+  #nav,
+  #nav-home,
+  #time {
+    color: var(--diff);
+    mix-blend-mode: difference;
+  }
   nav {
     position: fixed;
     width: 94%;
@@ -315,16 +322,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid var(--diff);
-    mix-blend-mode: difference;
     will-change: filter;
     border-radius: 100px;
     backdrop-filter: blur(10px);
     -moz-backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    /* -webkit-backface-visibility: hidden; */
-    /* -moz-backface-visibility: hidden; */
-    /* -webkit-transform: translate3d(0, 0, 0); */
-    /* -moz-transform: translate3d(0, 0, 0); */
+
     margin-top: 3vh;
     z-index: 10;
     height: 7.5vh;
@@ -332,8 +335,6 @@
   #nav {
     overflow: hidden;
     text-decoration: none;
-    color: var(--diff);
-    mix-blend-mode: difference;
   }
   #nav-home {
     position: absolute;
@@ -342,15 +343,9 @@
     transform: translate(-50%, -50%);
     transition: 0.2s ease-in-out;
     white-space: nowrap;
-    color: var(--diff);
-    mix-blend-mode: difference;
     text-transform: uppercase;
     font-family: var(--body);
     font-size: var(--p);
-  }
-  #time {
-    color: var(--diff);
-    mix-blend-mode: difference;
   }
   #nav-cluster {
     width: 20rem;
@@ -684,6 +679,13 @@
     }
   }
   @media (max-width: 450px) {
+    nav,
+    #nav,
+    #nav-home,
+    #time {
+      color: var(--diff);
+      mix-blend-mode: normal;
+    }
     #page-2 #cta {
       margin-top: 7rem;
     }
