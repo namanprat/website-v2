@@ -112,24 +112,6 @@
   .flex {
     display: flex;
   }
-  .grid {
-    display: grid;
-  }
-  .grid-1 {
-    grid-column: span 1;
-  }
-  .grid-2 {
-    grid-column: span 2;
-  }
-  .grid-3 {
-    grid-column: span 3;
-  }
-  .grid-4 {
-    grid-column: span 4;
-  }
-  .grid-5 {
-    grid-column: span 5;
-  }
   .col {
     display: flex;
     flex-direction: column;
@@ -506,10 +488,11 @@
     font-family: var(--title);
     -webkit-transition: 1.5s;
     transition: 0.5s;
+    white-space: nowrap;
   }
   .menu-item span {
     margin-right: 20px;
-    font-size: 20px;
+    font-size: 1.1rem;
   }
   #inactive {
     opacity: 0.2;
