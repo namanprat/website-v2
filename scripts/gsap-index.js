@@ -140,10 +140,10 @@ function textReveal() {
                 // markers: true,
                 onEnter: () => tl.play()
             });
-            ScrollTrigger.create({
-                trigger: $(this),
-                onLeaveBack: () => tl.pause(0)
-            });
+            // ScrollTrigger.create({
+            //     trigger: $(this),
+            //     onLeaveBack: () => tl.pause(0)
+            // });
         })
     })
 }

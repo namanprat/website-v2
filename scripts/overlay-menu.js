@@ -85,9 +85,9 @@ function overlayAnimation() {
         ease: "power4.inOut",
         stagger: 0.15
     }, "<");
-    $(".menu-close, .menu-open").click(function() {
+Array.from(document.querySelectorAll(".menu-close, .menu-open")).forEach(e => e.addEventListener("click", function() {
         tl.reversed() ? tl.play() : tl.reverse()
-    })
+    }))
 }
 gsap.registerPlugin(ScrollTrigger);
 gsap.config({
