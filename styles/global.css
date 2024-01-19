@@ -679,16 +679,16 @@
     }
   }
   @media (max-width: 450px) {
-    nav,
+    /* nav,
     #nav,
     #nav-home,
     #time {
       backdrop-filter: blur(0px);
       -moz-backdrop-filter: blur(0px);
       -webkit-backdrop-filter: blur(0px);
-      /* color: var(--diff);
-      mix-blend-mode: normal; */
-    }
+      color: var(--diff);
+      mix-blend-mode: normal;
+    } */
     #page-2 #cta {
       margin-top: 7rem;
     }
