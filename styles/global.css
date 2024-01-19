@@ -316,7 +316,6 @@
     mix-blend-mode: difference;
   }
   nav {
-    /* background-color: rgba(242, 0, 0, 0); */
     position: fixed;
     width: 94%;
     top: 4%;
