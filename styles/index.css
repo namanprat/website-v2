@@ -24,6 +24,8 @@ main {
   line-height: 1.25;
 }
 .year {
+  margin-top: 3vh;
+  line-height: 100%;
   font-family: var(--text);
   font-size: var(--h1);
   letter-spacing: var(--ls);
