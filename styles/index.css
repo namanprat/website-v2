@@ -9,11 +9,12 @@ main {
 }
 .hero-container {
   position: relative;
-  height: 100vh;
   height: 100svh;
+  eight: 100vh;
 }
 #hero {
   margin-top: 5vh;
+  height: 80svh;
   height: 80vh;
 }
 #name-year {

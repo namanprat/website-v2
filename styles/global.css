@@ -328,7 +328,7 @@
     /* -moz-backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); */
 
-    margin-top: 3vh;
+    margin-top: 3svh;
     z-index: 10;
     height: 7.5vh;
   }
@@ -444,7 +444,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100svh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.309);
     z-index: 9;
@@ -592,7 +592,7 @@
       padding-right: calc(var(--uni) * var(--ratio));
     }
     #work {
-      margin-top: 12vh;
+      margin-top: 12svh;
     }
     #nav-project {
       display: none;
