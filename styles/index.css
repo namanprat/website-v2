@@ -210,6 +210,9 @@ capsule {
   #cta-cluster {
     gap: 0;
   }
+  #hero {
+    margin-top: 10vh;
+  }
   #work-title {
     position: inherit;
     top: auto;
