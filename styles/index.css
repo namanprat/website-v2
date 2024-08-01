@@ -10,7 +10,7 @@ main {
 .hero-container {
   position: relative;
   height: 100svh;
-  eight: 100vh;
+  height: 100vh;
 }
 #hero {
   margin-top: 5vh;
